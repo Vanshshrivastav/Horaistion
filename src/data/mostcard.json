@@ -1,0 +1,122 @@
+[
+    {
+        "name": "Attack on Titan",
+        "image_url": "https://image.tmdb.org/t/p/w300/aiy35Evcofzl7hASZZvsFgltHTX.jpg",
+        "total_episodes": 87,
+        "aired_episodes": 87
+    },
+    {
+        "name": "Demon Slayer: Kimetsu no Yaiba",
+        "image_url": "https://image.tmdb.org/t/p/w300/zGVbrulkupqpbwgiNedkJPyQum4.jpg",
+        "total_episodes": 44,
+        "aired_episodes": 44
+    },
+    {
+        "name": "One Piece",
+        "image_url": "https://image.tmdb.org/t/p/w300/4I0CQfnMy6sRR7QhgqsXR16TmIs.jpg",
+        "total_episodes": 1075,
+        "aired_episodes": 1075
+    },
+    {
+        "name": "Jujutsu Kaisen",
+        "image_url": "https://image.tmdb.org/t/p/w300/tlhbFxzHkHhB5yEKgaKJ6OVSviU.jpg",
+        "total_episodes": 24,
+        "aired_episodes": 24
+    },
+    {
+        "name": "Spy x Family",
+        "image_url": "https://image.tmdb.org/t/p/w300/3r4LYFuXrg3G8fepysr4xSLWnQL.jpg",
+        "total_episodes": 25,
+        "aired_episodes": 25
+    },
+    {
+        "name": "Naruto",
+        "image_url": "https://image.tmdb.org/t/p/w300/vauCEnR7CiyBDzRCeElKkCaXIYu.jpg",
+        "total_episodes": 220,
+        "aired_episodes": 220
+    },
+    {
+        "name": "Bleach",
+        "image_url": "https://image.tmdb.org/t/p/w300/m1p22QFEb4ScP6WNSm65tvG7jQL.jpg",
+        "total_episodes": 366,
+        "aired_episodes": 366
+    },
+    {
+        "name": "My Hero Academia",
+        "image_url": "https://image.tmdb.org/t/p/w300/ivOLM47yJt90P19RH1NvJrAJz9F.jpg",
+        "total_episodes": 138,
+        "aired_episodes": 138
+    },
+    {
+        "name": "Black Clover",
+        "image_url": "https://image.tmdb.org/t/p/w300/oKd6K9EdbA8pmAN0e4g6pGHDv0K.jpg",
+        "total_episodes": 170,
+        "aired_episodes": 170
+    },
+    {
+        "name": "Death Note",
+        "image_url": "https://image.tmdb.org/t/p/w300/l7JpyVcxhWfQ8pp6TlGHOPJD8pX.jpg",
+        "total_episodes": 37,
+        "aired_episodes": 37
+    },
+    {
+        "name": "Tokyo Revengers",
+        "image_url": "https://image.tmdb.org/t/p/w300/vUkfegGZCvsB3zpFElG0ij7yNLr.jpg",
+        "total_episodes": 24,
+        "aired_episodes": 24
+    },
+    {
+        "name": "Chainsaw Man",
+        "image_url": "https://image.tmdb.org/t/p/w300/9pACuzMivb0XYOCWTOc5qarQdpW.jpg",
+        "total_episodes": 12,
+        "aired_episodes": 12
+    },
+    {
+        "name": "Dragon Ball Z",
+        "image_url": "https://image.tmdb.org/t/p/w300/yg6FczpPqgkJbJ6kwdRtDwQe1Ul.jpg",
+        "total_episodes": 291,
+        "aired_episodes": 291
+    },
+    {
+        "name": "Fairy Tail",
+        "image_url": "https://image.tmdb.org/t/p/w300/yT8fKu7M3Xr3ek9G4HwhzD3nlzS.jpg",
+        "total_episodes": 328,
+        "aired_episodes": 328
+    },
+    {
+        "name": "Sword Art Online",
+        "image_url": "https://image.tmdb.org/t/p/w300/qFZV8kSftEoZlJIdgEyiUvniULV.jpg",
+        "total_episodes": 96,
+        "aired_episodes": 96
+    },
+    {
+        "name": "Chainsaw Man",
+        "image_url": "https://image.tmdb.org/t/p/w300/9pACuzMivb0XYOCWTOc5qarQdpW.jpg",
+        "total_episodes": 12,
+        "aired_episodes": 12
+    },
+    {
+        "name": "Dragon Ball Z",
+        "image_url": "https://image.tmdb.org/t/p/w300/yg6FczpPqgkJbJ6kwdRtDwQe1Ul.jpg",
+        "total_episodes": 291,
+        "aired_episodes": 291
+    },
+    {
+        "name": "Fairy Tail",
+        "image_url": "https://image.tmdb.org/t/p/w300/yT8fKu7M3Xr3ek9G4HwhzD3nlzS.jpg",
+        "total_episodes": 328,
+        "aired_episodes": 328
+    },
+    {
+        "name": "Sword Art Online",
+        "image_url": "https://image.tmdb.org/t/p/w300/qFZV8kSftEoZlJIdgEyiUvniULV.jpg",
+        "total_episodes": 96,
+        "aired_episodes": 96
+    },
+    {
+        "name": "Sword Art Online",
+        "image_url": "https://image.tmdb.org/t/p/w300/qFZV8kSftEoZlJIdgEyiUvniULV.jpg",
+        "total_episodes": 96,
+        "aired_episodes": 96
+    }
+]

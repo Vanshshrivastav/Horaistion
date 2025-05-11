@@ -1,0 +1,223 @@
+[
+    {
+      "id": 1,
+      "name": "Your Name",
+      "duration": "23m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
+      "type": "tv",
+      "ep": 25,
+      "sub": 8,
+      "dub": 7,
+      "rating": 8.4
+    },
+    {
+      "id": 2,
+      "name": "Attack on Titan",
+      "duration": "24m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/44/Attack_on_Titan_Season_4_Part_2_Poster.jpg",
+      "type": "tv",
+      "ep": 150,
+      "sub": 10,
+      "dub": 9,
+      "rating": 9.1
+    },
+    {
+      "id": 3,
+      "name": "Demon Slayer",
+      "duration": "26m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/f/fb/Demon_Slayer_Kimetsu_no_Yaiba_Vol_1_cover.jpg",
+      "type": "tv",
+      "ep": 25,
+      "sub": 9,
+      "dub": 8,
+      "rating": 8.8
+    },
+    {
+      "id": 4,
+      "name": "Naruto",
+      "duration": "23m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg",
+      "type": "tv",
+      "ep": 150,
+      "sub": 10,
+      "dub": 9,
+      "rating": 8.2
+    },
+    {
+      "id": 5,
+      "name": "One Piece",
+      "duration": "24m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/2/29/One_Piece_vol_1_shueisha.jpg",
+      "type": "tv",
+      "ep": 150,
+      "sub": 10,
+      "dub": 8,
+      "rating": 8.7
+    },
+    {
+      "id": 6,
+      "name": "Fullmetal Alchemist: Brotherhood",
+      "duration": "25m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/e3/Fullmetal_Alchemist_Brotherhood_Key_Visual.jpg",
+      "type": "tv",
+      "ep": 25,
+      "sub": 10,
+      "dub": 10,
+      "rating": 9.2
+    },
+    {
+      "id": 7,
+      "name": "Death Note",
+      "duration": "23m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.jpg",
+      "type": "tv",
+      "ep": 25,
+      "sub": 10,
+      "dub": 10,
+      "rating": 9.0
+    },
+    {
+      "id": 8,
+      "name": "Bleach",
+      "duration": "23m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/a/a4/Bleachanime.png",
+      "type": "tv",
+      "ep": 150,
+      "sub": 9,
+      "dub": 8,
+      "rating": 8.3
+    },
+    {
+      "id": 9,
+      "name": "Jujutsu Kaisen",
+      "duration": "23m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/37/Jujutsu_Kaisen_Volume_1_cover.jpg",
+      "type": "tv",
+      "ep": 25,
+      "sub": 10,
+      "dub": 9,
+      "rating": 8.6
+    },
+    {
+      "id": 10,
+      "name": "Sword Art Online",
+      "duration": "24m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/f/fd/Sword_Art_Online_light_novel_volume_1_cover.jpg",
+      "type": "tv",
+      "ep": 25,
+      "sub": 8,
+      "dub": 7,
+      "rating": 7.9
+    },
+    {
+      "id": 11,
+      "name": "My Hero Academia",
+      "duration": "24m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/a/af/My_Hero_Academia_Key_Visual.jpg",
+      "type": "tv",
+      "ep": 150,
+      "sub": 10,
+      "dub": 9,
+      "rating": 8.5
+    },
+    {
+      "id": 12,
+      "name": "Tokyo Ghoul",
+      "duration": "24m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/5/52/TokyoGhoulVolume1Cover.jpg",
+      "type": "tv",
+      "ep": 25,
+      "sub": 9,
+      "dub": 8,
+      "rating": 8.0
+    },
+    {
+      "id": 13,
+      "name": "Fairy Tail",
+      "duration": "24m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/48/Fairy_Tail_volume_1_cover.jpg",
+      "type": "tv",
+      "ep": 150,
+      "sub": 8,
+      "dub": 7,
+      "rating": 7.7
+    },
+    {
+      "id": 14,
+      "name": "Black Clover",
+      "duration": "23m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/e/e9/Black_Clover_Volume_1.jpg",
+      "type": "tv",
+      "ep": 150,
+      "sub": 9,
+      "dub": 8,
+      "rating": 7.8
+    },
+    {
+      "id": 15,
+      "name": "Steins;Gate",
+      "duration": "24m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/c/cd/Steins%3BGate_cover.jpg",
+      "type": "tv",
+      "ep": 25,
+      "sub": 10,
+      "dub": 9,
+      "rating": 9.1
+    },
+    {
+      "id": 16,
+      "name": "Hunter x Hunter",
+      "duration": "23m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/3f/Hunter_x_Hunter_2011_Key_Visual.jpg",
+      "type": "tv",
+      "ep": 150,
+      "sub": 10,
+      "dub": 9,
+      "rating": 9.0
+    },
+    {
+      "id": 17,
+      "name": "Clannad",
+      "duration": "23m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/d6/Clannad_game_cover.jpg",
+      "type": "tv",
+      "ep": 25,
+      "sub": 8,
+      "dub": 7,
+      "rating": 8.2
+    },
+    {
+      "id": 18,
+      "name": "Dragon Ball Z",
+      "duration": "23m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/f/f7/Dragon_Ball_Z_cover.jpg",
+      "type": "tv",
+      "ep": 150,
+      "sub": 10,
+      "dub": 9,
+      "rating": 8.8
+    },
+    {
+      "id": 19,
+      "name": "Re:Zero",
+      "duration": "25m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/b/b8/Re_Zero_Volume_1_Cover.jpg",
+      "type": "tv",
+      "ep": 25,
+      "sub": 9,
+      "dub": 8,
+      "rating": 8.5
+    },
+    {
+      "id": 20,
+      "name": "Code Geass",
+      "duration": "25m",
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/4b/Code_Geass_DVD_cover.jpg",
+      "type": "tv",
+      "ep": 25,
+      "sub": 10,
+      "dub": 9,
+      "rating": 9.0
+    }
+  ]
+  
