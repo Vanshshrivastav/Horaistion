@@ -35,7 +35,7 @@ const Carousel = () => {
 
     return (
         <div className="relative w-full h-100 bg-[#1E1E1E] overflow-hidden">
-            <div className="bg-black/80 h-full w-full absolute md:hidden z-10"></div>
+            <div className="bg-black/80 h-full w-full absolute md:hidden "></div>
             <div
                 className="flex h-100 transition-transform duration-500 ease-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -51,7 +51,7 @@ const Carousel = () => {
                         }
                     >
                         <div>
-                            <div className="text-gray-300 ml-5 relative z-50 flex-1">
+                            <div className=" flex-1 ">
                                 <h3 className="text-1xl font-bold mb-4">{slide.spotlight}</h3>
                                 <Link to="/aniproflie" className="text-5xl font-bold mb-6">{slide.title}</Link>
                                 <p className="text-lg mb-6">{slide.details}</p>
