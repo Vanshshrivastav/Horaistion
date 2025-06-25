@@ -105,7 +105,7 @@ const AnimeCard = () => {
           <img
             src="https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png" // Replace with your image source
             alt="Anime Poster"
-            className="rounded-md shadow-md w-full h-auto max-w-[150px] sm:max-w-[200px] md:max-w-[300px] md:h-auto"
+            className="rounded-md shadow-md w-full h-auto max-w-[150px] sm:max-w-[200px] md:max-w-[300px] md:h-[28rem]"
           />
         </div>
 
