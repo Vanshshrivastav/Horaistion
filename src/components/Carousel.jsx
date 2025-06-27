@@ -69,7 +69,7 @@ const Carousel = () => {
                                       backgroundImage: `url(${slide.image})`,
                                       backgroundSize: "cover",
                                       backgroundPosition: "center",
-                                      filter: "brightness(2.5)",
+                                      filter: "brightness(3.0)",
                                   }
                                 : {}
                         }
@@ -91,13 +91,13 @@ const Carousel = () => {
 
             <button
                 onClick={() => handleNavigation("prev")}
-                className="absolute top-1/2 left-4 transform -translate-y-1/2 text-yellow-500 hover:text-yellow-400 text-3xl"
+                className="absolute top-1/2 left-1 transform -translate-y-1/2 text-yellow-500 hover:text-yellow-400 text-3xl "
             >
                 &#10094;
             </button>
             <button
                 onClick={() => handleNavigation("next")}
-                className="absolute top-1/2 right-4 transform -translate-y-1/2 text-yellow-500 hover:text-yellow-400 text-3xl"
+                className="absolute top-1/2 right-1 transform -translate-y-1/2 text-yellow-500 hover:text-yellow-400 text-3xl"
             >
                 &#10095;
             </button>
@@ -106,3 +106,4 @@ const Carousel = () => {
 };
 
 export default Carousel;
+

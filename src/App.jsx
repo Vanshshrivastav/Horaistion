@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Tvshow from './page/Tvshow'
 import Topairing from './page/Topairing'
 import Aniproflie from './page/Aniproflie'
+import Login from './page/Loginpage'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path='/tvshow' element={<Tvshow/>} />
         <Route path='/topairing' element={<Topairing/>} />
         <Route path='/aniproflie' element={<Aniproflie/>} />
+        <Route path='/Login' element={<Login/>} />
         </Routes>
       </BrowserRouter>
     </>

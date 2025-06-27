@@ -24,19 +24,19 @@ const AnimeCardGroup = () => {
 
     return (
         <div className="bg-[#1E1E1E]">
-            <div className="container mx-auto p-[2.5rem]">
+            <div className="container mx-auto p-[1.0rem]">
                 <h1 className="text-3xl font-bold mb-6 text-[#E0E0E0]">Top Airing</h1>
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
                     {currentMovies.map((item) => (
                         <div
                             key={item.id}
-                            className="rounded-md overflow-hidden shadow-md bg-[#2E2E2E]" 
+                            className="overflow-hidden shadow-md bg-[#2E2E2E]" 
                         >
                             <div className="relative">
                                 <img
                                     src={item.image}
                                     alt={item.name}
-                                    className="h-50 w-full object-cover md:h-85"
+                                    className="h-60 w-full object-cover md:h-90"
                                 />
                                 <div className="absolute bottom-2 left-2 flex gap-0.5">
                                     <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-l-lg">
@@ -51,8 +51,8 @@ const AnimeCardGroup = () => {
 
                                 </div>
                             </div>
-                            <div className="p-3 bg-[#1E1E1E] flex flex-col items-start justify-between">
-                                <div className="flex md:w-60  justify-between ">
+                            <div className="pt-2 bg-[#1E1E1E] flex flex-col items-start justify-between">
+                                <div className="flex md:w-69  justify-between ">
                                     <div className="">
                                         <h2 className="text-sm font-medium text-[#E0E0E0] hover:text-[#E3B505] truncate">
                                             {item.name}
