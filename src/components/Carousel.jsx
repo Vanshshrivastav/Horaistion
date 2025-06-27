@@ -69,7 +69,7 @@ const Carousel = () => {
                                       backgroundImage: `url(${slide.image})`,
                                       backgroundSize: "cover",
                                       backgroundPosition: "center",
-                                      filter: "brightness(3.0)",
+                                      filter: "brightness(2.5)",
                                   }
                                 : {}
                         }
