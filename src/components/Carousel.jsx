@@ -43,7 +43,7 @@ const Carousel = () => {
                 </p>
             )}
             <div className="flex gap-4">
-             <button className="bg-pink-500 text-white px-4 py-2 rounded-lg " >Watch Now</button>
+             <button className="bg-[#E3B505] text-black px-4 py-2 rounded-lg " ><a href="Aniproflie">Watch Now</a></button>
                 <button className="bg-white text-black px-4 py-2 rounded-lg">Detail</button>
             </div>
         </div>

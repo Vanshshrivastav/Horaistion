@@ -15,7 +15,7 @@ export default function AnimeCardCarousel() {
       {/* Left Scroll Button */}
       <button
         onClick={() => scroll(-200)}
-        className="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-yellow-500 to-orange-500 text-black rounded-full p-2 shadow-lg hover:scale-110 focus:outline-none"
+        className="hidden lg:block absolute left-0 top-1/2 transform -translate-y-1/2 bg-gradient-to-r bg-[#E3B505] text-black rounded-full p-2 shadow-lg hover:scale-110 focus:outline-none"
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
@@ -49,7 +49,7 @@ export default function AnimeCardCarousel() {
       {/* Right Scroll Button */}
       <button
         onClick={() => scroll(200)}
-        className="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 bg-gradient-to-r from-yellow-500 to-orange-500 text-black rounded-full p-2 shadow-lg hover:scale-110 focus:outline-none"
+        className="hidden lg:block absolute right-0 top-1/2 transform -translate-y-1/2 bg-gradient-to-r bg-[#E3B505]  text-black rounded-full p-2 shadow-lg hover:scale-110 focus:outline-none"
       >
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />

@@ -6,8 +6,8 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-900 px-4">
-      <div className="relative w-full max-w-md bg-gray-800 p-8 rounded-xl shadow-lg">
+    <div className="min-h-screen flex items-center justify-center bg-[#1E1E1E] px-4">
+      <div className="relative w-full max-w-md bg-[#121212] p-8 rounded-xl shadow-lg">
         {/* Back Button */}
         <button
           onClick={() => navigate("/")}
@@ -87,7 +87,7 @@ const LoginPage = () => {
           )}
           <button
             type="submit"
-            className="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300"
+            className="w-full py-2 bg-[#E3B505] hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300"
           >
             {isSignUp ? "Sign Up" : "Login"}
           </button>
