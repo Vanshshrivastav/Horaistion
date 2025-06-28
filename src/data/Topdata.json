@@ -1,223 +1,706 @@
 [
-    {
-      "id": 1,
-      "name": "Your Name",
-      "duration": "23m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Your_Name_poster.png",
-      "type": "tv",
-      "ep": 25,
-      "sub": 8,
-      "dub": 7,
-      "rating": 8.4
-    },
-    {
-      "id": 2,
-      "name": "Attack on Titan",
-      "duration": "24m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/4/44/Attack_on_Titan_Season_4_Part_2_Poster.jpg",
-      "type": "tv",
-      "ep": 150,
-      "sub": 10,
-      "dub": 9,
-      "rating": 9.1
-    },
-    {
-      "id": 3,
-      "name": "Demon Slayer",
-      "duration": "26m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/f/fb/Demon_Slayer_Kimetsu_no_Yaiba_Vol_1_cover.jpg",
-      "type": "tv",
-      "ep": 25,
-      "sub": 9,
-      "dub": 8,
-      "rating": 8.8
-    },
-    {
-      "id": 4,
-      "name": "Naruto",
-      "duration": "23m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/9/94/NarutoCoverTankobon1.jpg",
-      "type": "tv",
-      "ep": 150,
-      "sub": 10,
-      "dub": 9,
-      "rating": 8.2
-    },
-    {
-      "id": 5,
-      "name": "One Piece",
-      "duration": "24m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/2/29/One_Piece_vol_1_shueisha.jpg",
-      "type": "tv",
-      "ep": 150,
-      "sub": 10,
-      "dub": 8,
-      "rating": 8.7
-    },
-    {
-      "id": 6,
-      "name": "Fullmetal Alchemist: Brotherhood",
-      "duration": "25m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/e/e3/Fullmetal_Alchemist_Brotherhood_Key_Visual.jpg",
-      "type": "tv",
-      "ep": 25,
-      "sub": 10,
-      "dub": 10,
-      "rating": 9.2
-    },
-    {
-      "id": 7,
-      "name": "Death Note",
-      "duration": "23m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/6/6f/Death_Note_Vol_1.jpg",
-      "type": "tv",
-      "ep": 25,
-      "sub": 10,
-      "dub": 10,
-      "rating": 9.0
-    },
-    {
-      "id": 8,
-      "name": "Bleach",
-      "duration": "23m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/a/a4/Bleachanime.png",
-      "type": "tv",
-      "ep": 150,
-      "sub": 9,
-      "dub": 8,
-      "rating": 8.3
-    },
-    {
-      "id": 9,
-      "name": "Jujutsu Kaisen",
-      "duration": "23m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/3/37/Jujutsu_Kaisen_Volume_1_cover.jpg",
-      "type": "tv",
-      "ep": 25,
-      "sub": 10,
-      "dub": 9,
-      "rating": 8.6
-    },
-    {
-      "id": 10,
-      "name": "Sword Art Online",
-      "duration": "24m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/f/fd/Sword_Art_Online_light_novel_volume_1_cover.jpg",
-      "type": "tv",
-      "ep": 25,
-      "sub": 8,
-      "dub": 7,
-      "rating": 7.9
-    },
-    {
-      "id": 11,
-      "name": "My Hero Academia",
-      "duration": "24m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/a/af/My_Hero_Academia_Key_Visual.jpg",
-      "type": "tv",
-      "ep": 150,
-      "sub": 10,
-      "dub": 9,
-      "rating": 8.5
-    },
-    {
-      "id": 12,
-      "name": "Tokyo Ghoul",
-      "duration": "24m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/5/52/TokyoGhoulVolume1Cover.jpg",
-      "type": "tv",
-      "ep": 25,
-      "sub": 9,
-      "dub": 8,
-      "rating": 8.0
-    },
-    {
-      "id": 13,
-      "name": "Fairy Tail",
-      "duration": "24m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/4/48/Fairy_Tail_volume_1_cover.jpg",
-      "type": "tv",
-      "ep": 150,
-      "sub": 8,
-      "dub": 7,
-      "rating": 7.7
-    },
-    {
-      "id": 14,
-      "name": "Black Clover",
-      "duration": "23m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/e/e9/Black_Clover_Volume_1.jpg",
-      "type": "tv",
-      "ep": 150,
-      "sub": 9,
-      "dub": 8,
-      "rating": 7.8
-    },
-    {
-      "id": 15,
-      "name": "Steins;Gate",
-      "duration": "24m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/c/cd/Steins%3BGate_cover.jpg",
-      "type": "tv",
-      "ep": 25,
-      "sub": 10,
-      "dub": 9,
-      "rating": 9.1
-    },
-    {
-      "id": 16,
-      "name": "Hunter x Hunter",
-      "duration": "23m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/3/3f/Hunter_x_Hunter_2011_Key_Visual.jpg",
-      "type": "tv",
-      "ep": 150,
-      "sub": 10,
-      "dub": 9,
-      "rating": 9.0
-    },
-    {
-      "id": 17,
-      "name": "Clannad",
-      "duration": "23m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/d/d6/Clannad_game_cover.jpg",
-      "type": "tv",
-      "ep": 25,
-      "sub": 8,
-      "dub": 7,
-      "rating": 8.2
-    },
-    {
-      "id": 18,
-      "name": "Dragon Ball Z",
-      "duration": "23m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/f/f7/Dragon_Ball_Z_cover.jpg",
-      "type": "tv",
-      "ep": 150,
-      "sub": 10,
-      "dub": 9,
-      "rating": 8.8
-    },
-    {
-      "id": 19,
-      "name": "Re:Zero",
-      "duration": "25m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/b/b8/Re_Zero_Volume_1_Cover.jpg",
-      "type": "tv",
-      "ep": 25,
-      "sub": 9,
-      "dub": 8,
-      "rating": 8.5
-    },
-    {
-      "id": 20,
-      "name": "Code Geass",
-      "duration": "25m",
-      "image": "https://upload.wikimedia.org/wikipedia/en/4/4b/Code_Geass_DVD_cover.jpg",
-      "type": "tv",
-      "ep": 25,
-      "sub": 10,
-      "dub": 9,
-      "rating": 9.0
-    }
-  ]
-  
+  {
+    "id": 1,
+    "type": "TV Series",
+    "name": "Attack on Titan",
+    "image": "https://i.pinimg.com/736x/c4/cb/57/c4cb5734c7c94d3413efdaa3bca09a6d.jpg",
+    "duration": "24 min",
+    "total_episodes": 87,
+    "aired_episodes": 87,
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "9.1"
+  },
+  {
+    "id": 2,
+    "type": "TV Series",
+    "name": "Demon Slayer",
+    "image": "https://i.pinimg.com/736x/3c/1e/09/3c1e09b29c5cd2b222064633cc16fe6f.jpg",
+    "duration": "23 min",
+    "total_episodes": 44,
+    "aired_episodes": 44,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.7"
+  },
+  {
+    "id": 3,
+    "type": "TV Series",
+    "name": "Naruto",
+    "image": "https://i.pinimg.com/736x/3a/8c/63/3a8c63737ae2d94f9d4f09f477e3df34.jpg",
+    "duration": "23 min",
+    "total_episodes": 220,
+    "aired_episodes": 220,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.3"
+  },
+  {
+    "id": 4,
+    "type": "TV Series",
+    "name": "One Piece",
+    "image": "https://i.pinimg.com/736x/65/e9/a6/65e9a662394181e7ac4632cf202c2671.jpg",
+    "duration": "24 min",
+    "total_episodes": 1060,
+    "aired_episodes": 1060,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "status": "Airing",
+    "rating": "9.0"
+  },
+  {
+    "id": 5,
+    "type": "TV Series",
+    "name": "My Hero Academia",
+    "image": "https://i.pinimg.com/736x/ac/e9/77/ace9779153b6783f6d01a1d34ce688a0.jpg",
+    "duration": "24 min",
+    "total_episodes": 138,
+    "aired_episodes": 138,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Supernatural"
+    ],
+    "status": "Airing",
+    "rating": "8.2"
+  },
+  {
+    "id": 6,
+    "type": "TV Series",
+    "name": "Jujutsu Kaisen",
+    "image": "https://i.pinimg.com/736x/92/fd/ed/92fdedc559929a6c3a1b8f49f1058ccb.jpg",
+    "duration": "23 min",
+    "total_episodes": 24,
+    "aired_episodes": 24,
+    "genres": [
+      "Action",
+      "Supernatural",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.8"
+  },
+  {
+    "id": 7,
+    "type": "TV Series",
+    "name": "Sword Art Online",
+    "image": "https://i.pinimg.com/736x/78/ad/b4/78adb41c1c4a00c5ff9de6f121b45a13.jpg",
+    "duration": "23 min",
+    "total_episodes": 96,
+    "aired_episodes": 96,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "7.2"
+  },
+  {
+    "id": 8,
+    "type": "TV Series",
+    "name": "Death Note",
+    "image": "https://i.pinimg.com/736x/82/90/06/829006f7d871f3039e4ded4e902d19a0.jpg",
+    "duration": "23 min",
+    "total_episodes": 37,
+    "aired_episodes": 37,
+    "genres": [
+      "Thriller",
+      "Supernatural",
+      "Psychological"
+    ],
+    "status": "Complete",
+    "rating": "8.6"
+  },
+  {
+    "id": 9,
+    "type": "TV Series",
+    "name": "Hunter x Hunter",
+    "image": "https://i.pinimg.com/736x/92/ef/71/92ef71037a1b7f283af22eb7467dc51b.jpg",
+    "duration": "23 min",
+    "total_episodes": 148,
+    "aired_episodes": 148,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "9.0"
+  },
+  {
+    "id": 10,
+    "type": "TV Series",
+    "name": "Fullmetal Alchemist: Brotherhood",
+    "image": "https://i.pinimg.com/736x/6e/ca/2a/6eca2a6e3c9094ec4623082f243db399.jpg",
+    "duration": "24 min",
+    "total_episodes": 64,
+    "aired_episodes": 64,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "status": "Complete",
+    "rating": "9.1"
+  },
+  {
+    "id": 11,
+    "type": "TV Series",
+    "name": "Tokyo Ghoul",
+    "image": "https://i.pinimg.com/736x/44/f6/84/44f68426b51b4dd7d45f47d626264538.jpg",
+    "duration": "24 min",
+    "total_episodes": 48,
+    "aired_episodes": 48,
+    "genres": [
+      "Action",
+      "Horror",
+      "Supernatural"
+    ],
+    "status": "Complete",
+    "rating": "7.4"
+  },
+  {
+    "id": 12,
+    "type": "TV Series",
+    "name": "Black Clover",
+    "image": "https://i.pinimg.com/736x/f6/8e/49/f68e496637a53e42887652eb74dfc92c.jpg",
+    "duration": "23 min",
+    "total_episodes": 170,
+    "aired_episodes": 170,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.0"
+  },
+  {
+    "id": 13,
+    "type": "TV Series",
+    "name": "Bleach",
+    "image": "https://i.pinimg.com/736x/ad/64/fd/ad64fdbbc521821f454aa83cb5be9576.jpg",
+    "duration": "23 min",
+    "total_episodes": 366,
+    "aired_episodes": 366,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.2"
+  },
+  {
+    "id": 14,
+    "type": "TV Series",
+    "name": "Re:Zero",
+    "image": "https://i.pinimg.com/736x/1f/02/5e/1f025ed094bd6e156df9589f4c3b80fe.jpg",
+    "duration": "24 min",
+    "total_episodes": 50,
+    "aired_episodes": 50,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Thriller"
+    ],
+    "status": "Complete",
+    "rating": "8.3"
+  },
+  {
+    "id": 15,
+    "type": "TV Series",
+    "name": "Dragon Ball Z",
+    "image": "https://i.pinimg.com/736x/5b/8d/e2/5b8de21fd62ad558f04d9ef5713c5537.jpg",
+    "duration": "24 min",
+    "total_episodes": 291,
+    "aired_episodes": 291,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.8"
+  },
+  {
+    "id": 16,
+    "type": "TV Series",
+    "name": "Erased",
+    "image": "https://i.pinimg.com/736x/f1/db/72/f1db727e40f6a6701d4ef766a051c031.jpg",
+    "duration": "24 min",
+    "total_episodes": 12,
+    "aired_episodes": 12,
+    "genres": [
+      "Mystery",
+      "Drama",
+      "Supernatural"
+    ],
+    "status": "Complete",
+    "rating": "8.4"
+  },
+  {
+    "id": 17,
+    "type": "TV Series",
+    "name": "Steins;Gate",
+    "image": "https://i.pinimg.com/736x/41/b6/65/41b665a206b1d02f074d79c03d70fa50.jpg",
+    "duration": "24 min",
+    "total_episodes": 24,
+    "aired_episodes": 24,
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Thriller"
+    ],
+    "status": "Complete",
+    "rating": "9.1"
+  },
+  {
+    "id": 18,
+    "type": "TV Series",
+    "name": "Code Geass",
+    "image": "https://i.pinimg.com/736x/62/09/99/620999de88a64872c2c6f553faec42d8.jpg",
+    "duration": "24 min",
+    "total_episodes": 50,
+    "aired_episodes": 50,
+    "genres": [
+      "Action",
+      "Drama",
+      "Mecha"
+    ],
+    "status": "Complete",
+    "rating": "8.7"
+  },
+  {
+    "id": 19,
+    "type": "TV Series",
+    "name": "Chainsaw Man",
+    "image": "https://i.pinimg.com/736x/4b/27/c6/4b27c658960e735ca15d7252ac12263c.jpg",
+    "duration": "23 min",
+    "total_episodes": 12,
+    "aired_episodes": 12,
+    "genres": [
+      "Action",
+      "Supernatural",
+      "Horror"
+    ],
+    "status": "Complete",
+    "rating": "8.6"
+  },
+  {
+    "id": 20,
+    "type": "TV Series",
+    "name": "Vinland Saga",
+    "image": "https://i.pinimg.com/736x/ad/a1/45/ada145fec667e783c0696b0d7c4388b4.jpg",
+    "duration": "24 min",
+    "total_episodes": 48,
+    "aired_episodes": 48,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "status": "Airing",
+    "rating": "8.8"
+  },
+  {
+    "id": 21,
+    "type": "TV Series",
+    "name": "Haikyuu!!",
+    "image": "https://i.pinimg.com/736x/91/70/8f/91708f95858e154b5fde204cca2be762.jpg",
+    "duration": "23 min",
+    "total_episodes": 85,
+    "aired_episodes": 85,
+    "genres": [
+      "Sports",
+      "Comedy",
+      "Drama"
+    ],
+    "status": "Complete",
+    "rating": "8.9"
+  },
+  {
+    "id": 22,
+    "type": "TV Series",
+    "name": "Spy x Family",
+    "image": "https://i.pinimg.com/736x/3b/68/d1/3b68d1e828307852dcabffc0937e0d28.jpg",
+    "duration": "23 min",
+    "total_episodes": 25,
+    "aired_episodes": 25,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Slice of Life"
+    ],
+    "status": "Complete",
+    "rating": "8.7"
+  },
+  {
+    "id": 23,
+    "type": "TV Series",
+    "name": "The Rising of the Shield Hero",
+    "image": "https://i.pinimg.com/736x/0d/1b/0e/0d1b0ee3de73bf67d8ca9108a733fea3.jpg",
+    "duration": "24 min",
+    "total_episodes": 38,
+    "aired_episodes": 38,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "status": "Complete",
+    "rating": "7.8"
+  },
+  {
+    "id": 24,
+    "type": "TV Series",
+    "name": "No Game No Life",
+    "image": "https://i.pinimg.com/736x/55/3f/d0/553fd06dbcd43e28453d21ec2535c7e5.jpg",
+    "duration": "23 min",
+    "total_episodes": 12,
+    "aired_episodes": 12,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.1"
+  },
+  {
+    "id": 25,
+    "type": "TV Series",
+    "name": "Kaguya-sama: Love Is War",
+    "image": "https://i.pinimg.com/736x/4c/68/32/4c68320c22d9e144f4653ddfa18c24ba.jpg",
+    "duration": "24 min",
+    "total_episodes": 37,
+    "aired_episodes": 37,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Psychological"
+    ],
+    "status": "Complete",
+    "rating": "8.7"
+  },
+  {
+    "id": 26,
+    "type": "TV Series",
+    "name": "Made in Abyss",
+    "image": "https://i.pinimg.com/736x/16/f5/b6/16f5b6fcf2e33c3a5743fba4d7e44542.jpg",
+    "duration": "24 min",
+    "total_episodes": 25,
+    "aired_episodes": 25,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.6"
+  },
+  {
+    "id": 27,
+    "type": "TV Series",
+    "name": "Your Lie in April",
+    "image": "https://i.pinimg.com/736x/03/77/32/0377326297fe6c70fe9b5da328b93682.jpg",
+    "duration": "23 min",
+    "total_episodes": 22,
+    "aired_episodes": 22,
+    "genres": [
+      "Drama",
+      "Music",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "8.8"
+  },
+  {
+    "id": 28,
+    "type": "TV Series",
+    "name": "Clannad",
+    "image": "https://i.pinimg.com/736x/4f/01/ab/4f01ab284f52ad062328f7c92dee8b53.jpg",
+    "duration": "24 min",
+    "total_episodes": 44,
+    "aired_episodes": 44,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Slice of Life"
+    ],
+    "status": "Complete",
+    "rating": "8.5"
+  },
+  {
+    "id": 29,
+    "type": "TV Series",
+    "name": "Overlord",
+    "image": "https://i.pinimg.com/736x/4d/d8/c5/4dd8c57c9434fe4b5ac360f7be7093c0.jpg",
+    "duration": "24 min",
+    "total_episodes": 52,
+    "aired_episodes": 52,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "7.8"
+  },
+  {
+    "id": 30,
+    "type": "OVA",
+    "name": "Hellsing Ultimate",
+    "image": "https://i.pinimg.com/736x/c8/a6/dd/c8a6dd22fa8d6fd93b5aa8c11cde22e4.jpg",
+    "duration": "50 min",
+    "total_episodes": 10,
+    "aired_episodes": 10,
+    "genres": [
+      "Action",
+      "Horror",
+      "Supernatural"
+    ],
+    "status": "Complete",
+    "rating": "8.4"
+  },
+  {
+    "id": 31,
+    "type": "TV Series",
+    "name": "Fate/Zero",
+    "image": "https://i.pinimg.com/736x/77/32/f2/7732f20134b8cd697010ce3d5aaa009a.jpg",
+    "duration": "25 min",
+    "total_episodes": 25,
+    "aired_episodes": 25,
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Supernatural"
+    ],
+    "status": "Complete",
+    "rating": "8.5"
+  },
+  {
+    "id": 32,
+    "type": "TV Series",
+    "name": "Fate/Stay Night: Unlimited Blade Works",
+    "image": "https://i.pinimg.com/736x/ad/d9/0b/add90b0aea307fb2bee6dd8e18fe7686.jpg",
+    "duration": "24 min",
+    "total_episodes": 26,
+    "aired_episodes": 26,
+    "genres": [
+      "Action",
+      "Supernatural",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.4"
+  },
+  {
+    "id": 33,
+    "type": "TV Series",
+    "name": "Parasyte: The Maxim",
+    "image": "https://i.pinimg.com/736x/c2/ab/d9/c2abd92a51f99d10f6e23c879bd8d757.jpg",
+    "duration": "23 min",
+    "total_episodes": 24,
+    "aired_episodes": 24,
+    "genres": [
+      "Action",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "status": "Complete",
+    "rating": "8.5"
+  },
+  {
+    "id": 34,
+    "type": "TV Series",
+    "name": "Angel Beats!",
+    "image": "https://i.pinimg.com/736x/47/05/63/4705636ba1d8bb592099e1919a54c2c1.jpg",
+    "duration": "24 min",
+    "total_episodes": 13,
+    "aired_episodes": 13,
+    "genres": [
+      "Drama",
+      "Supernatural",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.3"
+  },
+  {
+    "id": 35,
+    "type": "TV Series",
+    "name": "Toradora!",
+    "image": "https://i.pinimg.com/736x/da/b2/5c/dab25ce8213fc64618cd7d49d32f806d.jpg",
+    "duration": "24 min",
+    "total_episodes": 25,
+    "aired_episodes": 25,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "8.2"
+  },
+  {
+    "id": 51,
+    "type": "TV Series",
+    "name": "Black Lagoon",
+    "image": "https://i.pinimg.com/736x/54/80/6f/54806f964d7318d6e3fff245966a655d.jpg",
+    "duration": "24 min",
+    "total_episodes": 24,
+    "aired_episodes": 24,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Seinen"
+    ],
+    "status": "Complete",
+    "rating": "8.0"
+  },
+  {
+    "id": 52,
+    "type": "TV Series",
+    "name": "Hyouka",
+    "image": "https://i.pinimg.com/736x/2f/41/b2/2f41b25fd77dc8d774c94473f30da824.jpg",
+    "duration": "24 min",
+    "total_episodes": 22,
+    "aired_episodes": 22,
+    "genres": [
+      "Mystery",
+      "Slice of Life",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.2"
+  },
+  {
+    "id": 53,
+    "type": "TV Series",
+    "name": "Bakuman",
+    "image": "https://i.pinimg.com/736x/3d/71/e4/3d71e499d907cddb2509b477143bb5f1.jpg",
+    "duration": "24 min",
+    "total_episodes": 75,
+    "aired_episodes": 75,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "8.1"
+  },
+  {
+    "id": 54,
+    "type": "TV Series",
+    "name": "Spice and Wolf",
+    "image": "https://i.pinimg.com/736x/ee/3d/b0/ee3db02d23ca5da5085e0aaa6dd76bb1.jpg",
+    "duration": "24 min",
+    "total_episodes": 26,
+    "aired_episodes": 26,
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "8.3"
+  },
+  {
+    "id": 55,
+    "type": "TV Series",
+    "name": "K-On!",
+    "image": null,
+    "duration": "24 min",
+    "total_episodes": 41,
+    "aired_episodes": 41,
+    "genres": [
+      "Music",
+      "Slice of Life",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.0"
+  },
+  {
+    "id": 56,
+    "type": "TV Series",
+    "name": "Food Wars!",
+    "image": "https://i.pinimg.com/736x/34/f4/0e/34f40ef448554f850513fcda3a52085c.jpg",
+    "duration": "24 min",
+    "total_episodes": 86,
+    "aired_episodes": 86,
+    "genres": [
+      "Comedy",
+      "Ecchi",
+      "Drama"
+    ],
+    "status": "Complete",
+    "rating": "8.1"
+  },
+  {
+    "id": 57,
+    "type": "TV Series",
+    "name": "Kuroko no Basket",
+    "image": "https://i.pinimg.com/736x/05/45/b0/0545b06f45f679659fa288afe94144c2.jpg",
+    "duration": "24 min",
+    "total_episodes": 75,
+    "aired_episodes": 75,
+    "genres": [
+      "Sports",
+      "Drama",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.4"
+  },
+  {
+    "id": 58,
+    "type": "TV Series",
+    "name": "The Devil is a Part-Timer!",
+    "image": "https://i.pinimg.com/736x/c6/c8/ec/c6c8ecaf433b0f24725ae54bf554924b.jpg",
+    "duration": "24 min",
+    "total_episodes": 25,
+    "aired_episodes": 25,
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Slice of Life"
+    ],
+    "status": "Complete",
+    "rating": "7.9"
+  },
+  {
+    "id": 59,
+    "type": "TV Series",
+    "name": "Durarara!!",
+    "image": "https://i.pinimg.com/736x/9c/0f/16/9c0f1624e8f86211fb3f739d8f28972c.jpg",
+    "duration": "24 min",
+    "total_episodes": 60,
+    "aired_episodes": 60,
+    "genres": [
+      "Action",
+      "Mystery",
+      "Supernatural"
+    ],
+    "status": "Complete",
+    "rating": "8.0"
+  }
+]

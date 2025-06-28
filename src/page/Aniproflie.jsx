@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Actordata from '../components/Actordata'
 import Anitrailer from '../components/Anitrailer'
 import Footer from '../components/Footer'
+import Refad from '../components/Refad'
 
 const Aniproflie = () => {
     return (
@@ -12,9 +13,11 @@ const Aniproflie = () => {
 
                 <Navbar />
                 <Aniinfo />
-                <Actordata/>
-                <Anitrailer/>
-                <Footer/>
+                <Actordata />
+                <Refad />
+                <Anitrailer />
+                
+                <Footer />
             </div>
         </>
     )

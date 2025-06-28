@@ -6,6 +6,7 @@ import Tvshow from './page/Tvshow'
 import Topairing from './page/Topairing'
 import Aniproflie from './page/Aniproflie'
 import Login from './page/Loginpage'
+import Mostwatch from './page/Mostwatch'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Route path='/topairing' element={<Topairing/>} />
         <Route path='/aniproflie' element={<Aniproflie/>} />
         <Route path='/Login' element={<Login/>} />
+        <Route path='/Mostwatch' element={<Mostwatch/>} />
         </Routes>
       </BrowserRouter>
     </>

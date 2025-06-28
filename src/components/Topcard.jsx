@@ -40,13 +40,13 @@ const AnimeCardGroup = () => {
                                 />
                                 <div className="absolute bottom-2 left-2 flex gap-0.5">
                                     <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-l-lg">
-                                        {item.ep}
+                                        {item.total_episodes}
                                     </span>
-                                    <span className="text-[12px] font-bold text-black bg-[#E3B505] px-2 py-1 ">
+                                    {/* <span className="text-[12px] font-bold text-black bg-[#E3B505] px-2 py-1 ">
                                         {item.sub}
-                                    </span>
+                                    </span> */}
                                     <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-r-lg">
-                                        {item.dub}
+                                        {item.aired_episodes}
                                     </span>
 
                                 </div>
