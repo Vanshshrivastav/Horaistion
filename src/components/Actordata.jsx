@@ -55,13 +55,13 @@ const CharacterList = () => {
 
     const CharacterCard = ({ characterImage, characterName, role, actorName, language, actorImage }) => {
         return (
-            <div className="flex items-center justify-between p-4 bg-[#121212]  rounded-xl shadow-lg">
+            <div className="flex items-center justify-between p-4 bg-[#121212]  rounded-xl shadow-lg gap-3"  >
                 {/* Character Details */}
-                <div className="flex items-center">
+                <div className="flex items-center ">
                     <img
                         src={characterImage}
                         alt={`${characterName} avatar`}
-                        className="w-12 h-12 rounded-full mr-4"
+                        className="w-16 h-12 rounded-full mr-3"
                     />
                     <div>
                         <p className="text-white font-bold">{characterName}</p>
@@ -71,7 +71,7 @@ const CharacterList = () => {
 
                 {/* Voice Actor Details */}
                 <div className="flex items-center">
-                    <div className="text-right mr-4">
+                    <div className="text-right mr-3">
                         <p className="text-white font-bold">{actorName}</p>
                         <p className="text-gray-400 text-sm">{language}</p>
                     </div>

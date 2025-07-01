@@ -1,0 +1,45 @@
+[
+{
+    "id": 35,
+    "type": "TV Series",
+    "name": "Toradora!",
+    "image": "https://i.pinimg.com/736x/da/b2/5c/dab25ce8213fc64618cd7d49d32f806d.jpg",
+    "duration": "24 min",
+    "total_episodes": 25,
+    "aired_episodes": 25,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "8.2",
+    "studios": ["J.C.Staff"],
+    "producers": ["Geneon Universal Entertainment", "Starchild Records", "Magic Capsule", "Yuyutei"],
+    "aired": "October 2, 2008 - March 26, 2009",
+    "synopsis": "Ryuuji Takasu has a gentle personality but intimidating eyes that make him look like a delinquent. Taiga Aisaka is a tiny girl with a fierce temper, earning her the nickname 'Palmtop Tiger.' When they discover each other's crushes on their respective best friends, they form an unlikely alliance to help each other win over their loves. This romantic comedy explores the complicated nature of teenage relationships, friendship, and the gradual realization that love might be closer than expected.",
+    "main_characters": [
+      {
+        "name": "Ryuuji Takasu",
+        "character_image": "https://i.pinimg.com/736x/12/09/87/12098765a4f3e2d1c0b9a8f7e6d5c4b3.jpg",
+        "japanese_va": "Junji Majima",
+        "english_va": "Erik Scott Kimerer",
+        "va_image": "https://i.pinimg.com/736x/09/87/65/0987654f3e2d1c0b9a8f7e6d5c4b3a29.jpg"
+      },
+      {
+        "name": "Taiga Aisaka",
+        "character_image": "https://i.pinimg.com/736x/87/65/43/87654321c0b9a8f7e6d5c4b3a2918071.jpg",
+        "japanese_va": "Rie Kugimiya",
+        "english_va": "Cassandra Lee Morris",
+        "va_image": "https://i.pinimg.com/736x/65/43/21/654321098f7e6d5c4b3a291807160514.jpg"
+      },
+      {
+        "name": "Minori Kushieda",
+        "character_image": "https://i.pinimg.com/736x/43/21/09/432109876d5c4b3a29180716051403120.jpg",
+        "japanese_va": "Yui Horie",
+        "english_va": "Christine Marie Cabanos",
+        "va_image": "https://i.pinimg.com/736x/21/09/87/21098765c4b3a291807160514031209e8.jpg"
+      }
+    ]
+  }
+]
