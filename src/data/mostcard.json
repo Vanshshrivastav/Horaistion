@@ -1,706 +1,1984 @@
 [
-    {
-        "id": 1,
-        "type": "TV Series",
-        "name": "Attack on Titan",
-        "image": "https://i.pinimg.com/736x/c4/cb/57/c4cb5734c7c94d3413efdaa3bca09a6d.jpg",
-        "duration": "24 min",
-        "total_episodes": 87,
-        "aired_episodes": 87,
-        "genres": [
-            "Action",
-            "Drama",
-            "Fantasy"
-        ],
-        "status": "Complete",
-        "rating": "9.1"
-    },
-    {
-        "id": 2,
-        "type": "TV Series",
-        "name": "Demon Slayer",
-        "image": "https://i.pinimg.com/736x/3c/1e/09/3c1e09b29c5cd2b222064633cc16fe6f.jpg",
-        "duration": "23 min",
-        "total_episodes": 44,
-        "aired_episodes": 44,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Fantasy"
-        ],
-        "status": "Complete",
-        "rating": "8.7"
-    },
-    {
-        "id": 3,
-        "type": "TV Series",
-        "name": "Naruto",
-        "image": "https://i.pinimg.com/736x/3a/8c/63/3a8c63737ae2d94f9d4f09f477e3df34.jpg",
-        "duration": "23 min",
-        "total_episodes": 220,
-        "aired_episodes": 220,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Comedy"
-        ],
-        "status": "Complete",
-        "rating": "8.3"
-    },
-    {
-        "id": 4,
-        "type": "TV Series",
-        "name": "One Piece",
-        "image": "https://i.pinimg.com/736x/65/e9/a6/65e9a662394181e7ac4632cf202c2671.jpg",
-        "duration": "24 min",
-        "total_episodes": 1060,
-        "aired_episodes": 1060,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Comedy"
-        ],
-        "status": "Airing",
-        "rating": "9.0"
-    },
-    {
-        "id": 5,
-        "type": "TV Series",
-        "name": "My Hero Academia",
-        "image": "https://i.pinimg.com/736x/ac/e9/77/ace9779153b6783f6d01a1d34ce688a0.jpg",
-        "duration": "24 min",
-        "total_episodes": 138,
-        "aired_episodes": 138,
-        "genres": [
-            "Action",
-            "Comedy",
-            "Supernatural"
-        ],
-        "status": "Airing",
-        "rating": "8.2"
-    },
-    {
-        "id": 6,
-        "type": "TV Series",
-        "name": "Jujutsu Kaisen",
-        "image": "https://i.pinimg.com/736x/92/fd/ed/92fdedc559929a6c3a1b8f49f1058ccb.jpg",
-        "duration": "23 min",
-        "total_episodes": 24,
-        "aired_episodes": 24,
-        "genres": [
-            "Action",
-            "Supernatural",
-            "Fantasy"
-        ],
-        "status": "Complete",
-        "rating": "8.8"
-    },
-    {
-        "id": 7,
-        "type": "TV Series",
-        "name": "Sword Art Online",
-        "image": "https://i.pinimg.com/736x/78/ad/b4/78adb41c1c4a00c5ff9de6f121b45a13.jpg",
-        "duration": "23 min",
-        "total_episodes": 96,
-        "aired_episodes": 96,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Fantasy"
-        ],
-        "status": "Complete",
-        "rating": "7.2"
-    },
-    {
-        "id": 8,
-        "type": "TV Series",
-        "name": "Death Note",
-        "image": "https://i.pinimg.com/736x/82/90/06/829006f7d871f3039e4ded4e902d19a0.jpg",
-        "duration": "23 min",
-        "total_episodes": 37,
-        "aired_episodes": 37,
-        "genres": [
-            "Thriller",
-            "Supernatural",
-            "Psychological"
-        ],
-        "status": "Complete",
-        "rating": "8.6"
-    },
-    {
-        "id": 9,
-        "type": "TV Series",
-        "name": "Hunter x Hunter",
-        "image": "https://i.pinimg.com/736x/92/ef/71/92ef71037a1b7f283af22eb7467dc51b.jpg",
-        "duration": "23 min",
-        "total_episodes": 148,
-        "aired_episodes": 148,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Fantasy"
-        ],
-        "status": "Complete",
-        "rating": "9.0"
-    },
-    {
-        "id": 10,
-        "type": "TV Series",
-        "name": "Fullmetal Alchemist: Brotherhood",
-        "image": "https://i.pinimg.com/736x/6e/ca/2a/6eca2a6e3c9094ec4623082f243db399.jpg",
-        "duration": "24 min",
-        "total_episodes": 64,
-        "aired_episodes": 64,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Drama"
-        ],
-        "status": "Complete",
-        "rating": "9.1"
-    },
-    {
-        "id": 11,
-        "type": "TV Series",
-        "name": "Tokyo Ghoul",
-        "image": "https://i.pinimg.com/736x/44/f6/84/44f68426b51b4dd7d45f47d626264538.jpg",
-        "duration": "24 min",
-        "total_episodes": 48,
-        "aired_episodes": 48,
-        "genres": [
-            "Action",
-            "Horror",
-            "Supernatural"
-        ],
-        "status": "Complete",
-        "rating": "7.4"
-    },
-    {
-        "id": 12,
-        "type": "TV Series",
-        "name": "Black Clover",
-        "image": "https://i.pinimg.com/736x/f6/8e/49/f68e496637a53e42887652eb74dfc92c.jpg",
-        "duration": "23 min",
-        "total_episodes": 170,
-        "aired_episodes": 170,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Fantasy"
-        ],
-        "status": "Complete",
-        "rating": "8.0"
-    },
-    {
-        "id": 13,
-        "type": "TV Series",
-        "name": "Bleach",
-        "image": "https://i.pinimg.com/736x/ad/64/fd/ad64fdbbc521821f454aa83cb5be9576.jpg",
-        "duration": "23 min",
-        "total_episodes": 366,
-        "aired_episodes": 366,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Fantasy"
-        ],
-        "status": "Complete",
-        "rating": "8.2"
-    },
-    {
-        "id": 14,
-        "type": "TV Series",
-        "name": "Re:Zero",
-        "image": "https://i.pinimg.com/736x/1f/02/5e/1f025ed094bd6e156df9589f4c3b80fe.jpg",
-        "duration": "24 min",
-        "total_episodes": 50,
-        "aired_episodes": 50,
-        "genres": [
-            "Drama",
-            "Fantasy",
-            "Thriller"
-        ],
-        "status": "Complete",
-        "rating": "8.3"
-    },
-    {
-        "id": 15,
-        "type": "TV Series",
-        "name": "Dragon Ball Z",
-        "image": "https://i.pinimg.com/736x/5b/8d/e2/5b8de21fd62ad558f04d9ef5713c5537.jpg",
-        "duration": "24 min",
-        "total_episodes": 291,
-        "aired_episodes": 291,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Comedy"
-        ],
-        "status": "Complete",
-        "rating": "8.8"
-    },
-    {
-        "id": 16,
-        "type": "TV Series",
-        "name": "Erased",
-        "image": "https://i.pinimg.com/736x/f1/db/72/f1db727e40f6a6701d4ef766a051c031.jpg",
-        "duration": "24 min",
-        "total_episodes": 12,
-        "aired_episodes": 12,
-        "genres": [
-            "Mystery",
-            "Drama",
-            "Supernatural"
-        ],
-        "status": "Complete",
-        "rating": "8.4"
-    },
-    {
-        "id": 17,
-        "type": "TV Series",
-        "name": "Steins;Gate",
-        "image": "https://i.pinimg.com/736x/41/b6/65/41b665a206b1d02f074d79c03d70fa50.jpg",
-        "duration": "24 min",
-        "total_episodes": 24,
-        "aired_episodes": 24,
-        "genres": [
-            "Sci-Fi",
-            "Drama",
-            "Thriller"
-        ],
-        "status": "Complete",
-        "rating": "9.1"
-    },
-    {
-        "id": 18,
-        "type": "TV Series",
-        "name": "Code Geass",
-        "image": "https://i.pinimg.com/736x/62/09/99/620999de88a64872c2c6f553faec42d8.jpg",
-        "duration": "24 min",
-        "total_episodes": 50,
-        "aired_episodes": 50,
-        "genres": [
-            "Action",
-            "Drama",
-            "Mecha"
-        ],
-        "status": "Complete",
-        "rating": "8.7"
-    },
-    {
-        "id": 19,
-        "type": "TV Series",
-        "name": "Chainsaw Man",
-        "image": "https://i.pinimg.com/736x/4b/27/c6/4b27c658960e735ca15d7252ac12263c.jpg",
-        "duration": "23 min",
-        "total_episodes": 12,
-        "aired_episodes": 12,
-        "genres": [
-            "Action",
-            "Supernatural",
-            "Horror"
-        ],
-        "status": "Complete",
-        "rating": "8.6"
-    },
-    {
-        "id": 20,
-        "type": "TV Series",
-        "name": "Vinland Saga",
-        "image": "https://i.pinimg.com/736x/ad/a1/45/ada145fec667e783c0696b0d7c4388b4.jpg",
-        "duration": "24 min",
-        "total_episodes": 48,
-        "aired_episodes": 48,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Drama"
-        ],
-        "status": "Airing",
-        "rating": "8.8"
-    },
-    {
-        "id": 21,
-        "type": "TV Series",
-        "name": "Haikyuu!!",
-        "image": "https://i.pinimg.com/736x/91/70/8f/91708f95858e154b5fde204cca2be762.jpg",
-        "duration": "23 min",
-        "total_episodes": 85,
-        "aired_episodes": 85,
-        "genres": [
-            "Sports",
-            "Comedy",
-            "Drama"
-        ],
-        "status": "Complete",
-        "rating": "8.9"
-    },
-    {
-        "id": 22,
-        "type": "TV Series",
-        "name": "Spy x Family",
-        "image": "https://i.pinimg.com/736x/3b/68/d1/3b68d1e828307852dcabffc0937e0d28.jpg",
-        "duration": "23 min",
-        "total_episodes": 25,
-        "aired_episodes": 25,
-        "genres": [
-            "Action",
-            "Comedy",
-            "Slice of Life"
-        ],
-        "status": "Complete",
-        "rating": "8.7"
-    },
-    {
-        "id": 23,
-        "type": "TV Series",
-        "name": "The Rising of the Shield Hero",
-        "image": "https://i.pinimg.com/736x/0d/1b/0e/0d1b0ee3de73bf67d8ca9108a733fea3.jpg",
-        "duration": "24 min",
-        "total_episodes": 38,
-        "aired_episodes": 38,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Drama"
-        ],
-        "status": "Complete",
-        "rating": "7.8"
-    },
-    {
-        "id": 24,
-        "type": "TV Series",
-        "name": "No Game No Life",
-        "image": "https://i.pinimg.com/736x/55/3f/d0/553fd06dbcd43e28453d21ec2535c7e5.jpg",
-        "duration": "23 min",
-        "total_episodes": 12,
-        "aired_episodes": 12,
-        "genres": [
-            "Adventure",
-            "Comedy",
-            "Fantasy"
-        ],
-        "status": "Complete",
-        "rating": "8.1"
-    },
-    {
-        "id": 25,
-        "type": "TV Series",
-        "name": "Kaguya-sama: Love Is War",
-        "image": "https://i.pinimg.com/736x/4c/68/32/4c68320c22d9e144f4653ddfa18c24ba.jpg",
-        "duration": "24 min",
-        "total_episodes": 37,
-        "aired_episodes": 37,
-        "genres": [
-            "Comedy",
-            "Romance",
-            "Psychological"
-        ],
-        "status": "Complete",
-        "rating": "8.7"
-    },
-    {
-        "id": 26,
-        "type": "TV Series",
-        "name": "Made in Abyss",
-        "image": "https://i.pinimg.com/736x/16/f5/b6/16f5b6fcf2e33c3a5743fba4d7e44542.jpg",
-        "duration": "24 min",
-        "total_episodes": 25,
-        "aired_episodes": 25,
-        "genres": [
-            "Adventure",
-            "Drama",
-            "Fantasy"
-        ],
-        "status": "Complete",
-        "rating": "8.6"
-    },
-    {
-        "id": 27,
-        "type": "TV Series",
-        "name": "Your Lie in April",
-        "image": "https://i.pinimg.com/736x/03/77/32/0377326297fe6c70fe9b5da328b93682.jpg",
-        "duration": "23 min",
-        "total_episodes": 22,
-        "aired_episodes": 22,
-        "genres": [
-            "Drama",
-            "Music",
-            "Romance"
-        ],
-        "status": "Complete",
-        "rating": "8.8"
-    },
-    {
-        "id": 28,
-        "type": "TV Series",
-        "name": "Clannad",
-        "image": "https://i.pinimg.com/736x/4f/01/ab/4f01ab284f52ad062328f7c92dee8b53.jpg",
-        "duration": "24 min",
-        "total_episodes": 44,
-        "aired_episodes": 44,
-        "genres": [
-            "Drama",
-            "Romance",
-            "Slice of Life"
-        ],
-        "status": "Complete",
-        "rating": "8.5"
-    },
-    {
-        "id": 29,
-        "type": "TV Series",
-        "name": "Overlord",
-        "image": "https://i.pinimg.com/736x/4d/d8/c5/4dd8c57c9434fe4b5ac360f7be7093c0.jpg",
-        "duration": "24 min",
-        "total_episodes": 52,
-        "aired_episodes": 52,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Fantasy"
-        ],
-        "status": "Complete",
-        "rating": "7.8"
-    },
-    {
-        "id": 30,
-        "type": "OVA",
-        "name": "Hellsing Ultimate",
-        "image": "https://i.pinimg.com/736x/c8/a6/dd/c8a6dd22fa8d6fd93b5aa8c11cde22e4.jpg",
-        "duration": "50 min",
-        "total_episodes": 10,
-        "aired_episodes": 10,
-        "genres": [
-            "Action",
-            "Horror",
-            "Supernatural"
-        ],
-        "status": "Complete",
-        "rating": "8.4"
-    },
-    {
-        "id": 31,
-        "type": "TV Series",
-        "name": "Fate/Zero",
-        "image": "https://i.pinimg.com/736x/77/32/f2/7732f20134b8cd697010ce3d5aaa009a.jpg",
-        "duration": "25 min",
-        "total_episodes": 25,
-        "aired_episodes": 25,
-        "genres": [
-            "Action",
-            "Fantasy",
-            "Supernatural"
-        ],
-        "status": "Complete",
-        "rating": "8.5"
-    },
-    {
-        "id": 32,
-        "type": "TV Series",
-        "name": "Fate/Stay Night: Unlimited Blade Works",
-        "image": "https://i.pinimg.com/736x/ad/d9/0b/add90b0aea307fb2bee6dd8e18fe7686.jpg",
-        "duration": "24 min",
-        "total_episodes": 26,
-        "aired_episodes": 26,
-        "genres": [
-            "Action",
-            "Supernatural",
-            "Fantasy"
-        ],
-        "status": "Complete",
-        "rating": "8.4"
-    },
-    {
-        "id": 33,
-        "type": "TV Series",
-        "name": "Parasyte: The Maxim",
-        "image": "https://i.pinimg.com/736x/c2/ab/d9/c2abd92a51f99d10f6e23c879bd8d757.jpg",
-        "duration": "23 min",
-        "total_episodes": 24,
-        "aired_episodes": 24,
-        "genres": [
-            "Action",
-            "Horror",
-            "Sci-Fi"
-        ],
-        "status": "Complete",
-        "rating": "8.5"
-    },
-    {
-        "id": 34,
-        "type": "TV Series",
-        "name": "Angel Beats!",
-        "image": "https://i.pinimg.com/736x/47/05/63/4705636ba1d8bb592099e1919a54c2c1.jpg",
-        "duration": "24 min",
-        "total_episodes": 13,
-        "aired_episodes": 13,
-        "genres": [
-            "Drama",
-            "Supernatural",
-            "Comedy"
-        ],
-        "status": "Complete",
-        "rating": "8.3"
-    },
-    {
-        "id": 35,
-        "type": "TV Series",
-        "name": "Toradora!",
-        "image": "https://i.pinimg.com/736x/da/b2/5c/dab25ce8213fc64618cd7d49d32f806d.jpg",
-        "duration": "24 min",
-        "total_episodes": 25,
-        "aired_episodes": 25,
-        "genres": [
-            "Comedy",
-            "Drama",
-            "Romance"
-        ],
-        "status": "Complete",
-        "rating": "8.2"
-    },
-    {
-        "id": 51,
-        "type": "TV Series",
-        "name": "Black Lagoon",
-        "image": "https://i.pinimg.com/736x/54/80/6f/54806f964d7318d6e3fff245966a655d.jpg",
-        "duration": "24 min",
-        "total_episodes": 24,
-        "aired_episodes": 24,
-        "genres": [
-            "Action",
-            "Adventure",
-            "Seinen"
-        ],
-        "status": "Complete",
-        "rating": "8.0"
-    },
-    {
-        "id": 52,
-        "type": "TV Series",
-        "name": "Hyouka",
-        "image": "https://i.pinimg.com/736x/2f/41/b2/2f41b25fd77dc8d774c94473f30da824.jpg",
-        "duration": "24 min",
-        "total_episodes": 22,
-        "aired_episodes": 22,
-        "genres": [
-            "Mystery",
-            "Slice of Life",
-            "Comedy"
-        ],
-        "status": "Complete",
-        "rating": "8.2"
-    },
-    {
-        "id": 53,
-        "type": "TV Series",
-        "name": "Bakuman",
-        "image": "https://i.pinimg.com/736x/3d/71/e4/3d71e499d907cddb2509b477143bb5f1.jpg",
-        "duration": "24 min",
-        "total_episodes": 75,
-        "aired_episodes": 75,
-        "genres": [
-            "Comedy",
-            "Drama",
-            "Romance"
-        ],
-        "status": "Complete",
-        "rating": "8.1"
-    },
-    {
-        "id": 54,
-        "type": "TV Series",
-        "name": "Spice and Wolf",
-        "image": "https://i.pinimg.com/736x/ee/3d/b0/ee3db02d23ca5da5085e0aaa6dd76bb1.jpg",
-        "duration": "24 min",
-        "total_episodes": 26,
-        "aired_episodes": 26,
-        "genres": [
-            "Adventure",
-            "Fantasy",
-            "Romance"
-        ],
-        "status": "Complete",
-        "rating": "8.3"
-    },
-    {
-        "id": 55,
-        "type": "TV Series",
-        "name": "K-On!",
-        "image": null,
-        "duration": "24 min",
-        "total_episodes": 41,
-        "aired_episodes": 41,
-        "genres": [
-            "Music",
-            "Slice of Life",
-            "Comedy"
-        ],
-        "status": "Complete",
-        "rating": "8.0"
-    },
-    {
-        "id": 56,
-        "type": "TV Series",
-        "name": "Food Wars!",
-        "image": "https://i.pinimg.com/736x/34/f4/0e/34f40ef448554f850513fcda3a52085c.jpg",
-        "duration": "24 min",
-        "total_episodes": 86,
-        "aired_episodes": 86,
-        "genres": [
-            "Comedy",
-            "Ecchi",
-            "Drama"
-        ],
-        "status": "Complete",
-        "rating": "8.1"
-    },
-    {
-        "id": 57,
-        "type": "TV Series",
-        "name": "Kuroko no Basket",
-        "image": "https://i.pinimg.com/736x/05/45/b0/0545b06f45f679659fa288afe94144c2.jpg",
-        "duration": "24 min",
-        "total_episodes": 75,
-        "aired_episodes": 75,
-        "genres": [
-            "Sports",
-            "Drama",
-            "Comedy"
-        ],
-        "status": "Complete",
-        "rating": "8.4"
-    },
-    {
-        "id": 58,
-        "type": "TV Series",
-        "name": "The Devil is a Part-Timer!",
-        "image": "https://i.pinimg.com/736x/c6/c8/ec/c6c8ecaf433b0f24725ae54bf554924b.jpg",
-        "duration": "24 min",
-        "total_episodes": 25,
-        "aired_episodes": 25,
-        "genres": [
-            "Comedy",
-            "Fantasy",
-            "Slice of Life"
-        ],
-        "status": "Complete",
-        "rating": "7.9"
-    },
-    {
-        "id": 59,
-        "type": "TV Series",
-        "name": "Durarara!!",
-        "image": "https://i.pinimg.com/736x/9c/0f/16/9c0f1624e8f86211fb3f739d8f28972c.jpg",
-        "duration": "24 min",
-        "total_episodes": 60,
-        "aired_episodes": 60,
-        "genres": [
-            "Action",
-            "Mystery",
-            "Supernatural"
-        ],
-        "status": "Complete",
-        "rating": "8.0"
-    }
+  {
+    "id": 1,
+    "type": "TV Series",
+    "name": "Attack on Titan",
+    "image": "https://i.pinimg.com/736x/c4/cb/57/c4cb5734c7c94d3413efdaa3bca09a6d.jpg",
+    "duration": "24 min",
+    "total_episodes": 87,
+    "aired_episodes": 87,
+    "genres": [
+      "Action",
+      "Drama",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "9.1",
+    "studios": "Wit Studio (Seasons 1-3), MAPPA (Season 4)",
+    "producers": "Production I.G, Pony Canyon, Kodansha, Mainichi Broadcasting System",
+    "aired": "April 7, 2013 - November 5, 2023",
+    "story": "In a world where humanity lives within enormous walled cities to protect themselves from gigantic humanoid Titans, young Eren Yeager joins the military to fight these monsters after his hometown is destroyed and his mother is killed by a Titan.",
+    "characters": [
+      {
+        "name": "Eren Yeager",
+        "japanese_voice_actor": "Yuki Kaji",
+        "english_voice_actor": "Bryce Papenbrook",
+        "character_image": "https://i.pinimg.com/564x/8c/5c/8a/8c5c8a8f3e4c8c0b5a5c8a8f3e4c8c0b.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/2f/3f/4f/2f3f4f8f9f8f9f8f9f8f9f8f9f8f9f8f.jpg"
+      },
+      {
+        "name": "Mikasa Ackerman",
+        "japanese_voice_actor": "Yui Ishikawa",
+        "english_voice_actor": "Trina Nishimura",
+        "character_image": "https://i.pinimg.com/564x/1a/2a/3a/1a2a3a4a5a6a7a8a9a0a1a2a3a4a5a6a.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/7b/8b/9b/7b8b9b0b1b2b3b4b5b6b7b8b9b0b1b2b.jpg"
+      },
+      {
+        "name": "Armin Arlert",
+        "japanese_voice_actor": "Marina Inoue",
+        "english_voice_actor": "Josh Grelle",
+        "character_image": "https://i.pinimg.com/564x/3c/4c/5c/3c4c5c6c7c8c9c0c1c2c3c4c5c6c7c8c.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/9d/0d/1d/9d0d1d2d3d4d5d6d7d8d9d0d1d2d3d4d.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "TV Series",
+    "name": "Demon Slayer",
+    "image": "https://i.pinimg.com/736x/3c/1e/09/3c1e09b29c5cd2b222064633cc16fe6f.jpg",
+    "duration": "23 min",
+    "total_episodes": 44,
+    "aired_episodes": 44,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.7",
+    "studios": "Ufotable",
+    "producers": "Aniplex, Shueisha, Fuji TV",
+    "aired": "April 6, 2019 - February 13, 2022",
+    "story": "Tanjiro Kamado becomes a demon slayer after his family is slaughtered by demons and his sister Nezuko is turned into a demon. He embarks on a journey to find a cure for his sister while fighting demons.",
+    "characters": [
+      {
+        "name": "Tanjiro Kamado",
+        "japanese_voice_actor": "Natsuki Hanae",
+        "english_voice_actor": "Zach Aguilar",
+        "character_image": "https://i.pinimg.com/564x/4e/5e/6e/4e5e6e7e8e9e0e1e2e3e4e5e6e7e8e9e.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/0f/1f/2f/0f1f2f3f4f5f6f7f8f9f0f1f2f3f4f5f.jpg"
+      },
+      {
+        "name": "Nezuko Kamado",
+        "japanese_voice_actor": "Satomi Sato",
+        "english_voice_actor": "Abby Trott",
+        "character_image": "https://i.pinimg.com/564x/6g/7g/8g/6g7g8g9g0g1g2g3g4g5g6g7g8g9g0g1g.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/2h/3h/4h/2h3h4h5h6h7h8h9h0h1h2h3h4h5h6h7h.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "TV Series",
+    "name": "Naruto",
+    "image": "https://i.pinimg.com/736x/3a/8c/63/3a8c63737ae2d94f9d4f09f477e3df34.jpg",
+    "duration": "23 min",
+    "total_episodes": 220,
+    "aired_episodes": 220,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.3",
+    "studios": "Pierrot",
+    "producers": "TV Tokyo, Aniplex, Bandai Entertainment",
+    "aired": "October 3, 2002 - February 8, 2007",
+    "story": "Naruto Uzumaki, a young ninja with a sealed demon fox inside him, dreams of becoming the strongest ninja and leader of his village. He struggles for recognition while learning the ways of the ninja.",
+    "characters": [
+      {
+        "name": "Naruto Uzumaki",
+        "japanese_voice_actor": "Junko Takeuchi",
+        "english_voice_actor": "Maile Flanagan",
+        "character_image": "https://i.pinimg.com/564x/8i/9i/0i/8i9i0i1i2i3i4i5i6i7i8i9i0i1i2i3i.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/4j/5j/6j/4j5j6j7j8j9j0j1j2j3j4j5j6j7j8j9j.jpg"
+      },
+      {
+        "name": "Sasuke Uchiha",
+        "japanese_voice_actor": "Noriaki Sugiyama",
+        "english_voice_actor": "Yuri Lowenthal",
+        "character_image": "https://i.pinimg.com/564x/0k/1k/2k/0k1k2k3k4k5k6k7k8k9k0k1k2k3k4k5k.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/6l/7l/8l/6l7l8l9l0l1l2l3l4l5l6l7l8l9l0l1l.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "TV Series",
+    "name": "One Piece",
+    "image": "https://i.pinimg.com/736x/65/e9/a6/65e9a662394181e7ac4632cf202c2671.jpg",
+    "duration": "24 min",
+    "total_episodes": 1060,
+    "aired_episodes": 1060,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "status": "Airing",
+    "rating": "9.0",
+    "studios": "Toei Animation",
+    "producers": "Fuji TV, Toei Animation, Shueisha",
+    "aired": "October 20, 1999 - Present",
+    "story": "Monkey D. Luffy, a young pirate with rubber powers, explores the Grand Line with his diverse crew of Straw Hat Pirates to find the legendary treasure known as One Piece and become the next Pirate King.",
+    "characters": [
+      {
+        "name": "Monkey D. Luffy",
+        "japanese_voice_actor": "Mayumi Tanaka",
+        "english_voice_actor": "Colleen Clinkenbeard",
+        "character_image": "https://i.pinimg.com/564x/2m/3m/4m/2m3m4m5m6m7m8m9m0m1m2m3m4m5m6m7m.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/8n/9n/0n/8n9n0n1n2n3n4n5n6n7n8n9n0n1n2n3n.jpg"
+      },
+      {
+        "name": "Roronoa Zoro",
+        "japanese_voice_actor": "Kazuya Nakai",
+        "english_voice_actor": "Christopher Sabat",
+        "character_image": "https://i.pinimg.com/564x/4o/5o/6o/4o5o6o7o8o9o0o1o2o3o4o5o6o7o8o9o.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/0p/1p/2p/0p1p2p3p4p5p6p7p8p9p0p1p2p3p4p5p.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "TV Series",
+    "name": "My Hero Academia",
+    "image": "https://i.pinimg.com/736x/ac/e9/77/ace9779153b6783f6d01a1d34ce688a0.jpg",
+    "duration": "24 min",
+    "total_episodes": 138,
+    "aired_episodes": 138,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Supernatural"
+    ],
+    "status": "Airing",
+    "rating": "8.2",
+    "studios": "Bones",
+    "producers": "Dentsu, Mainichi Broadcasting System, Movic, TOHO animation",
+    "aired": "April 3, 2016 - Present",
+    "story": "In a world where 80% of people have superpowers called Quirks, Izuku Midoriya is born without one but still dreams of becoming a hero. He inherits the legendary One For All quirk and enrolls in U.A. High School.",
+    "characters": [
+      {
+        "name": "Izuku Midoriya",
+        "japanese_voice_actor": "Daiki Yamashita",
+        "english_voice_actor": "Justin Briner",
+        "character_image": "https://i.pinimg.com/564x/6q/7q/8q/6q7q8q9q0q1q2q3q4q5q6q7q8q9q0q1q.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/2r/3r/4r/2r3r4r5r6r7r8r9r0r1r2r3r4r5r6r7r.jpg"
+      },
+      {
+        "name": "Katsuki Bakugo",
+        "japanese_voice_actor": "Nobuhiko Okamoto",
+        "english_voice_actor": "Clifford Chapin",
+        "character_image": "https://i.pinimg.com/564x/8s/9s/0s/8s9s0s1s2s3s4s5s6s7s8s9s0s1s2s3s.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/4t/5t/6t/4t5t6t7t8t9t0t1t2t3t4t5t6t7t8t9t.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "TV Series",
+    "name": "Jujutsu Kaisen",
+    "image": "https://i.pinimg.com/736x/92/fd/ed/92fdedc559929a6c3a1b8f49f1058ccb.jpg",
+    "duration": "23 min",
+    "total_episodes": 24,
+    "aired_episodes": 24,
+    "genres": [
+      "Action",
+      "Supernatural",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.8",
+    "studios": "MAPPA",
+    "producers": "Mainichi Broadcasting System, TOHO animation, Shueisha",
+    "aired": "October 3, 2020 - March 27, 2021",
+    "story": "Yuji Itadori, a high school student, joins a secret organization of Jujutsu Sorcerers to kill a powerful Curse named Ryomen Sukuna, whose finger Yuji consumed and became his host.",
+    "characters": [
+      {
+        "name": "Yuji Itadori",
+        "japanese_voice_actor": "Junya Enoki",
+        "english_voice_actor": "Adam McArthur",
+        "character_image": "https://i.pinimg.com/564x/0u/1u/2u/0u1u2u3u4u5u6u7u8u9u0u1u2u3u4u5u.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/6v/7v/8v/6v7v8v9v0v1v2v3v4v5v6v7v8v9v0v1v.jpg"
+      },
+      {
+        "name": "Megumi Fushiguro",
+        "japanese_voice_actor": "Yuma Uchida",
+        "english_voice_actor": "Robbie Daymond",
+        "character_image": "https://i.pinimg.com/564x/2w/3w/4w/2w3w4w5w6w7w8w9w0w1w2w3w4w5w6w7w.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/8x/9x/0x/8x9x0x1x2x3x4x5x6x7x8x9x0x1x2x3x.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "TV Series",
+    "name": "Sword Art Online",
+    "image": "https://i.pinimg.com/736x/78/ad/b4/78adb41c1c4a00c5ff9de6f121b45a13.jpg",
+    "duration": "23 min",
+    "total_episodes": 96,
+    "aired_episodes": 96,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "7.2",
+    "studios": "A-1 Pictures",
+    "producers": "Aniplex, Bandai Namco Games, ASCII Media Works",
+    "aired": "July 8, 2012 - September 23, 2012",
+    "story": "Players become trapped in a virtual reality MMORPG where death in the game means death in real life. Kirito must clear all 100 floors of the floating castle Aincrad to escape.",
+    "characters": [
+      {
+        "name": "Kazuto Kirigaya/Kirito",
+        "japanese_voice_actor": "Matsuoka Yoshitsugu",
+        "english_voice_actor": "Bryce Papenbrook",
+        "character_image": "https://i.pinimg.com/564x/4y/5y/6y/4y5y6y7y8y9y0y1y2y3y4y5y6y7y8y9y.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/0z/1z/2z/0z1z2z3z4z5z6z7z8z9z0z1z2z3z4z5z.jpg"
+      },
+      {
+        "name": "Asuna Yuuki",
+        "japanese_voice_actor": "Haruka Tomatsu",
+        "english_voice_actor": "Cherami Leigh",
+        "character_image": "https://i.pinimg.com/564x/6a/7a/8a/6a7a8a9a0a1a2a3a4a5a6a7a8a9a0a1a.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/2b/3b/4b/2b3b4b5b6b7b8b9b0b1b2b3b4b5b6b7b.jpg"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "TV Series",
+    "name": "Death Note",
+    "image": "https://i.pinimg.com/736x/82/90/06/829006f7d871f3039e4ded4e902d19a0.jpg",
+    "duration": "23 min",
+    "total_episodes": 37,
+    "aired_episodes": 37,
+    "genres": [
+      "Thriller",
+      "Supernatural",
+      "Psychological"
+    ],
+    "status": "Complete",
+    "rating": "8.6",
+    "studios": "Madhouse",
+    "producers": "VAP, Konami, Ashi Productions, Nippon Television Network",
+    "aired": "October 4, 2006 - June 27, 2007",
+    "story": "High school student Light Yagami finds a supernatural notebook that allows him to kill anyone whose name he writes in it. He begins eliminating criminals but attracts the attention of detective L.",
+    "characters": [
+      {
+        "name": "Light Yagami",
+        "japanese_voice_actor": "Mamoru Miyano",
+        "english_voice_actor": "Brad Swaile",
+        "character_image": "https://i.pinimg.com/564x/8c/9c/0c/8c9c0c1c2c3c4c5c6c7c8c9c0c1c2c3c.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/4d/5d/6d/4d5d6d7d8d9d0d1d2d3d4d5d6d7d8d9d.jpg"
+      },
+      {
+        "name": "L Lawliet",
+        "japanese_voice_actor": "Kappei Yamaguchi",
+        "english_voice_actor": "Alessandro Juliani",
+        "character_image": "https://i.pinimg.com/564x/0e/1e/2e/0e1e2e3e4e5e6e7e8e9e0e1e2e3e4e5e.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/6f/7f/8f/6f7f8f9f0f1f2f3f4f5f6f7f8f9f0f1f.jpg"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "TV Series",
+    "name": "Hunter x Hunter",
+    "image": "https://i.pinimg.com/736x/92/ef/71/92ef71037a1b7f283af22eb7467dc51b.jpg",
+    "duration": "23 min",
+    "total_episodes": 148,
+    "aired_episodes": 148,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "9.0",
+    "studios": "Madhouse",
+    "producers": "VAP, Shueisha, Nippon Television Network",
+    "aired": "October 2, 2011 - September 24, 2014",
+    "story": "Young Gon Freecss discovers his father is a legendary Hunter and embarks on a journey to become a Hunter himself. He makes friends and faces dangerous challenges in his quest.",
+    "characters": [
+      {
+        "name": "Gon Freecss",
+        "japanese_voice_actor": "Megumi Han",
+        "english_voice_actor": "Erica Mendez",
+        "character_image": "https://i.pinimg.com/564x/2g/3g/4g/2g3g4g5g6g7g8g9g0g1g2g3g4g5g6g7g.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/8h/9h/0h/8h9h0h1h2h3h4h5h6h7h8h9h0h1h2h3h.jpg"
+      },
+      {
+        "name": "Killua Zoldyck",
+        "japanese_voice_actor": "Mariya Ise",
+        "english_voice_actor": "Cristina Valenzuela",
+        "character_image": "https://i.pinimg.com/564x/4i/5i/6i/4i5i6i7i8i9i0i1i2i3i4i5i6i7i8i9i.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/0j/1j/2j/0j1j2j3j4j5j6j7j8j9j0j1j2j3j4j5j.jpg"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "TV Series",
+    "name": "Fullmetal Alchemist: Brotherhood",
+    "image": "https://i.pinimg.com/736x/6e/ca/2a/6eca2a6e3c9094ec4623082f243db399.jpg",
+    "duration": "24 min",
+    "total_episodes": 64,
+    "aired_episodes": 64,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "status": "Complete",
+    "rating": "9.1",
+    "studios": "Bones",
+    "producers": "Aniplex, Square Enix, Mainichi Broadcasting System",
+    "aired": "April 5, 2009 - July 4, 2010",
+    "story": "Brothers Edward and Alphonse Elric use alchemy in their quest to find the Philosopher's Stone to restore their bodies after a failed attempt to revive their deceased mother.",
+    "characters": [
+      {
+        "name": "Edward Elric",
+        "japanese_voice_actor": "Romi Park",
+        "english_voice_actor": "Vic Mignogna",
+        "character_image": "https://i.pinimg.com/564x/6k/7k/8k/6k7k8k9k0k1k2k3k4k5k6k7k8k9k0k1k.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/2l/3l/4l/2l3l4l5l6l7l8l9l0l1l2l3l4l5l6l7l.jpg"
+      },
+      {
+        "name": "Alphonse Elric",
+        "japanese_voice_actor": "Rie Kugimiya",
+        "english_voice_actor": "Maxey Whitehead",
+        "character_image": "https://i.pinimg.com/564x/8m/9m/0m/8m9m0m1m2m3m4m5m6m7m8m9m0m1m2m3m.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/4n/5n/6n/4n5n6n7n8n9n0n1n2n3n4n5n6n7n8n9n.jpg"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "type": "TV Series",
+    "name": "Tokyo Ghoul",
+    "image": "https://i.pinimg.com/736x/44/f6/84/44f68426b51b4dd7d45f47d626264538.jpg",
+    "duration": "24 min",
+    "total_episodes": 48,
+    "aired_episodes": 48,
+    "genres": [
+      "Action",
+      "Horror",
+      "Supernatural"
+    ],
+    "status": "Complete",
+    "rating": "7.4",
+    "studios": "Pierrot",
+    "producers": "Marvelous AQL, TC Entertainment, Shueisha",
+    "aired": "July 4, 2014 - December 18, 2018",
+    "story": "College student Ken Kaneki's encounter with his date Rize, who reveals herself as a ghoul, changes his life forever when he becomes a half-ghoul and must navigate the dangerous world of ghouls and humans.",
+    "characters": [
+      {
+        "name": "Ken Kaneki",
+        "japanese_voice_actor": "Natsuki Hanae",
+        "english_voice_actor": "Austin Tindle",
+        "character_image": "https://i.pinimg.com/564x/0o/1o/2o/0o1o2o3o4o5o6o7o8o9o0o1o2o3o4o5o.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/6p/7p/8p/6p7p8p9p0p1p2p3p4p5p6p7p8p9p0p1p.jpg"
+      },
+      {
+        "name": "Touka Kirishima",
+        "japanese_voice_actor": "Sora Amamiya",
+        "english_voice_actor": "Brina Palencia",
+        "character_image": "https://i.pinimg.com/564x/2q/3q/4q/2q3q4q5q6q7q8q9q0q1q2q3q4q5q6q7q.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/8r/9r/0r/8r9r0r1r2r3r4r5r6r7r8r9r0r1r2r3r.jpg"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "TV Series",
+    "name": "Black Clover",
+    "image": "https://i.pinimg.com/736x/f6/8e/49/f68e496637a53e42887652eb74dfc92c.jpg",
+    "duration": "23 min",
+    "total_episodes": 170,
+    "aired_episodes": 170,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.0",
+    "studios": "Pierrot",
+    "producers": "TV Tokyo, Avex Pictures, Shueisha",
+    "aired": "October 3, 2017 - March 30, 2021",
+    "story": "Asta, a young boy born without magic in a world where magic is everything, dreams of becoming the Wizard King. Despite his lack of magical ability, he trains relentlessly and eventually gains anti-magic powers through a five-leaf clover grimoire.",
+    "characters": [
+      {
+        "name": "Asta",
+        "japanese_voice_actor": "Gakuto Kajiwara",
+        "english_voice_actor": "Dallas Reid",
+        "character_image": "https://i.pinimg.com/564x/4s/5s/6s/4s5s6s7s8s9s0s1s2s3s4s5s6s7s8s9s.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/0t/1t/2t/0t1t2t3t4t5t6t7t8t9t0t1t2t3t4t5t.jpg"
+      },
+      {
+        "name": "Yuno Grinberryall",
+        "japanese_voice_actor": "Nobunaga Shimazaki",
+        "english_voice_actor": "Micah Solusod",
+        "character_image": "https://i.pinimg.com/564x/6u/7u/8u/6u7u8u9u0u1u2u3u4u5u6u7u8u9u0u1u.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/2v/3v/4v/2v3v4v5v6v7v8v9v0v1v2v3v4v5v6v7v.jpg"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "type": "TV Series",
+    "name": "Bleach",
+    "image": "https://i.pinimg.com/736x/ad/64/fd/ad64fdbbc521821f454aa83cb5be9576.jpg",
+    "duration": "23 min",
+    "total_episodes": 366,
+    "aired_episodes": 366,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.2",
+    "studios": "Pierrot",
+    "producers": "TV Tokyo, Dentsu, Aniplex",
+    "aired": "October 5, 2004 - March 27, 2012",
+    "story": "Ichigo Kurosaki, a teenager with the ability to see ghosts, accidentally obtains the powers of a Soul Reaper from Rukia Kuchiki and must protect the living world from evil spirits called Hollows while helping souls pass on to the afterlife.",
+    "characters": [
+      {
+        "name": "Ichigo Kurosaki",
+        "japanese_voice_actor": "Masakazu Morita",
+        "english_voice_actor": "Johnny Yong Bosch",
+        "character_image": "https://i.pinimg.com/564x/8w/9w/0w/8w9w0w1w2w3w4w5w6w7w8w9w0w1w2w3w.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/4x/5x/6x/4x5x6x7x8x9x0x1x2x3x4x5x6x7x8x9x.jpg"
+      },
+      {
+        "name": "Rukia Kuchiki",
+        "japanese_voice_actor": "Fumiko Orikasa",
+        "english_voice_actor": "Michelle Ruff",
+        "character_image": "https://i.pinimg.com/564x/0y/1y/2y/0y1y2y3y4y5y6y7y8y9y0y1y2y3y4y5y.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/6z/7z/8z/6z7z8z9z0z1z2z3z4z5z6z7z8z9z0z1z.jpg"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "type": "TV Series",
+    "name": "Re:Zero",
+    "image": "https://i.pinimg.com/736x/1f/02/5e/1f025ed094bd6e156df9589f4c3b80fe.jpg",
+    "duration": "24 min",
+    "total_episodes": 50,
+    "aired_episodes": 50,
+    "genres": [
+      "Drama",
+      "Fantasy",
+      "Thriller"
+    ],
+    "status": "Complete",
+    "rating": "8.3",
+    "studios": "White Fox",
+    "producers": "AT-X, Memory-Tech, Kadokawa",
+    "aired": "April 4, 2016 - March 24, 2021",
+    "story": "Subaru Natsuki is transported to a fantasy world where he discovers he has the ability to return from death, resetting time to a previous checkpoint. He uses this power to save those he cares about, particularly Emilia, while uncovering dark secrets.",
+    "characters": [
+      {
+        "name": "Subaru Natsuki",
+        "japanese_voice_actor": "Yusuke Kobayashi",
+        "english_voice_actor": "Sean Chiplock",
+        "character_image": "https://i.pinimg.com/564x/2a/3a/4a/2a3a4a5a6a7a8a9a0a1a2a3a4a5a6a7a.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/8b/9b/0b/8b9b0b1b2b3b4b5b6b7b8b9b0b1b2b3b.jpg"
+      },
+      {
+        "name": "Emilia",
+        "japanese_voice_actor": "Rie Takahashi",
+        "english_voice_actor": "Kayli Mills",
+        "character_image": "https://i.pinimg.com/564x/4c/5c/6c/4c5c6c7c8c9c0c1c2c3c4c5c6c7c8c9c.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/0d/1d/2d/0d1d2d3d4d5d6d7d8d9d0d1d2d3d4d5d.jpg"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "type": "TV Series",
+    "name": "Dragon Ball Z",
+    "image": "https://i.pinimg.com/736x/5b/8d/e2/5b8de21fd62ad558f04d9ef5713c5537.jpg",
+    "duration": "24 min",
+    "total_episodes": 291,
+    "aired_episodes": 291,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.8",
+    "studios": "Toei Animation",
+    "producers": "Fuji TV, Toei Animation, Bird Studio",
+    "aired": "April 26, 1989 - January 31, 1996",
+    "story": "Following Goku's adventures as an adult, he faces increasingly powerful enemies while protecting Earth. The series focuses on epic battles, power transformations, and Goku's journey to become the strongest warrior in the universe.",
+    "characters": [
+      {
+        "name": "Son Goku",
+        "japanese_voice_actor": "Masako Nozawa",
+        "english_voice_actor": "Sean Schemmel",
+        "character_image": "https://i.pinimg.com/564x/6e/7e/8e/6e7e8e9e0e1e2e3e4e5e6e7e8e9e0e1e.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/2f/3f/4f/2f3f4f5f6f7f8f9f0f1f2f3f4f5f6f7f.jpg"
+      },
+      {
+        "name": "Vegeta",
+        "japanese_voice_actor": "Ryo Horikawa",
+        "english_voice_actor": "Christopher Sabat",
+        "character_image": "https://i.pinimg.com/564x/8g/9g/0g/8g9g0g1g2g3g4g5g6g7g8g9g0g1g2g3g.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/4h/5h/6h/4h5h6h7h8h9h0h1h2h3h4h5h6h7h8h9h.jpg"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "type": "TV Series",
+    "name": "Erased",
+    "image": "https://i.pinimg.com/736x/f1/db/72/f1db727e40f6a6701d4ef766a051c031.jpg",
+    "duration": "24 min",
+    "total_episodes": 12,
+    "aired_episodes": 12,
+    "genres": [
+      "Mystery",
+      "Drama",
+      "Supernatural"
+    ],
+    "status": "Complete",
+    "rating": "8.4",
+    "studios": "A-1 Pictures",
+    "producers": "Aniplex, Dentsu, Kadokawa",
+    "aired": "January 8, 2016 - March 25, 2016",
+    "story": "Satoru Fujinuma possesses an ability called 'Revival' that sends him back in time to prevent deaths. When his mother is murdered, he's sent back 18 years to his childhood to prevent a series of kidnappings that may be connected to his mother's death.",
+    "characters": [
+      {
+        "name": "Satoru Fujinuma",
+        "japanese_voice_actor": "Shinnosuke Mitsushima",
+        "english_voice_actor": "Ben Diskin",
+        "character_image": "https://i.pinimg.com/564x/0i/1i/2i/0i1i2i3i4i5i6i7i8i9i0i1i2i3i4i5i.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/6j/7j/8j/6j7j8j9j0j1j2j3j4j5j6j7j8j9j0j1j.jpg"
+      },
+      {
+        "name": "Kayo Hinazuki",
+        "japanese_voice_actor": "Aoi Yuki",
+        "english_voice_actor": "Michelle Ruff",
+        "character_image": "https://i.pinimg.com/564x/2k/3k/4k/2k3k4k5k6k7k8k9k0k1k2k3k4k5k6k7k.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/8l/9l/0l/8l9l0l1l2l3l4l5l6l7l8l9l0l1l2l3l.jpg"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "type": "TV Series",
+    "name": "Steins;Gate",
+    "image": "https://i.pinimg.com/736x/41/b6/65/41b665a206b1d02f074d79c03d70fa50.jpg",
+    "duration": "24 min",
+    "total_episodes": 24,
+    "aired_episodes": 24,
+    "genres": [
+      "Sci-Fi",
+      "Drama",
+      "Thriller"
+    ],
+    "status": "Complete",
+    "rating": "9.1",
+    "studios": "White Fox",
+    "producers": "Frontier Works, Media Factory, AT-X",
+    "aired": "April 6, 2011 - September 14, 2011",
+    "story": "Self-proclaimed mad scientist Rintaro Okabe accidentally discovers time travel through a modified microwave. As he experiments with changing the past, he realizes that every alteration has serious consequences for the present.",
+    "characters": [
+      {
+        "name": "Rintaro Okabe",
+        "japanese_voice_actor": "Mamoru Miyano",
+        "english_voice_actor": "J. Michael Tatum",
+        "character_image": "https://i.pinimg.com/564x/4m/5m/6m/4m5m6m7m8m9m0m1m2m3m4m5m6m7m8m9m.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/0n/1n/2n/0n1n2n3n4n5n6n7n8n9n0n1n2n3n4n5n.jpg"
+      },
+      {
+        "name": "Kurisu Makise",
+        "japanese_voice_actor": "Asami Imai",
+        "english_voice_actor": "Trina Nishimura",
+        "character_image": "https://i.pinimg.com/564x/6o/7o/8o/6o7o8o9o0o1o2o3o4o5o6o7o8o9o0o1o.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/2p/3p/4p/2p3p4p5p6p7p8p9p0p1p2p3p4p5p6p7p.jpg"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "type": "TV Series",
+    "name": "Code Geass",
+    "image": "https://i.pinimg.com/736x/62/09/99/620999de88a64872c2c6f553faec42d8.jpg",
+    "duration": "24 min",
+    "total_episodes": 50,
+    "aired_episodes": 50,
+    "genres": [
+      "Action",
+      "Drama",
+      "Mecha"
+    ],
+    "status": "Complete",
+    "rating": "8.7",
+    "studios": "Sunrise",
+    "producers": "Mainichi Broadcasting System, Bandai Visual, Hakuhodo DY Media Partners",
+    "aired": "October 6, 2006 - September 28, 2008",
+    "story": "Lelouch vi Britannia, an exiled prince, gains the power of Geass and leads a rebellion against the Holy Britannian Empire using the identity Zero, seeking to create a better world for his sister Nunnally.",
+    "characters": [
+      {
+        "name": "Lelouch vi Britannia",
+        "japanese_voice_actor": "Jun Fukuyama",
+        "english_voice_actor": "Johnny Yong Bosch",
+        "character_image": "https://i.pinimg.com/564x/8q/9q/0q/8q9q0q1q2q3q4q5q6q7q8q9q0q1q2q3q.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/4r/5r/6r/4r5r6r7r8r9r0r1r2r3r4r5r6r7r8r9r.jpg"
+      },
+      {
+        "name": "C.C.",
+        "japanese_voice_actor": "Yukana",
+        "english_voice_actor": "Kate Higgins",
+        "character_image": "https://i.pinimg.com/564x/0s/1s/2s/0s1s2s3s4s5s6s7s8s9s0s1s2s3s4s5s.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/6t/7t/8t/6t7t8t9t0t1t2t3t4t5t6t7t8t9t0t1t.jpg"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "type": "TV Series",
+    "name": "Chainsaw Man",
+    "image": "https://i.pinimg.com/736x/4b/27/c6/4b27c658960e735ca15d7252ac12263c.jpg",
+    "duration": "23 min",
+    "total_episodes": 12,
+    "aired_episodes": 12,
+    "genres": [
+      "Action",
+      "Supernatural",
+      "Horror"
+    ],
+    "status": "Complete",
+    "rating": "8.6",
+    "studios": "MAPPA",
+    "producers": "Shueisha, TOHO animation, MBS",
+    "aired": "October 11, 2022 - December 27, 2022",
+    "story": "Denji, a young man trapped in debt, merges with his pet devil Pochita to become Chainsaw Man. He joins the Public Safety Devil Hunters to fight devils while pursuing his simple dreams of a normal life with basic pleasures.",
+    "characters": [
+      {
+        "name": "Denji",
+        "japanese_voice_actor": "Kikunosuke Toya",
+        "english_voice_actor": "Ryan Colt Levy",
+        "character_image": "https://i.pinimg.com/564x/2u/3u/4u/2u3u4u5u6u7u8u9u0u1u2u3u4u5u6u7u.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/8v/9v/0v/8v9v0v1v2v3v4v5v6v7v8v9v0v1v2v3v.jpg"
+      },
+      {
+        "name": "Makima",
+        "japanese_voice_actor": "Tomori Kusunoki",
+        "english_voice_actor": "Suzie Yeung",
+        "character_image": "https://i.pinimg.com/564x/4w/5w/6w/4w5w6w7w8w9w0w1w2w3w4w5w6w7w8w9w.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/0x/1x/2x/0x1x2x3x4x5x6x7x8x9x0x1x2x3x4x5x.jpg"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "type": "TV Series",
+    "name": "Vinland Saga",
+    "image": "https://i.pinimg.com/736x/ad/a1/45/ada145fec667e783c0696b0d7c4388b4.jpg",
+    "duration": "24 min",
+    "total_episodes": 48,
+    "aired_episodes": 48,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "status": "Airing",
+    "rating": "8.8",
+    "studios": "Wit Studio (Season 1), MAPPA (Season 2)",
+    "producers": "Production I.G, Twin Engine, Kodansha",
+    "aired": "July 7, 2019 - March 28, 2023",
+    "story": "Set in medieval Europe during the Viking Age, the story follows Thorfinn, a young Viking warrior seeking revenge against Askeladd for killing his father. The series explores themes of war, revenge, and the search for peace and purpose.",
+    "characters": [
+      {
+        "name": "Thorfinn",
+        "japanese_voice_actor": "Yuto Uemura",
+        "english_voice_actor": "Zeno Robinson",
+        "character_image": "https://i.pinimg.com/564x/6y/7y/8y/6y7y8y9y0y1y2y3y4y5y6y7y8y9y0y1y.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/2z/3z/4z/2z3z4z5z6z7z8z9z0z1z2z3z4z5z6z7z.jpg"
+      },
+      {
+        "name": "Askeladd",
+        "japanese_voice_actor": "Naoya Uchida",
+        "english_voice_actor": "Kirk Thornton",
+        "character_image": "https://i.pinimg.com/564x/8a/9a/0a/8a9a0a1a2a3a4a5a6a7a8a9a0a1a2a3a.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/4b/5b/6b/4b5b6b7b8b9b0b1b2b3b4b5b6b7b8b9b.jpg"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "type": "TV Series",
+    "name": "Haikyuu!!",
+    "image": "https://i.pinimg.com/736x/91/70/8f/91708f95858e154b5fde204cca2be762.jpg",
+    "duration": "23 min",
+    "total_episodes": 85,
+    "aired_episodes": 85,
+    "genres": [
+      "Sports",
+      "Comedy",
+      "Drama"
+    ],
+    "status": "Complete",
+    "rating": "8.9",
+    "studios": "Production I.G",
+    "producers": "Mainichi Broadcasting System, Dentsu, Sony Music Entertainment, Movic, Shueisha",
+    "story": "Junior high school student Shoyo Hinata becomes obsessed with volleyball after seeing Karasuno High School play in the Nationals on TV. Despite his short stature, Hinata is inspired by a player nicknamed 'The Little Giant'. He joins Karasuno High School only to discover that his middle school rival, the genius setter Tobio Kageyama, is also there. Together, they form an explosive partnership that begins Karasuno's journey to restore their reputation and reach the Nationals.",
+    "aired": "April 6, 2014 - September 21, 2014 (Season 1)",
+    "characters": [
+      {
+        "name": "Shoyo Hinata",
+        "voice_actor_jp": "Ayumu Murase",
+        "voice_actor_en": "Bryson Baugus",
+        "character_image": "https://i.pinimg.com/736x/8d/c7/77/8dc7779a2eaa4e0d6e8e3a1e7a7b4d9c.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/4a/5f/2c/4a5f2c9d3e1a2b3c4d5e6f7g8h9i0j1k.jpg"
+      },
+      {
+        "name": "Tobio Kageyama",
+        "voice_actor_jp": "Kaito Ishikawa",
+        "voice_actor_en": "Scott Gibbs",
+        "character_image": "https://i.pinimg.com/736x/9e/f8/11/9ef8113b7c2d5a4e6f1g2h3i4j5k6l7m.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/7b/4d/9a/7b4d9a2c5e8f1g4h7i0j3k6l9m2n5o8p.jpg"
+      },
+      {
+        "name": "Kei Tsukishima",
+        "voice_actor_jp": "Koki Uchiyama",
+        "voice_actor_en": "Austin Tindle",
+        "character_image": "https://i.pinimg.com/736x/2f/8b/5d/2f8b5d9e1f4g7h0i3j6k9l2m5n8o1p4q.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/6c/9f/2e/6c9f2e5g8h1i4j7k0l3m6n9o2p5q8r1s.jpg"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "type": "TV Series",
+    "name": "Spy x Family",
+    "image": "https://i.pinimg.com/736x/3b/68/d1/3b68d1e828307852dcabffc0937e0d28.jpg",
+    "duration": "23 min",
+    "total_episodes": 25,
+    "aired_episodes": 25,
+    "genres": [
+      "Action",
+      "Comedy",
+      "Slice of Life"
+    ],
+    "status": "Complete",
+    "rating": "8.7",
+    "studios": "Wit Studio, CloverWorks",
+    "producers": "Shogakukan-Shueisha Productions, Toho, Shogakukan",
+    "story": "Master spy Twilight is assigned a mission to infiltrate an elite private school by forming a fake family. He adopts a telepathic girl named Anya and marries Yor, an assassin, unaware of each other's true identities. Together, this unconventional family must navigate their secret lives while maintaining their cover as the perfect family.",
+    "aired": "April 9, 2022 - June 25, 2022 (Part 1), October 1, 2022 - December 24, 2022 (Part 2)",
+    "characters": [
+      {
+        "name": "Loid Forger / Twilight",
+        "voice_actor_jp": "Takuya Eguchi",
+        "voice_actor_en": "Alex Organ",
+        "character_image": "https://i.pinimg.com/736x/1a/4e/7b/1a4e7b2c5d8e1f4g7h0i3j6k9l2m5n8o.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/9d/6a/3f/9d6a3f2e5g8h1i4j7k0l3m6n9o2p5q8r.jpg"
+      },
+      {
+        "name": "Yor Forger / Thorn Princess",
+        "voice_actor_jp": "Saori Hayami",
+        "voice_actor_en": "Natalie Van Sistine",
+        "character_image": "https://i.pinimg.com/736x/8f/2c/5e/8f2c5e9d1f4g7h0i3j6k9l2m5n8o1p4q.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/3e/8b/1f/3e8b1f4g7h0i2j5k8l1m4n7o0p3q6r9s.jpg"
+      },
+      {
+        "name": "Anya Forger",
+        "voice_actor_jp": "Atsumi Tanezaki",
+        "voice_actor_en": "Megan Shipman",
+        "character_image": "https://i.pinimg.com/736x/7c/9a/2d/7c9a2d5e8f1g4h7i0j3k6l9m2n5o8p1q.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/5f/8e/1b/5f8e1b4g7h0i3j6k9l2m5n8o1p4q7r0s.jpg"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "type": "TV Series",
+    "name": "The Rising of the Shield Hero",
+    "image": "https://i.pinimg.com/736x/0d/1b/0e/0d1b0ee3de73bf67d8ca9108a733fea3.jpg",
+    "duration": "24 min",
+    "total_episodes": 38,
+    "aired_episodes": 38,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Drama"
+    ],
+    "status": "Complete",
+    "rating": "7.8",
+    "studios": "Kinema Citrus, DR Movie",
+    "producers": "Kadokawa, Crunchyroll, Frontier Works, Media Factory",
+    "story": "Naofumi Iwatani is summoned to another world as one of four Cardinal Heroes wielding legendary weapons. Armed with the Legendary Shield, he's falsely accused of assault and becomes an outcast. Betrayed and alone, Naofumi must overcome his cynicism and grow stronger to save the world from destructive Waves while learning to trust others again.",
+    "aired": "January 9, 2019 - June 26, 2019 (Season 1)",
+    "characters": [
+      {
+        "name": "Naofumi Iwatani",
+        "voice_actor_jp": "Kaito Ishikawa",
+        "voice_actor_en": "Billy Kametz",
+        "character_image": "https://i.pinimg.com/736x/4d/7a/1e/4d7a1e5f8g2h5i8j1k4l7m0n3o6p9q2r.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/8g/1d/4f/8g1d4f7h0i3j6k9l2m5n8o1p4q7r0s3t.jpg"
+      },
+      {
+        "name": "Raphtalia",
+        "voice_actor_jp": "Asami Seto",
+        "voice_actor_en": "Erica Mendez",
+        "character_image": "https://i.pinimg.com/736x/2e/8f/3c/2e8f3c6g9h2i5j8k1l4m7n0o3p6q9r2s.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/6h/3e/9b/6h3e9b2f5g8h1i4j7k0l3m6n9o2p5q8r.jpg"
+      },
+      {
+        "name": "Filo",
+        "voice_actor_jp": "Rina Hidaka",
+        "voice_actor_en": "Brianna Knickerbocker",
+        "character_image": "https://i.pinimg.com/736x/9b/6f/2d/9b6f2d5e8f1g4h7i0j3k6l9m2n5o8p1q.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/1f/4c/8a/1f4c8a3g6h9i2j5k8l1m4n7o0p3q6r9s.jpg"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "type": "TV Series",
+    "name": "No Game No Life",
+    "image": "https://i.pinimg.com/736x/55/3f/d0/553fd06dbcd43e28453d21ec2535c7e5.jpg",
+    "duration": "23 min",
+    "total_episodes": 12,
+    "aired_episodes": 12,
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.1",
+    "studios": "Madhouse",
+    "producers": "Media Factory, AT-X, Kadokawa Shoten, Docomo Anime Store",
+    "story": "Sora and Shiro, known as 'Blank' in the gaming world, are transported to Disboard, a world where everything is decided by games. Ruled by the one true god Tet, this world operates under ten simple rules. The siblings must use their gaming skills to unite the sixteen races and challenge Tet for the right to become the new gods of this world.",
+    "aired": "April 9, 2014 - June 25, 2014",
+    "characters": [
+      {
+        "name": "Sora",
+        "voice_actor_jp": "Yoko Hikasa",
+        "voice_actor_en": "Scott Gibbs",
+        "character_image": "https://i.pinimg.com/736x/3c/9e/1f/3c9e1f4g7h0i2j5k8l1m4n7o0p3q6r9s.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/7f/2a/5d/7f2a5d8e1f4g7h0i3j6k9l2m5n8o1p4q.jpg"
+      },
+      {
+        "name": "Shiro",
+        "voice_actor_jp": "Ai Kayano",
+        "voice_actor_en": "Caitlynn French",
+        "character_image": "https://i.pinimg.com/736x/8e/4b/7f/8e4b7f1g4h7i0j2k5l8m1n4o7p0q3r6s.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/2d/8f/3c/2d8f3c6g9h2i5j8k1l4m7n0o3p6q9r2s.jpg"
+      },
+      {
+        "name": "Stephanie Dola",
+        "voice_actor_jp": "Yuka Iguchi",
+        "voice_actor_en": "Felecia Angelle",
+        "character_image": "https://i.pinimg.com/736x/6a/3d/9f/6a3d9f2e5g8h1i4j7k0l3m6n9o2p5q8r.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/9f/6c/2a/9f6c2a5d8e1f4g7h0i3j6k9l2m5n8o1p.jpg"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "type": "TV Series",
+    "name": "Kaguya-sama: Love Is War",
+    "image": "https://i.pinimg.com/736x/4c/68/32/4c68320c22d9e144f4653ddfa18c24ba.jpg",
+    "duration": "24 min",
+    "total_episodes": 37,
+    "aired_episodes": 37,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Psychological"
+    ],
+    "status": "Complete",
+    "rating": "8.7",
+    "studios": "A-1 Pictures",
+    "producers": "Aniplex, Dentsu, Fuji TV, Shogakukan-Shueisha Productions",
+    "story": "At the elite Shuchiin Academy, student council president Miyuki Shirogane and vice-president Kaguya Shinomiya appear to be the perfect couple. However, despite their mutual attraction, their pride prevents them from confessing their feelings. Instead, they engage in elaborate psychological warfare, each trying to make the other confess first in this battle of love and wits.",
+    "aired": "January 12, 2019 - March 30, 2019 (Season 1)",
+    "characters": [
+      {
+        "name": "Kaguya Shinomiya",
+        "voice_actor_jp": "Aoi Koga",
+        "voice_actor_en": "Alexis Tipton",
+        "character_image": "https://i.pinimg.com/736x/1e/7b/4f/1e7b4f8g1h4i7j0k3l6m9n2o5p8q1r4s.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/5g/9d/2f/5g9d2f8e1h4i7j0k3l6m9n2o5p8q1r4s.jpg"
+      },
+      {
+        "name": "Miyuki Shirogane",
+        "voice_actor_jp": "Makoto Furukawa",
+        "voice_actor_en": "Aaron Dismuke",
+        "character_image": "https://i.pinimg.com/736x/8d/3a/6f/8d3a6f9g2h5i8j1k4l7m0n3o6p9q2r5s.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/2f/8e/1b/2f8e1b4g7h0i3j6k9l2m5n8o1p4q7r0s.jpg"
+      },
+      {
+        "name": "Chika Fujiwara",
+        "voice_actor_jp": "Konomi Kohara",
+        "voice_actor_en": "Jad Saxton",
+        "character_image": "https://i.pinimg.com/736x/6c/9a/3e/6c9a3e7f0g3h6i9j2k5l8m1n4o7p0q3r.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/9e/4b/8f/9e4b8f2g5h8i1j4k7l0m3n6o9p2q5r8s.jpg"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "type": "TV Series",
+    "name": "Made in Abyss",
+    "image": "https://i.pinimg.com/736x/16/f5/b6/16f5b6fcf2e33c3a5743fba4d7e44542.jpg",
+    "duration": "24 min",
+    "total_episodes": 25,
+    "aired_episodes": 25,
+    "genres": [
+      "Adventure",
+      "Drama",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.6",
+    "studios": "Kinema Citrus",
+    "producers": "Kadokawa, Cygames, Kadokawa Media House, Global Rise",
+    "story": "The Abyss is a mysterious chasm that stretches deep into the earth, filled with ancient relics and dangerous creatures. Riko, a young girl whose mother was a legendary Cave Raider, dreams of exploring its depths. When she meets Reg, a mysterious robot boy, they embark on a perilous journey into the Abyss to find Riko's mother and uncover its secrets.",
+    "aired": "July 7, 2017 - September 29, 2017 (Season 1)",
+    "characters": [
+      {
+        "name": "Riko",
+        "voice_actor_jp": "Miyu Tomita",
+        "voice_actor_en": "Brittany Lauda",
+        "character_image": "https://i.pinimg.com/736x/4f/8c/2a/4f8c2a5d7e0f3g6h9i2j5k8l1m4n7o0p.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/8a/5f/9d/8a5f9d2e4g7h0i3j6k9l2m5n8o1p4q7r.jpg"
+      },
+      {
+        "name": "Reg",
+        "voice_actor_jp": "Mariya Ise",
+        "voice_actor_en": "Luci Christian",
+        "character_image": "https://i.pinimg.com/736x/2d/9e/6b/2d9e6b8f1g4h7i0j3k6l9m2n5o8p1q4r.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/6e/3b/8f/6e3b8f1g4h7i0j2k5l8m1n4o7p0q3r6s.jpg"
+      },
+      {
+        "name": "Nanachi",
+        "voice_actor_jp": "Shiori Izawa",
+        "voice_actor_en": "Brittney Karbowski",
+        "character_image": "https://i.pinimg.com/736x/9f/2e/5b/9f2e5b8a1d4f7g0h3i6j9k2l5m8n1o4p.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/3c/8f/1e/3c8f1e4g7h0i2j5k8l1m4n7o0p3q6r9s.jpg"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "type": "TV Series",
+    "name": "Your Lie in April",
+    "image": "https://i.pinimg.com/736x/03/77/32/0377326297fe6c70fe9b5da328b93682.jpg",
+    "duration": "23 min",
+    "total_episodes": 22,
+    "aired_episodes": 22,
+    "genres": [
+      "Drama",
+      "Music",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "8.8",
+    "studios": "A-1 Pictures",
+    "producers": "Aniplex, Dentsu, Fuji TV, Kodansha, A-1 Pictures",
+    "story": "Kosei Arima was a piano prodigy until his mother's death left him unable to hear the sound of his own playing. Two years later, he meets Kaori Miyazono, a free-spirited violinist who helps him return to the world of music. Together, they navigate the challenges of performance, competition, and the fleeting nature of youth in this emotional tale of love, loss, and the power of music.",
+    "aired": "October 10, 2014 - March 20, 2015",
+    "characters": [
+      {
+        "name": "Kosei Arima",
+        "voice_actor_jp": "Natsuki Hanae",
+        "voice_actor_en": "Max Mittelman",
+        "character_image": "https://i.pinimg.com/736x/7e/1b/4f/7e1b4f8a2d5e8f1g4h7i0j3k6l9m2n5o.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/1f/8e/3c/1f8e3c6g9h2i5j8k1l4m7n0o3p6q9r2s.jpg"
+      },
+      {
+        "name": "Kaori Miyazono",
+        "voice_actor_jp": "Risa Taneda",
+        "voice_actor_en": "Erica Lindbeck",
+        "character_image": "https://i.pinimg.com/736x/5c/9f/2e/5c9f2e8d1f4g7h0i3j6k9l2m5n8o1p4q.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/9a/4d/7f/9a4d7f2e5g8h1i4j7k0l3m6n9o2p5q8r.jpg"
+      },
+      {
+        "name": "Tsubaki Sawabe",
+        "voice_actor_jp": "Ayane Sakura",
+        "voice_actor_en": "Erica Mendez",
+        "character_image": "https://i.pinimg.com/736x/3e/8b/1f/3e8b1f4g7h0i2j5k8l1m4n7o0p3q6r9s.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/7b/2f/6e/7b2f6e9a3d5f8g1h4i7j0k3l6m9n2o5p.jpg"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "type": "TV Series",
+    "name": "Clannad",
+    "image": "https://i.pinimg.com/736x/4f/01/ab/4f01ab284f52ad062328f7c92dee8b53.jpg",
+    "duration": "24 min",
+    "total_episodes": 44,
+    "aired_episodes": 44,
+    "genres": [
+      "Drama",
+      "Romance",
+      "Slice of Life"
+    ],
+    "status": "Complete",
+    "rating": "8.5",
+    "studios": "Kyoto Animation",
+    "producers": "Pony Canyon, TBS, Movic, Animation Do",
+    "story": "Tomoya Okazaki is a delinquent who finds life boring and believes he'll never amount to anything. Along with his friend Sunohara, he skips school and plans to waste away his remaining high school years. However, when he meets Nagisa Furukawa, a repeating student striving to revive the school's drama club, his life begins to change as he helps her and other girls overcome their personal struggles.",
+    "aired": "October 5, 2007 - March 28, 2008 (Season 1)",
+    "characters": [
+      {
+        "name": "Tomoya Okazaki",
+        "voice_actor_jp": "Yuichi Nakamura",
+        "voice_actor_en": "David Matranga",
+        "character_image": "https://i.pinimg.com/736x/8d/4a/7f/8d4a7f2e5g8h1i4j7k0l3m6n9o2p5q8r.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/2f/8e/1b/2f8e1b4g7h0i3j6k9l2m5n8o1p4q7r0s.jpg"
+      },
+      {
+        "name": "Nagisa Furukawa",
+        "voice_actor_jp": "Mai Nakahara",
+        "voice_actor_en": "Luci Christian",
+        "character_image": "https://i.pinimg.com/736x/6c/9a/3e/6c9a3e7f0g3h6i9j2k5l8m1n4o7p0q3r.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/9e/4b/8f/9e4b8f2g5h8i1j4k7l0m3n6o9p2q5r8s.jpg"
+      },
+      {
+        "name": "Kyou Fujibayashi",
+        "voice_actor_jp": "Ryo Hirohashi",
+        "voice_actor_en": "Shelley Calene-Black",
+        "character_image": "https://i.pinimg.com/736x/1e/7b/4f/1e7b4f8g1h4i7j0k3l6m9n2o5p8q1r4s.jpg",
+        "voice_actor_image": "https://i.pinimg.com/736x/5g/9d/2f/5g9d2f8e1h4i7j0k3l6m9n2o5p8q1r4s.jpg"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "type": "TV Series",
+    "name": "Overlord",
+    "image": "https://i.pinimg.com/736x/4d/d8/c5/4dd8c57c9434fe4b5ac360f7be7093c0.jpg",
+    "duration": "24 min",
+    "total_episodes": 52,
+    "aired_episodes": 52,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "7.8",
+    "studios": [
+      "Madhouse"
+    ],
+    "producers": [
+      "Enterbrain",
+      "AT-X",
+      "Grooove",
+      "KlockWorx"
+    ],
+    "aired": "July 7, 2015 - December 26, 2022",
+    "synopsis": "When a popular MMORPG is scheduled to be shut down permanently, veteran player Momonga refuses to log out. As NPCs begin to develop personalities and minds of their own, he decides to put his skills to use in this new world as the fearsome overlord Ainz Ooal Gown. Trapped in the game world with his guild's NPCs, Momonga must navigate political intrigue, build his undead empire, and discover the truth behind his situation in this dark fantasy isekai adventure.",
+    "main_characters": [
+      {
+        "name": "Ainz Ooal Gown / Momonga",
+        "character_image": "https://i.pinimg.com/736x/8c/3d/2e/8c3d2e4f5a6b7c8d9e0f1a2b3c4d5e6f.jpg",
+        "japanese_va": "Satoshi Hino",
+        "english_va": "Chris Guerrero",
+        "va_image": "https://i.pinimg.com/736x/7f/2e/1d/7f2e1d0c9b8a7f6e5d4c3b2a1f0e9d8c.jpg"
+      },
+      {
+        "name": "Albedo",
+        "character_image": "https://i.pinimg.com/736x/9d/4c/3b/9d4c3b2a1f0e9d8c7b6a5f4e3d2c1b0a.jpg",
+        "japanese_va": "Yumi Hara",
+        "english_va": "Elizabeth Maxwell",
+        "va_image": "https://i.pinimg.com/736x/8e/5d/4c/8e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1b.jpg"
+      },
+      {
+        "name": "Shalltear Bloodfallen",
+        "character_image": "https://i.pinimg.com/736x/7f/6e/5d/7f6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c.jpg",
+        "japanese_va": "Sumire Uesaka",
+        "english_va": "Felecia Angelle",
+        "va_image": "https://i.pinimg.com/736x/6e/5d/4c/6e5d4c3b2a1f0e9d8c7b6a5f4e3d2c1.jpg"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "type": "OVA",
+    "name": "Hellsing Ultimate",
+    "image": "https://i.pinimg.com/736x/c8/a6/dd/c8a6dd22fa8d6fd93b5aa8c11cde22e4.jpg",
+    "duration": "50 min",
+    "total_episodes": 10,
+    "aired_episodes": 10,
+    "genres": [
+      "Action",
+      "Horror",
+      "Supernatural"
+    ],
+    "status": "Complete",
+    "rating": "8.4",
+    "studios": [
+      "Satelight",
+      "Madhouse",
+      "Graphinica"
+    ],
+    "producers": [
+      "Geneon Universal Entertainment",
+      "Funimation Entertainment",
+      "Wild Geese"
+    ],
+    "aired": "February 10, 2006 - December 26, 2012",
+    "synopsis": "The vampire Alucard, his master Sir Integra Fairbrook Wingates Hellsing, and his newly sired ward Seras Victoria, try to protect England from a war-crazed SS-Major who seeks to start an eternal war with his vampire army. This dark and violent series follows the Hellsing Organization as they battle supernatural threats while uncovering a conspiracy that threatens to engulf the world in eternal warfare between vampires and humans.",
+    "main_characters": [
+      {
+        "name": "Alucard",
+        "character_image": "https://i.pinimg.com/736x/5a/4b/3c/5a4b3c2d1e0f9e8d7c6b5a4f3e2d1c0b.jpg",
+        "japanese_va": "Jouji Nakata",
+        "english_va": "Crispin Freeman",
+        "va_image": "https://i.pinimg.com/736x/4b/3c/2d/4b3c2d1e0f9e8d7c6b5a4f3e2d1c0b9a.jpg"
+      },
+      {
+        "name": "Seras Victoria",
+        "character_image": "https://i.pinimg.com/736x/3c/2d/1e/3c2d1e0f9e8d7c6b5a4f3e2d1c0b9a8f.jpg",
+        "japanese_va": "Fumiko Orikasa",
+        "english_va": "Katie Gray",
+        "va_image": "https://i.pinimg.com/736x/2d/1e/0f/2d1e0f9e8d7c6b5a4f3e2d1c0b9a8f7e.jpg"
+      },
+      {
+        "name": "Integra Hellsing",
+        "character_image": "https://i.pinimg.com/736x/1e/0f/9e/1e0f9e8d7c6b5a4f3e2d1c0b9a8f7e6d.jpg",
+        "japanese_va": "Yoshiko Sakakibara",
+        "english_va": "Victoria Harwood",
+        "va_image": "https://i.pinimg.com/736x/0f/9e/8d/0f9e8d7c6b5a4f3e2d1c0b9a8f7e6d5c.jpg"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "type": "TV Series",
+    "name": "Fate/Zero",
+    "image": "https://i.pinimg.com/736x/77/32/f2/7732f20134b8cd697010ce3d5aaa009a.jpg",
+    "duration": "25 min",
+    "total_episodes": 25,
+    "aired_episodes": 25,
+    "genres": [
+      "Action",
+      "Fantasy",
+      "Supernatural"
+    ],
+    "status": "Complete",
+    "rating": "8.5",
+    "studios": [
+      "Ufotable"
+    ],
+    "producers": [
+      "Aniplex",
+      "Nitroplus",
+      "Seikaisha",
+      "Type-Moon"
+    ],
+    "aired": "October 2, 2011 - June 24, 2012",
+    "synopsis": "Ten years before the events of Fate/stay night, the Fourth Holy Grail War begins. Seven Masters summon seven Servants to compete for the omnipotent Holy Grail. Kiritsugu Emiya, the notorious 'Magus Killer,' enters this deadly competition representing the Einzbern family, with his wife Irisviel and the legendary King Arthur, Saber, by his side. This prequel explores the dark and brutal nature of the Holy Grail War with mature themes and complex moral questions.",
+    "main_characters": [
+      {
+        "name": "Kiritsugu Emiya",
+        "character_image": "https://i.pinimg.com/736x/9e/8d/7c/9e8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b.jpg",
+        "japanese_va": "Rikiya Koyama",
+        "english_va": "Matthew Mercer",
+        "va_image": "https://i.pinimg.com/736x/8d/7c/6b/8d7c6b5a4f3e2d1c0b9a8f7e6d5c4b3a.jpg"
+      },
+      {
+        "name": "Saber (Artoria Pendragon)",
+        "character_image": "https://i.pinimg.com/736x/7c/6b/5a/7c6b5a4f3e2d1c0b9a8f7e6d5c4b3a29.jpg",
+        "japanese_va": "Ayako Kawasumi",
+        "english_va": "Kari Wahlgren",
+        "va_image": "https://i.pinimg.com/736x/6b/5a/4f/6b5a4f3e2d1c0b9a8f7e6d5c4b3a2918.jpg"
+      },
+      {
+        "name": "Gilgamesh",
+        "character_image": "https://i.pinimg.com/736x/5a/4f/3e/5a4f3e2d1c0b9a8f7e6d5c4b3a291807.jpg",
+        "japanese_va": "Tomokazu Seki",
+        "english_va": "David Vincent",
+        "va_image": "https://i.pinimg.com/736x/4f/3e/2d/4f3e2d1c0b9a8f7e6d5c4b3a29180716.jpg"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "type": "TV Series",
+    "name": "Fate/Stay Night: Unlimited Blade Works",
+    "image": "https://i.pinimg.com/736x/ad/d9/0b/add90b0aea307fb2bee6dd8e18fe7686.jpg",
+    "duration": "24 min",
+    "total_episodes": 26,
+    "aired_episodes": 26,
+    "genres": [
+      "Action",
+      "Supernatural",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.4",
+    "studios": [
+      "Ufotable"
+    ],
+    "producers": [
+      "Aniplex",
+      "Notes",
+      "Tokyo MX",
+      "Type-Moon"
+    ],
+    "aired": "October 5, 2014 - June 28, 2015",
+    "synopsis": "Shirou Emiya finds himself an unwilling participant in the Fifth Holy Grail War, where seven Masters fight for the ultimate prize with their summoned Servants. Following the Unlimited Blade Works route, this adaptation focuses on Shirou's relationship with the Servant Archer and the mysterious Rin Tosaka. As the war intensifies, Shirou must confront his ideals about justice and heroism while uncovering the truth about his own abilities and destiny.",
+    "main_characters": [
+      {
+        "name": "Shirou Emiya",
+        "character_image": "https://i.pinimg.com/736x/3e/2d/1c/3e2d1c0b9a8f7e6d5c4b3a2918071605.jpg",
+        "japanese_va": "Noriaki Sugiyama",
+        "english_va": "Bryce Papenbrook",
+        "va_image": "https://i.pinimg.com/736x/2d/1c/0b/2d1c0b9a8f7e6d5c4b3a291807160514.jpg"
+      },
+      {
+        "name": "Rin Tosaka",
+        "character_image": "https://i.pinimg.com/736x/1c/0b/9a/1c0b9a8f7e6d5c4b3a29180716051403.jpg",
+        "japanese_va": "Kana Ueda",
+        "english_va": "Mela Lee",
+        "va_image": "https://i.pinimg.com/736x/0b/9a/8f/0b9a8f7e6d5c4b3a2918071605140312.jpg"
+      },
+      {
+        "name": "Archer",
+        "character_image": "https://i.pinimg.com/736x/9a/8f/7e/9a8f7e6d5c4b3a29180716051403120f.jpg",
+        "japanese_va": "Junichi Suwabe",
+        "english_va": "Kaiji Tang",
+        "va_image": "https://i.pinimg.com/736x/8f/7e/6d/8f7e6d5c4b3a29180716051403120f9e.jpg"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "type": "TV Series",
+    "name": "Parasyte: The Maxim",
+    "image": "https://i.pinimg.com/736x/c2/ab/d9/c2abd92a51f99d10f6e23c879bd8d757.jpg",
+    "duration": "23 min",
+    "total_episodes": 24,
+    "aired_episodes": 24,
+    "genres": [
+      "Action",
+      "Horror",
+      "Sci-Fi"
+    ],
+    "status": "Complete",
+    "rating": "8.5",
+    "studios": [
+      "Madhouse"
+    ],
+    "producers": [
+      "VAP",
+      "Nippon Television Network",
+      "Kodansha",
+      "Forecast Communications"
+    ],
+    "aired": "October 9, 2014 - March 26, 2015",
+    "synopsis": "Alien parasites have invaded Earth, taking over human hosts by burrowing into their brains. High school student Shinichi Izumi becomes partially infected when a parasite fails to take over his brain, instead settling in his right hand. Named 'Migi' by Shinichi, this unusual partnership must work together to survive as they encounter other parasites who see them as a threat. This psychological horror explores themes of humanity, coexistence, and what it means to be human in a world where the line between human and monster becomes increasingly blurred.",
+    "main_characters": [
+      {
+        "name": "Shinichi Izumi",
+        "character_image": "https://i.pinimg.com/736x/7e/6d/5c/7e6d5c4b3a29180716051403120f9e8d.jpg",
+        "japanese_va": "Nobunaga Shimazaki",
+        "english_va": "Adam Gibbs",
+        "va_image": "https://i.pinimg.com/736x/6d/5c/4b/6d5c4b3a29180716051403120f9e8d7c.jpg"
+      },
+      {
+        "name": "Migi",
+        "character_image": "https://i.pinimg.com/736x/5c/4b/3a/5c4b3a29180716051403120f9e8d7c6b.jpg",
+        "japanese_va": "Aya Hirano",
+        "english_va": "Brittney Karbowski",
+        "va_image": "https://i.pinimg.com/736x/4b/3a/29/4b3a29180716051403120f9e8d7c6b5a.jpg"
+      },
+      {
+        "name": "Satomi Murano",
+        "character_image": "https://i.pinimg.com/736x/3a/29/18/3a29180716051403120f9e8d7c6b5a4f.jpg",
+        "japanese_va": "Kana Hanazawa",
+        "english_va": "Cherami Leigh",
+        "va_image": "https://i.pinimg.com/736x/29/18/07/29180716051403120f9e8d7c6b5a4f3e.jpg"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "type": "TV Series",
+    "name": "Angel Beats!",
+    "image": "https://i.pinimg.com/736x/47/05/63/4705636ba1d8bb592099e1919a54c2c1.jpg",
+    "duration": "24 min",
+    "total_episodes": 13,
+    "aired_episodes": 13,
+    "genres": [
+      "Drama",
+      "Supernatural",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.3",
+    "studios": [
+      "P.A. Works"
+    ],
+    "producers": [
+      "Aniplex",
+      "Dentsu",
+      "ASCII Media Works",
+      "Key"
+    ],
+    "aired": "April 3, 2010 - June 26, 2010",
+    "synopsis": "Yuzuru Otonashi awakens in the afterlife with no memory of his death. He discovers he's in a school-like limbo where students who died young must overcome their life's regrets before moving on to their next life. Led by the mysterious Yuri, the Afterlife Battlefront rebels against the student council president Angel, believing she's preventing them from moving on. This emotional journey explores themes of regret, acceptance, and the meaning of life through both comedic and heart-wrenching moments.",
+    "main_characters": [
+      {
+        "name": "Yuzuru Otonashi",
+        "character_image": "https://i.pinimg.com/736x/18/07/16/18071605140312f09e8d7c6b5a4f3e2d.jpg",
+        "japanese_va": "Hiroshi Kamiya",
+        "english_va": "Blake Shepard",
+        "va_image": "https://i.pinimg.com/736x/07/16/05/07160514031209e8d7c6b5a4f3e2d1c.jpg"
+      },
+      {
+        "name": "Kanade Tachibana (Angel)",
+        "character_image": "https://i.pinimg.com/736x/16/05/14/160514031209e8d7c6b5a4f3e2d1c0b.jpg",
+        "japanese_va": "Kana Hanazawa",
+        "english_va": "Emily Neves",
+        "va_image": "https://i.pinimg.com/736x/05/14/03/05140312098d7c6b5a4f3e2d1c0b9a8f.jpg"
+      },
+      {
+        "name": "Yuri Nakamura",
+        "character_image": "https://i.pinimg.com/736x/14/03/12/140312098d7c6b5a4f3e2d1c0b9a8f7e.jpg",
+        "japanese_va": "Harumi Sakurai",
+        "english_va": "Leah Clark",
+        "va_image": "https://i.pinimg.com/736x/03/12/09/03120987c6b5a4f3e2d1c0b9a8f7e6d5.jpg"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "type": "TV Series",
+    "name": "Toradora!",
+    "image": "https://i.pinimg.com/736x/da/b2/5c/dab25ce8213fc64618cd7d49d32f806d.jpg",
+    "duration": "24 min",
+    "total_episodes": 25,
+    "aired_episodes": 25,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "8.2",
+    "studios": [
+      "J.C.Staff"
+    ],
+    "producers": [
+      "Geneon Universal Entertainment",
+      "Starchild Records",
+      "Magic Capsule",
+      "Yuyutei"
+    ],
+    "aired": "October 2, 2008 - March 26, 2009",
+    "synopsis": "Ryuuji Takasu has a gentle personality but intimidating eyes that make him look like a delinquent. Taiga Aisaka is a tiny girl with a fierce temper, earning her the nickname 'Palmtop Tiger.' When they discover each other's crushes on their respective best friends, they form an unlikely alliance to help each other win over their loves. This romantic comedy explores the complicated nature of teenage relationships, friendship, and the gradual realization that love might be closer than expected.",
+    "main_characters": [
+      {
+        "name": "Ryuuji Takasu",
+        "character_image": "https://i.pinimg.com/736x/12/09/87/12098765a4f3e2d1c0b9a8f7e6d5c4b3.jpg",
+        "japanese_va": "Junji Majima",
+        "english_va": "Erik Scott Kimerer",
+        "va_image": "https://i.pinimg.com/736x/09/87/65/0987654f3e2d1c0b9a8f7e6d5c4b3a29.jpg"
+      },
+      {
+        "name": "Taiga Aisaka",
+        "character_image": "https://i.pinimg.com/736x/87/65/43/87654321c0b9a8f7e6d5c4b3a2918071.jpg",
+        "japanese_va": "Rie Kugimiya",
+        "english_va": "Cassandra Lee Morris",
+        "va_image": "https://i.pinimg.com/736x/65/43/21/654321098f7e6d5c4b3a291807160514.jpg"
+      },
+      {
+        "name": "Minori Kushieda",
+        "character_image": "https://i.pinimg.com/736x/43/21/09/432109876d5c4b3a29180716051403120.jpg",
+        "japanese_va": "Yui Horie",
+        "english_va": "Christine Marie Cabanos",
+        "va_image": "https://i.pinimg.com/736x/21/09/87/21098765c4b3a291807160514031209e8.jpg"
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "type": "TV Series",
+    "name": "Black Lagoon",
+    "image": "https://i.pinimg.com/736x/54/80/6f/54806f964d7318d6e3fff245966a655d.jpg",
+    "duration": "24 min",
+    "total_episodes": 24,
+    "aired_episodes": 24,
+    "genres": [
+      "Action",
+      "Adventure",
+      "Seinen"
+    ],
+    "status": "Complete",
+    "rating": "8.0",
+    "studios": [
+      "Madhouse"
+    ],
+    "producers": [
+      "Geneon Entertainment",
+      "Shogakukan"
+    ],
+    "aired": "April 9, 2006 - June 25, 2006",
+    "story": "A Japanese businessman named Rokuro Okajima is captured by modern-day pirates known as the Lagoon Company in the South China Sea. When his company abandons him, he decides to join the mercenary crew and adopts the name 'Rock.' Operating from the fictional city of Roanapur, Thailand, he navigates a dangerous world of crime, corruption, and violence alongside the trigger-happy gunslinger Revy, Dutch the leader, and Benny the tech expert.",
+    "characters": [
+      {
+        "name": "Rock (Rokuro Okajima)",
+        "voice_actor_jp": "Daisuke Namikawa",
+        "voice_actor_en": "Brad Swaile",
+        "character_image": "https://static.wikia.nocookie.net/blacklagoon/images/6/6b/Rock_main.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/4/48/Daisuke_Namikawa.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/b/bc/Brad_Swaile.jpg"
+      },
+      {
+        "name": "Revy",
+        "voice_actor_jp": "Megumi Toyoguchi",
+        "voice_actor_en": "Maryke Hendrikse",
+        "character_image": "https://static.wikia.nocookie.net/blacklagoon/images/3/33/Revy_main.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/5/56/Megumi_Toyoguchi.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/8/8f/Maryke_Hendrikse.jpg"
+      },
+      {
+        "name": "Dutch",
+        "voice_actor_jp": "Tsutomu Isobe",
+        "voice_actor_en": "Dean Redman",
+        "character_image": "https://static.wikia.nocookie.net/blacklagoon/images/2/27/Dutch_main.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/c/c8/Tsutomu_Isobe.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/d/de/Dean_Redman.jpg"
+      },
+      {
+        "name": "Benny",
+        "voice_actor_jp": "Hiroaki Hirata",
+        "voice_actor_en": "Brian Drummond",
+        "character_image": "https://static.wikia.nocookie.net/blacklagoon/images/9/95/Benny_main.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/1/18/Hiroaki_Hirata.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/5/5a/Brian_Drummond.jpg"
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "type": "TV Series",
+    "name": "Hyouka",
+    "image": "https://i.pinimg.com/736x/2f/41/b2/2f41b25fd77dc8d774c94473f30da824.jpg",
+    "duration": "24 min",
+    "total_episodes": 22,
+    "aired_episodes": 22,
+    "genres": [
+      "Mystery",
+      "Slice of Life",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.2",
+    "studios": [
+      "Kyoto Animation"
+    ],
+    "producers": [
+      "Kadokawa Shoten",
+      "Kyoto Animation",
+      "Lantis"
+    ],
+    "aired": "April 22, 2012 - September 16, 2012",
+    "story": "Houtarou Oreki is a high school student who believes in conserving energy and avoiding unnecessary activities. However, his peaceful life changes when he's forced to join the Classic Literature Club to prevent its disbandment. Along with the curious Eru Chitanda, the database enthusiast Satoshi Fukube, and the sharp-tongued Mayaka Ibara, Oreki finds himself solving various mysteries around their school, from 45-year-old incidents to everyday puzzles.",
+    "characters": [
+      {
+        "name": "Houtarou Oreki",
+        "voice_actor_jp": "Yoshimasa Hosoya",
+        "voice_actor_en": "Adam Gibbs",
+        "character_image": "https://static.wikia.nocookie.net/hyouka/images/8/80/Houtarou_Oreki.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/7/7f/Yoshimasa_Hosoya.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/a/aa/Adam_Gibbs.jpg"
+      },
+      {
+        "name": "Eru Chitanda",
+        "voice_actor_jp": "Satomi Sato",
+        "voice_actor_en": "Cherami Leigh",
+        "character_image": "https://static.wikia.nocookie.net/hyouka/images/c/ca/Eru_Chitanda.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/4/44/Satomi_Sato.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/3/35/Cherami_Leigh.jpg"
+      },
+      {
+        "name": "Satoshi Fukube",
+        "voice_actor_jp": "Daisuke Sakaguchi",
+        "voice_actor_en": "Clifford Chapin",
+        "character_image": "https://static.wikia.nocookie.net/hyouka/images/9/91/Satoshi_Fukube.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/8/8d/Daisuke_Sakaguchi.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/c/cd/Clifford_Chapin.jpg"
+      },
+      {
+        "name": "Mayaka Ibara",
+        "voice_actor_jp": "Ai Kayano",
+        "voice_actor_en": "Apphia Yu",
+        "character_image": "https://static.wikia.nocookie.net/hyouka/images/5/57/Mayaka_Ibara.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/2/2c/Ai_Kayano.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/a/ab/Apphia_Yu.jpg"
+      }
+    ]
+  },
+  {
+    "id": 53,
+    "type": "TV Series",
+    "name": "Bakuman",
+    "image": "https://i.pinimg.com/736x/3d/71/e4/3d71e499d907cddb2509b477143bb5f1.jpg",
+    "duration": "24 min",
+    "total_episodes": 75,
+    "aired_episodes": 75,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "8.1",
+    "studios": [
+      "J.C.Staff"
+    ],
+    "producers": [
+      "NHK",
+      "Shueisha",
+      "J.C.Staff"
+    ],
+    "aired": "October 2, 2010 - April 1, 2013",
+    "story": "Moritaka Mashiro, a junior high student, meets his classmate Akito Takagi who discovers Mashiro's drawing talent. Takagi convinces Mashiro to team up and create manga together, with Takagi writing the stories and Mashiro illustrating them. Their ultimate goal is to get their manga serialized in Weekly Shonen Jump and eventually adapted into an anime, so Mashiro can fulfill his promise to marry his crush Miho Azuki when she becomes a voice actress.",
+    "characters": [
+      {
+        "name": "Moritaka Mashiro",
+        "voice_actor_jp": "Atsushi Abe",
+        "voice_actor_en": "Greg Ayres",
+        "character_image": "https://static.wikia.nocookie.net/bakuman/images/7/7c/Moritaka_Mashiro.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/9/93/Atsushi_Abe.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/4/4e/Greg_Ayres.jpg"
+      },
+      {
+        "name": "Akito Takagi",
+        "voice_actor_jp": "Satoshi Hino",
+        "voice_actor_en": "Luci Christian",
+        "character_image": "https://static.wikia.nocookie.net/bakuman/images/2/2b/Akito_Takagi.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/5/5c/Satoshi_Hino.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/8/84/Luci_Christian.jpg"
+      },
+      {
+        "name": "Miho Azuki",
+        "voice_actor_jp": "Saori Hayami",
+        "voice_actor_en": "Monica Rial",
+        "character_image": "https://static.wikia.nocookie.net/bakuman/images/1/1d/Miho_Azuki.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/e/e1/Saori_Hayami.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/6/68/Monica_Rial.jpg"
+      },
+      {
+        "name": "Eiji Nizuma",
+        "voice_actor_jp": "Nobuhiko Okamoto",
+        "voice_actor_en": "Joel McDonald",
+        "character_image": "https://static.wikia.nocookie.net/bakuman/images/8/8c/Eiji_Nizuma.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/3/3f/Nobuhiko_Okamoto.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/9/92/Joel_McDonald.jpg"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "type": "TV Series",
+    "name": "Spice and Wolf",
+    "image": "https://i.pinimg.com/736x/ee/3d/b0/ee3db02d23ca5da5085e0aaa6dd76bb1.jpg",
+    "duration": "24 min",
+    "total_episodes": 26,
+    "aired_episodes": 26,
+    "genres": [
+      "Adventure",
+      "Fantasy",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "8.3",
+    "studios": [
+      "Imagin",
+      "Brain's Base"
+    ],
+    "producers": [
+      "Pony Canyon",
+      "Imagin",
+      "Marvelous Entertainment"
+    ],
+    "aired": "January 9, 2008 - September 25, 2009",
+    "story": "Lawrence Craft is a traveling merchant in a medieval world who encounters Holo, a wolf deity who has been bound to a wheat harvest for centuries. Seeking to return to her northern homeland, Holo joins Lawrence on his travels. Together, they navigate the complex world of medieval commerce, politics, and economics while their relationship slowly develops from business partnership to something deeper. The series focuses on intelligent dialogue, economic strategy, and the evolving romance between the pragmatic merchant and the wise wolf deity.",
+    "characters": [
+      {
+        "name": "Kraft Lawrence",
+        "voice_actor_jp": "Jun Fukuyama",
+        "voice_actor_en": "J. Michael Tatum",
+        "character_image": "https://static.wikia.nocookie.net/spiceandwolf/images/7/72/Lawrence.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/8/80/Jun_Fukuyama.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/1/1c/J_Michael_Tatum.jpg"
+      },
+      {
+        "name": "Holo",
+        "voice_actor_jp": "Ami Koshimizu",
+        "voice_actor_en": "Brina Palencia",
+        "character_image": "https://static.wikia.nocookie.net/spiceandwolf/images/9/95/Holo.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/2/28/Ami_Koshimizu.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/4/4f/Brina_Palencia.jpg"
+      },
+      {
+        "name": "Norah Arendt",
+        "voice_actor_jp": "Kaori Nazuka",
+        "voice_actor_en": "Leah Clark",
+        "character_image": "https://static.wikia.nocookie.net/spiceandwolf/images/3/34/Norah.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/5/59/Kaori_Nazuka.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/7/7c/Leah_Clark.jpg"
+      },
+      {
+        "name": "Chloe",
+        "voice_actor_jp": "Marina Inoue",
+        "voice_actor_en": "Maxey Whitehead",
+        "character_image": "https://static.wikia.nocookie.net/spiceandwolf/images/8/86/Chloe.jpg",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/c/c9/Marina_Inoue.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/5/5f/Maxey_Whitehead.jpg"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "type": "TV Series",
+    "name": "K-On!",
+    "image": null,
+    "duration": "24 min",
+    "total_episodes": 41,
+    "aired_episodes": 41,
+    "genres": [
+      "Music",
+      "Slice of Life",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.0",
+    "studios": [
+      "Kyoto Animation"
+    ],
+    "producers": [
+      "Pony Canyon",
+      "TBS",
+      "Kyoto Animation"
+    ],
+    "aired": "April 3, 2009 - September 21, 2010",
+    "story": "Yui Hirasawa, a carefree high school girl, accidentally joins the Light Music Club thinking it's about easy music. However, she discovers it's actually about playing instruments. With no musical experience, she teams up with bassist Mio Akiyama, drummer Ritsu Tainaka, and keyboardist Tsumugi Kotobuki to form the band 'After School Tea Time.' The series follows their daily lives, practice sessions, and performances as they build friendships and musical skills together.",
+    "characters": [
+      {
+        "name": "Yui Hirasawa",
+        "voice_actor_jp": "Aki Toyosaki",
+        "voice_actor_en": "Stephanie Sheh",
+        "character_image": "https://static.wikia.nocookie.net/k-on/images/e/ef/Yui_character.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/5/56/Aki_Toyosaki.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/4/4a/Stephanie_Sheh.jpg"
+      },
+      {
+        "name": "Mio Akiyama",
+        "voice_actor_jp": "Yoko Hikasa",
+        "voice_actor_en": "Cristina Vee",
+        "character_image": "https://static.wikia.nocookie.net/k-on/images/2/2c/Mio_character.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/b/b9/Yoko_Hikasa.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/8/8f/Cristina_Vee.jpg"
+      },
+      {
+        "name": "Ritsu Tainaka",
+        "voice_actor_jp": "Satomi Sato",
+        "voice_actor_en": "Cassandra Lee Morris",
+        "character_image": "https://static.wikia.nocookie.net/k-on/images/a/a7/Ritsu_character.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/4/44/Satomi_Sato.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/9/9c/Cassandra_Lee_Morris.jpg"
+      },
+      {
+        "name": "Tsumugi Kotobuki",
+        "voice_actor_jp": "Minako Kotobuki",
+        "voice_actor_en": "Shelby Lindley",
+        "character_image": "https://static.wikia.nocookie.net/k-on/images/3/36/Tsumugi_character.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/f/f3/Minako_Kotobuki.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/2/2f/Shelby_Lindley.jpg"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "type": "TV Series",
+    "name": "Food Wars!",
+    "image": "https://i.pinimg.com/736x/34/f4/0e/34f40ef448554f850513fcda3a52085c.jpg",
+    "duration": "24 min",
+    "total_episodes": 86,
+    "aired_episodes": 86,
+    "genres": [
+      "Comedy",
+      "Ecchi",
+      "Drama"
+    ],
+    "status": "Complete",
+    "rating": "8.1",
+    "studios": [
+      "J.C.Staff"
+    ],
+    "producers": [
+      "Sentai Filmworks",
+      "Shueisha",
+      "MBS"
+    ],
+    "aired": "April 4, 2015 - September 25, 2020",
+    "story": "Soma Yukihira dreams of becoming a full-time chef at his father's neighborhood restaurant and surpassing his father's culinary skills. However, his father closes the restaurant and enrolls Soma in Totsuki Culinary Academy, an elite culinary school where only 10% of students graduate. Soma must navigate intense cooking competitions, shokugeki (food wars), and rivalries while developing his unique cooking style and aiming to become the top chef in his class.",
+    "characters": [
+      {
+        "name": "Soma Yukihira",
+        "voice_actor_jp": "Yuki Kaji",
+        "voice_actor_en": "Blake Shepard",
+        "character_image": "https://static.wikia.nocookie.net/shokugekinosoma/images/3/3c/Soma_Yukihira.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/f/f0/Yuki_Kaji.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/b/b8/Blake_Shepard.jpg"
+      },
+      {
+        "name": "Erina Nakiri",
+        "voice_actor_jp": "Risa Taneda",
+        "voice_actor_en": "Stephanie Wittels",
+        "character_image": "https://static.wikia.nocookie.net/shokugekinosoma/images/4/45/Erina_Nakiri.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/a/a8/Risa_Taneda.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/5/5d/Stephanie_Wittels.jpg"
+      },
+      {
+        "name": "Megumi Tadokoro",
+        "voice_actor_jp": "Minami Takahashi",
+        "voice_actor_en": "Abby Trott",
+        "character_image": "https://static.wikia.nocookie.net/shokugekinosoma/images/8/86/Megumi_Tadokoro.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/7/7a/Minami_Takahashi.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/3/39/Abby_Trott.jpg"
+      },
+      {
+        "name": "Takumi Aldini",
+        "voice_actor_jp": "Natsuki Hanae",
+        "voice_actor_en": "Griffin Burns",
+        "character_image": "https://static.wikia.nocookie.net/shokugekinosoma/images/9/9f/Takumi_Aldini.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/4/4c/Natsuki_Hanae.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/1/1d/Griffin_Burns.jpg"
+      }
+    ]
+  },
+  {
+    "id": 57,
+    "type": "TV Series",
+    "name": "Kuroko no Basket",
+    "image": "https://i.pinimg.com/736x/05/45/b0/0545b06f45f679659fa288afe94144c2.jpg",
+    "duration": "24 min",
+    "total_episodes": 75,
+    "aired_episodes": 75,
+    "genres": [
+      "Sports",
+      "Drama",
+      "Comedy"
+    ],
+    "status": "Complete",
+    "rating": "8.4",
+    "studios": [
+      "Production I.G"
+    ],
+    "producers": [
+      "Bandai Visual",
+      "Lantis",
+      "Production I.G"
+    ],
+    "aired": "April 7, 2012 - June 30, 2015",
+    "story": "Tetsuya Kuroko, known as the 'Phantom Sixth Man,' was part of the legendary 'Generation of Miracles' basketball team in middle school. Now in high school, he teams up with Taiga Kagami, a naturally talented player returning from America, to help Seirin High School's basketball team defeat his former teammates who have split up among different elite schools. Using his unique misdirection skills and teamwork philosophy, Kuroko aims to prove that teamwork can triumph over individual talent.",
+    "characters": [
+      {
+        "name": "Tetsuya Kuroko",
+        "voice_actor_jp": "Kensho Ono",
+        "voice_actor_en": "Max Mittelman",
+        "character_image": "https://static.wikia.nocookie.net/kurokonobasuke/images/f/f5/Kuroko_anime.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/7/72/Kensho_Ono.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/8/8b/Max_Mittelman.jpg"
+      },
+      {
+        "name": "Taiga Kagami",
+        "voice_actor_jp": "Yuki Ono",
+        "voice_actor_en": "Scott Gibbs",
+        "character_image": "https://static.wikia.nocookie.net/kurokonobasuke/images/8/8a/Kagami_anime.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/9/9f/Yuki_Ono.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/c/c8/Scott_Gibbs.jpg"
+      },
+      {
+        "name": "Daiki Aomine",
+        "voice_actor_jp": "Suki Suwabe",
+        "voice_actor_en": "Cris George",
+        "character_image": "https://static.wikia.nocookie.net/kurokonobasuke/images/a/a1/Aomine_anime.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/e/e9/Suki_Suwabe.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/4/4e/Cris_George.jpg"
+      },
+      {
+        "name": "Shintaro Midorima",
+        "voice_actor_jp": "Kisho Taniyama",
+        "voice_actor_en": "Ian Sinclair",
+        "character_image": "https://static.wikia.nocookie.net/kurokonobasuke/images/5/55/Midorima_anime.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/d/d4/Kisho_Taniyama.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/f/ff/Ian_Sinclair.jpg"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "type": "TV Series",
+    "name": "The Devil is a Part-Timer!",
+    "image": "https://i.pinimg.com/736x/c6/c8/ec/c6c8ecaf433b0f24725ae54bf554924b.jpg",
+    "duration": "24 min",
+    "total_episodes": 25,
+    "aired_episodes": 25,
+    "genres": [
+      "Comedy",
+      "Fantasy",
+      "Slice of Life"
+    ],
+    "status": "Complete",
+    "rating": "7.9",
+    "studios": [
+      "White Fox",
+      "Studio 3Hz"
+    ],
+    "producers": [
+      "Kadokawa Shoten",
+      "KlockWorx",
+      "ASCII Media Works",
+      "Pony Canyon"
+    ],
+    "aired": "April 4, 2013 - June 27, 2013 (Season 1), July 14, 2022 - September 22, 2022 (Season 2)",
+    "story": "Satan, the Demon Lord, is forced to retreat from his world to modern-day Tokyo after being defeated by the hero Emilia. Stripped of his magical powers, he adopts the human identity 'Sadao Maou' and works part-time at MgRonald's (a McDonald's parody) to survive. Meanwhile, Emilia also arrives in Tokyo as 'Emi Yusa' and must adapt to human life. The series follows their comedic struggles with mundane human problems like paying rent, dealing with noisy neighbors, and climbing the corporate ladder while slowly regaining their powers.",
+    "characters": [
+      {
+        "name": "Satan/Sadao Maou",
+        "voice_actor_jp": "Ryota Ohsaka",
+        "voice_actor_en": "Josh Grelle",
+        "character_image": "https://static.wikia.nocookie.net/hataraku/images/8/8c/Sadao_Maou_2.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/d/d5/Ryota_Ohsaka.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/5/5e/Josh_Grelle.jpg"
+      },
+      {
+        "name": "Emilia/Emi Yusa",
+        "voice_actor_jp": "Yoko Hikasa",
+        "voice_actor_en": "Felecia Angelle",
+        "character_image": "https://static.wikia.nocookie.net/hataraku/images/9/94/Emi_Yusa_2.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/b/b9/Yoko_Hikasa.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/7/7a/Felecia_Angelle.jpg"
+      },
+      {
+        "name": "Ashiya Shiro/Alciel",
+        "voice_actor_jp": "Takahiro Sakurai",
+        "voice_actor_en": "Anthony Bowling",
+        "character_image": "https://static.wikia.nocookie.net/hataraku/images/6/64/Ashiya_Shiro_2.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/8/8f/Takahiro_Sakurai.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/2/2f/Anthony_Bowling.jpg"
+      },
+      {
+        "name": "Chiho Sasaki",
+        "voice_actor_jp": "Nao Toyama",
+        "voice_actor_en": "Tia Ballard",
+        "character_image": "https://static.wikia.nocookie.net/hataraku/images/3/3b/Chiho_Sasaki_2.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/f/ff/Nao_Toyama.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/4/4c/Tia_Ballard.jpg"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "type": "TV Series",
+    "name": "Durarara!!",
+    "image": "https://i.pinimg.com/736x/9c/0f/16/9c0f1624e8f86211fb3f739d8f28972c.jpg",
+    "duration": "24 min",
+    "total_episodes": 60,
+    "aired_episodes": 60,
+    "genres": [
+      "Action",
+      "Mystery",
+      "Supernatural"
+    ],
+    "status": "Complete",
+    "rating": "8.0",
+    "studios": [
+      "Brain's Base",
+      "Shuka"
+    ],
+    "producers": [
+      "Aniplex",
+      "Square Enix",
+      "MBS",
+      "ASCII Media Works"
+    ],
+    "aired": "January 8, 2010 - June 25, 2010 (Season 1), January 10, 2015 - March 26, 2016 (Season 2-3)",
+    "story": "Mikado Ryugamine, a young boy longing for excitement, moves to Ikebukuro district in Tokyo to attend Raira Academy with his childhood friend Masaomi Kida. The bustling district is full of urban legends, including the mysterious headless rider known as the 'Black Rider' who rides a black motorcycle. As Mikado becomes involved with various gangs, information brokers, and supernatural beings, he discovers that Ikebukuro is far more dangerous and interconnected than he imagined, with everyone's past intertwining in unexpected ways.",
+    "characters": [
+      {
+        "name": "Mikado Ryugamine",
+        "voice_actor_jp": "Toshiyuki Toyonaga",
+        "voice_actor_en": "Darrel Guilbeau",
+        "character_image": "https://static.wikia.nocookie.net/durarara/images/a/a8/Mikado_Ryugamine_Anime.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/8/8c/Toshiyuki_Toyonaga.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/5/5d/Darrel_Guilbeau.jpg"
+      },
+      {
+        "name": "Celty Sturluson",
+        "voice_actor_jp": "Miyuki Sawashiro",
+        "voice_actor_en": "Kari Wahlgren",
+        "character_image": "https://static.wikia.nocookie.net/durarara/images/f/f4/Celty_Sturluson_Anime.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/c/c7/Miyuki_Sawashiro.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/f/f8/Kari_Wahlgren.jpg"
+      },
+      {
+        "name": "Izaya Orihara",
+        "voice_actor_jp": "Hiroshi Kamiya",
+        "voice_actor_en": "Johnny Yong Bosch",
+        "character_image": "https://static.wikia.nocookie.net/durarara/images/8/80/Izaya_Orihara_Anime.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/1/18/Hiroshi_Kamiya.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/4/4f/Johnny_Yong_Bosch.jpg"
+      },
+      {
+        "name": "Shizuo Heiwajima",
+        "voice_actor_jp": "Daisuke Ono",
+        "voice_actor_en": "Crispin Freeman",
+        "character_image": "https://static.wikia.nocookie.net/durarara/images/2/26/Shizuo_Heiwajima_Anime.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/9/9f/Daisuke_Ono.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/d/dc/Crispin_Freeman.jpg"
+      },
+      {
+        "name": "Masaomi Kida",
+        "voice_actor_jp": "Mamoru Miyano",
+        "voice_actor_en": "Bryce Papenbrook",
+        "character_image": "https://static.wikia.nocookie.net/durarara/images/e/e4/Masaomi_Kida_Anime.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/4/4c/Mamoru_Miyano.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/2/2f/Bryce_Papenbrook.jpg"
+      },
+      {
+        "name": "Anri Sonohara",
+        "voice_actor_jp": "Kana Hanazawa",
+        "voice_actor_en": "Michelle Ruff",
+        "character_image": "https://static.wikia.nocookie.net/durarara/images/9/93/Anri_Sonohara_Anime.png",
+        "voice_actor_image_jp": "https://static.wikia.nocookie.net/voiceacting/images/1/1f/Kana_Hanazawa.jpg",
+        "voice_actor_image_en": "https://static.wikia.nocookie.net/voiceacting/images/6/6c/Michelle_Ruff.jpg"
+      }
+    ]
+  }
 ]

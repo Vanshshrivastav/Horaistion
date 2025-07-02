@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import aniinfo from "../data/aniinfo.json"; // Adjust path based on your project structure
+import mostcard from "../data/mostcard.json"; // Adjust path based on your project structure
 
 const AnimeCard = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
+
+   const { id } = useParams(); // Get the recipe ID from the URL
+
+    // Find the specific recipe based on the ID
+    const most = mostcard.find(item => item.id === parseInt(id));
   // Assuming you are displaying the first anime's details for now
   const anime = aniinfo[0];
 
@@ -88,3 +94,7 @@ const AnimeCard = () => {
 };
 
 export default AnimeCard;
+
+
+
+

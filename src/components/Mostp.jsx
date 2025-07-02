@@ -110,3 +110,6 @@ const AnimeCardGroup = () => {
 };
 
 export default AnimeCardGroup;
+
+
+
