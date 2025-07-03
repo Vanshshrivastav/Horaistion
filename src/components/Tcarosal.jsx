@@ -1,10 +1,12 @@
 import React, { useRef } from 'react';
-import animeData from '../data/animedata.json';
+import { Link } from 'react-router-dom'; // ✅ Import Link
+import animeData from '../data/maindata.json';
 
 export default function AnimeCardCarousel() {
   const carouselRef = useRef(null);
 
-  const scroll = (amount) => carouselRef.current?.scrollBy({ left: amount, behavior: 'smooth' });
+  const scroll = (amount) =>
+    carouselRef.current?.scrollBy({ left: amount, behavior: 'smooth' });
 
   return (
     <div className="relative bg-[#1E1E1E] p-1.5">
@@ -23,19 +25,21 @@ export default function AnimeCardCarousel() {
       <div
         ref={carouselRef}
         className="flex overflow-x-scroll space-x-2 lg:space-x-4 p-2 lg:p-4 bg-[#1E1E1E] scrollbar-hide"
-        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }} // Hides scrollbar for Firefox and IE/Edge
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        {animeData.slice(0, 10).map((anime, index) => (
-          <div key={index} className="min-w-[125px] lg:min-w-[200px] bg-[#121212] shadow-lg flex flex-col text-white">
-            <img src={anime.image} alt={anime.name} className="w-full h-50 md:h-70 object-cover" />
-            <div className="p-2">
-              <h3 className="text-sm font-semibold hover:text-[#E3B505] mb-1">
-                <a href="#">{anime.name}</a>
-              </h3>
-              <p className="text-xs">Type: {anime.type}</p>
-              <p className="text-xs">Rating: {anime.rating}</p>
+        {animeData.slice(0, 10).map((anime) => (
+          <Link to={`/aniproflie/${anime.id}`} key={anime.id}>
+            <div className="min-w-[125px] lg:min-w-[200px] bg-[#121212] shadow-lg flex flex-col text-white hover:shadow-xl transition cursor-pointer">
+              <img src={anime.image} alt={anime.name} className="w-full h-50 md:h-70 object-cover" />
+              <div className="p-2">
+                <h3 className="text-sm font-semibold hover:text-[#E3B505] mb-1">
+                  {anime.name}
+                </h3>
+                <p className="text-xs">Type: {anime.type}</p>
+                <p className="text-xs">Rating: {anime.rating}</p>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 

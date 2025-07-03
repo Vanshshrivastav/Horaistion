@@ -1,4 +1,5 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 import Aniinfo from '../components/Aniinfo'
 import Navbar from '../components/Navbar'
 import Actordata from '../components/Actordata'
@@ -7,20 +8,18 @@ import Footer from '../components/Footer'
 import Refad from '../components/Refad'
 
 const Aniproflie = () => {
-    return (
-        <>
-            <div className='bg-[#1E1E1E] h-screen'>
+    const { id } = useParams(); // ⬅️ get id from URL
 
-                <Navbar />
-                <Aniinfo />
-                <Actordata />
-                <Refad />
-                <Anitrailer />
-                
-                <Footer />
-            </div>
-        </>
+    return (
+        <div className='bg-[#1E1E1E] min-h-screen'>
+            <Navbar />
+            <Aniinfo animeId={id} /> {/* ⬅️ pass id as prop */}
+            <Actordata animeId={id} />
+            <Refad />
+            <Anitrailer animeId={id} />
+            <Footer />
+        </div>
     )
 }
 
-export default Aniproflie
+export default Aniproflie;

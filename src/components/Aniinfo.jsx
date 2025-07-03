@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import aniinfo from "../data/aniinfo.json"; // Adjust path based on your project structure
-import mostcard from "../data/mostcard.json"; // Adjust path based on your project structure
+
+import { useParams } from "react-router-dom";// Adjust path based on your project structure
 
 const AnimeCard = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -9,9 +10,11 @@ const AnimeCard = () => {
    const { id } = useParams(); // Get the recipe ID from the URL
 
     // Find the specific recipe based on the ID
-    const most = mostcard.find(item => item.id === parseInt(id));
+  const anime = aniinfo.find(item => item.id === parseInt(id));
+
+
   // Assuming you are displaying the first anime's details for now
-  const anime = aniinfo[0];
+ 
 
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
@@ -61,8 +64,8 @@ const AnimeCard = () => {
           >
             <p className="leading-relaxed text-sm md:text-base">
               {isExpanded
-                ? anime.synopsis
-                : `${anime.synopsis ? anime.synopsis.split(" ").slice(0, 50).join(" ") : ""}...`}
+                ? anime.story
+                : `${anime.story ? anime.story.split(" ").slice(0, 50).join(" ") : ""}...`}
               <span
                 onClick={toggleExpand}
                 className="text-[#E3B505] hover:underline cursor-pointer"
@@ -94,6 +97,7 @@ const AnimeCard = () => {
 };
 
 export default AnimeCard;
+
 
 
 

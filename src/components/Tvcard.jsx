@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import animeMovies from "../data/tvcard.json"; // Adjust the path if needed
+import { Link } from "react-router-dom"; // ✅ Required for routing
+import animeMovies from "../data/maindata.json"; // Adjust the path if needed
 
 const AnimeCardGroup = () => {
     const [movies, setMovies] = useState([]);
@@ -23,57 +24,52 @@ const AnimeCardGroup = () => {
     };
 
     return (
-        <div className="bg-[#1E1E1E] ">
+        <div className="bg-[#1E1E1E]">
             <div className="container mx-auto p-[1.0em]">
-                <h1 className="text-3xl font-bold mb-6 text-[#E0E0E0]">Tv Show</h1>
+                <h1 className="text-3xl font-bold mb-6 text-[#E0E0E0]">TV Show</h1>
+
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
                     {currentMovies.map((item) => (
-                        <div
-                            key={item.id}
-                            className=" overflow-hidden shadow-md bg-[#2E2E2E]" 
-                        >
-                            <div className="relative">
-                                <img
-                                    src={item.image}
-                                    alt={item.name}
-                                    className="h-60 w-full object-cover md:h-90"
-                                />
-                                <div className="absolute bottom-2 left-2 flex gap-0.5">
-                                    <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-l-lg">
-                                        {item.total_episodes}
-                                    </span>
-                                    {/* <span className="text-[12px] font-bold text-black bg-[#E3B505] px-2 py-1 ">
-                                        {item.sub}
-                                    </span> */}
-                                    <span className="text-[12px] font-bold text-black bg-[#E3B505] px-2 py-1 rounded-r-lg">
-                                        {item.aired_episodes}
-                                    </span>
-
-                                </div>
-                            </div>
-                            <div className="pt-2 bg-[#1E1E1E] flex flex-col items-start justify-between">
-                                <div className="flex md:w-69 justify-between ">
-                                    <div className="">
-                                        <h2 className="text-sm font-medium text-[#E0E0E0] hover:text-[#E3B505] truncate">
-                                            {item.name}
-                                        </h2>
-                                        <div className="flex gap-1 mt-1">
-                                            <p className="text-xs text-[#E0E0E0] ">{item.type}</p>
-                                            <p className="text-xs text-[#E0E0E0]">{item.duration}</p>
-                                        </div>
-                                    </div>
-                                    <div className="mt-2 hidden md:block">
-                                        <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-md">
-                                            {item.rating}
+                        <Link to={`/aniproflie/${item.id}`} key={item.id}>
+                            <div className="overflow-hidden shadow-md bg-[#2E2E2E] hover:shadow-lg transition cursor-pointer">
+                                <div className="relative">
+                                    <img
+                                        src={item.image}
+                                        alt={item.name}
+                                        className="h-60 w-full object-cover md:h-90"
+                                    />
+                                    <div className="absolute bottom-2 left-2 flex gap-0.5">
+                                        <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-l-lg">
+                                            {item.total_episodes}
+                                        </span>
+                                        <span className="text-[12px] font-bold text-black bg-[#E3B505] px-2 py-1 rounded-r-lg">
+                                            {item.aired_episodes}
                                         </span>
                                     </div>
-
                                 </div>
-
+                                <div className="pt-2 bg-[#1E1E1E] flex flex-col items-start justify-between">
+                                    <div className="flex md:w-69 justify-between w-full px-2">
+                                        <div>
+                                            <h2 className="text-sm font-medium text-[#E0E0E0] hover:text-[#E3B505] truncate">
+                                                {item.name}
+                                            </h2>
+                                            <div className="flex gap-1 mt-1">
+                                                <p className="text-xs text-[#E0E0E0]">{item.type}</p>
+                                                <p className="text-xs text-[#E0E0E0]">{item.duration}</p>
+                                            </div>
+                                        </div>
+                                        <div className="mt-2 hidden md:block">
+                                            <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-md">
+                                                {item.rating}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     ))}
                 </div>
+
                 <div className="flex justify-center items-center mt-6 gap-2">
                     <button
                         onClick={() => handlePageChange(currentPage - 1)}
@@ -105,7 +101,7 @@ const AnimeCardGroup = () => {
                     </button>
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 
