@@ -1,9 +1,9 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import Aniinfo from '../components/Aniinfo'
+import Information from '../components/Information'
 import Navbar from '../components/Navbar'
 import Actordata from '../components/Actordata'
-import Anitrailer from '../components/Anitrailer'
+import Trailer from '../components/Trailer'
 import Footer from '../components/Footer'
 import Refad from '../components/Refad'
 
@@ -13,10 +13,10 @@ const Aniproflie = () => {
     return (
         <div className='bg-[#1E1E1E] min-h-screen'>
             <Navbar />
-            <Aniinfo animeId={id} /> {/* ⬅️ pass id as prop */}
+            <Information animeId={id} /> {/* ⬅️ pass id as prop */}
             <Actordata animeId={id} />
             <Refad />
-            <Anitrailer animeId={id} />
+            <Trailer animeId={id} />
             <Footer />
         </div>
     )

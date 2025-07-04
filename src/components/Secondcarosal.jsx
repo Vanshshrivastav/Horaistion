@@ -9,7 +9,7 @@ export default function AnimeCardCarousel() {
     carouselRef.current?.scrollBy({ left: amount, behavior: 'smooth' });
 
   return (
-    <div className="relative bg-[#1E1E1E] p-1.5">
+    <div className="relative bg-[#1E1E1E] p-2">
       {/* Scroll Buttons */}
       <button
         onClick={() => scroll(-200)}

@@ -20,7 +20,7 @@ function App() {
     }, []);
 
     return (
-        <div className="bg-[#1E1E1E] text-white p-3 sm:p-4 border-t border-b border-gray-600">
+        <div className="bg-[#1E1E1E] text-white p-3 sm:p-3  ">
             <h1 className="text-base sm:text-xl font-bold mb-3 sm:mb-5">Most Watch</h1>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 sm:gap-4">

@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Mostp from '../components/Mostp'
+import Mostlink from '../components/Mostlink'
 import Footer from '../components/Footer'
 
 const Topairing = () => {
     return (
         <>
             <Navbar />
-            <Mostp />
+            <Mostlink />
             <Footer />
         </>
     )
