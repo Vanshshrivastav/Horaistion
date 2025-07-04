@@ -33,15 +33,15 @@ function App() {
                                 className="w-18 sm:w-20 h-20 sm:h-30 mr-2 sm:mr-3"
                             />
                             <div>
-                                <h2 className="text-xs sm:text-sm font-bold hover:text-[#E3B505] mb-2 sm:mb-3">
+                                <h2 className="text-xs sm:text-[15px] font-bold hover:text-[#E3B505] mb-2 sm:mb-3">
                                     {anime.name}
                                 </h2>
-                                <div className="flex items-center space-x-1 sm:space-x-2">
-                                    <div className="bg-gray-700 text-center rounded-lg w-10 sm:w-12 h-4 sm:h-5 flex items-center justify-center">
-                                        <span className="text-[10px] sm:text-xs">{anime.aired_episodes}</span>
+                                <div className="flex items-center space-x-1 sm:space-x-1">
+                                    <div className="bg-[#2E2E2E] text-center text-[#E3B505]  w-10 sm:w-12 h-4 sm:h-5 flex items-center justify-center">
+                                        <span className="text-[10px] sm:text-[15px]">{anime.aired_episodes}</span>
                                     </div>
-                                    <div className="bg-gray-700 text-center rounded-lg w-10 sm:w-12 h-4 sm:h-5 flex items-center justify-center">
-                                        <span className="text-[10px] sm:text-xs">{anime.total_episodes}</span>
+                                    <div className="bg-[#E3B505] text-[#121212] text-center  w-10 sm:w-12 h-4 sm:h-5 flex items-center justify-center">
+                                        <span className="text-[10px] sm:text-[15px]">{anime.total_episodes}</span>
                                     </div>
                                 </div>
                             </div>

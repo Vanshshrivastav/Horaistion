@@ -40,10 +40,10 @@ const AnimeCardGroup = () => {
                                         className="h-60 w-full object-cover md:h-90"
                                     />
                                     <div className="absolute bottom-2 left-2 flex gap-0.5">
-                                        <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-l-lg">
+                                        <span className="text-[12px] font-bold text-[#E3B505] bg-[#2E2E2E] px-2 py-1 rounded-l-lg">
                                             {item.total_episodes || "?"}
                                         </span>
-                                        <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-r-lg">
+                                        <span className="text-[12px] font-bold text-[#121212] bg-[#E3B505] px-2 py-1 rounded-r-lg">
                                             {item.aired_episodes || "?"}
                                         </span>
                                     </div>
@@ -60,7 +60,7 @@ const AnimeCardGroup = () => {
                                             </div>
                                         </div>
                                         <div className="mt-2 hidden md:block">
-                                            <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-md">
+                                            <span className="text-[12px] font-bold text-[#121212] bg-[#E3B505] px-2 py-1 rounded-md">
                                                 {item.rating || "NR"}
                                             </span>
                                         </div>

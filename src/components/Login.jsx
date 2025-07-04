@@ -39,7 +39,7 @@ const LoginPage = () => {
               <input
                 type="text"
                 id="name"
-                className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#E3B505]"
                 placeholder="Enter your full name"
               />
             </div>
@@ -51,7 +51,7 @@ const LoginPage = () => {
             <input
               type="email"
               id="email"
-              className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#E3B505]"
               placeholder="Enter your email"
             />
           </div>
@@ -65,7 +65,7 @@ const LoginPage = () => {
             <input
               type="password"
               id="password"
-              className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#E3B505]"
               placeholder="Enter your password"
             />
           </div>
@@ -80,14 +80,14 @@ const LoginPage = () => {
               <input
                 type="password"
                 id="confirm-password"
-                className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#E3B505]"
                 placeholder="Confirm your password"
               />
             </div>
           )}
           <button
             type="submit"
-            className="w-full py-2 bg-[#E3B505] hover:bg-blue-700 text-white font-semibold rounded-lg transition duration-300"
+            className="w-full py-2 bg-[#E3B505] hover:bg-[#2E2E2E] text-white font-semibold rounded-lg transition duration-300"
           >
             {isSignUp ? "Sign Up" : "Login"}
           </button>
@@ -98,7 +98,7 @@ const LoginPage = () => {
           {isSignUp ? "Already have an account?" : "Don't have an account?"}{" "}
           <button
             onClick={() => setIsSignUp(!isSignUp)}
-            className="text-blue-400 hover:text-blue-500 font-medium"
+            className="text-blue-400 hover:text-[#E3B505] font-medium"
           >
             {isSignUp ? "Login" : "Sign Up"}
           </button>

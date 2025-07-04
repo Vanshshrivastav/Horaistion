@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import aniinfo from "../data/aniinfo.json"; // Adjust path based on your project structure
+import maindata from "../data/maindata.json"; // Adjust path based on your project structure
 
 import { useParams } from "react-router-dom";// Adjust path based on your project structure
 
@@ -10,7 +10,7 @@ const AnimeCard = () => {
    const { id } = useParams(); // Get the recipe ID from the URL
 
     // Find the specific recipe based on the ID
-  const anime = aniinfo.find(item => item.id === parseInt(id));
+  const anime = maindata.find(item => item.id === parseInt(id));
 
 
   // Assuming you are displaying the first anime's details for now

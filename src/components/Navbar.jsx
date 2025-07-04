@@ -52,7 +52,7 @@ const Navbar = () => {
                     </button>
                     <Link
                         to="/login"
-                        className="ml-4 bg-[#E3B505] text-black text-sm py-2 px-4 rounded-md shadow hover:bg-[#C99E04]"
+                        className="ml-4 bg-[#E3B505] text-[#121212] text-sm py-2 px-4 rounded-md shadow "
                     >
                         Login
                     </Link>
