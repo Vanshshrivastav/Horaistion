@@ -1,0 +1,782 @@
+[
+  {
+    "id": 1,
+    "type": "Movie",
+    "name": "Spirited Away",
+    "image": "https://i.pinimg.com/736x/v7/w8/x9/v7w8x9y0z1a2b3c4d5e6f7g8h9i0j1k2.jpg",
+    "duration": "125 min",
+    "genres": [
+      "Adventure",
+      "Family",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "9.3",
+    "studios": "Studio Ghibli",
+    "producers": "Studio Ghibli, Tokuma Shoten, Nippon Television Network",
+    "aired": "July 20, 2001",
+    "story": "A young girl becomes trapped in a mysterious spirit world and must work to free herself and her parents.",
+    "characters": [
+      {
+        "name": "Chihiro Ogino",
+        "japanese_voice_actor": "Rumi Hiiragi",
+        "english_voice_actor": "Daveigh Chase",
+        "character_image": "https://i.pinimg.com/564x/l3/m4/n5/l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/e5/f6/g7/e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0.jpg"
+      },
+      {
+        "name": "Setsuko",
+        "japanese_voice_actor": "Ayano Shiraishi",
+        "english_voice_actor": "Emily Neves",
+        "character_image": "https://i.pinimg.com/564x/u1/v2/w3/u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/k7/l8/m9/k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2.jpg"
+      },
+      {
+        "name": "Aunt",
+        "japanese_voice_actor": "Yoshiko Shinohara",
+        "english_voice_actor": "Veronica Taylor",
+        "character_image": "https://i.pinimg.com/564x/a3/b4/c5/a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/q9/r0/s1/q9r0s1t2u3v4w5x6y7z8a9b0c1d2e3f4.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "type": "Movie",
+    "name": "Paprika",
+    "image": "https://i.pinimg.com/736x/g5/h6/i7/g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0.jpg",
+    "duration": "90 min",
+    "genres": [
+      "Animation",
+      "Drama",
+      "Mystery"
+    ],
+    "status": "Complete",
+    "rating": "7.7",
+    "studios": "Madhouse",
+    "producers": "Madhouse, Sony Pictures Entertainment",
+    "aired": "September 2, 2006",
+    "story": "When a machine that allows therapists to enter their patients' dreams is stolen, all hell breaks loose.",
+    "characters": [
+      {
+        "name": "Paprika",
+        "japanese_voice_actor": "Megumi Hayashibara",
+        "english_voice_actor": "Cindy Robinson",
+        "character_image": "https://i.pinimg.com/564x/w1/x2/y3/w1x2y3z4a5b6c7d8e9f0g1h2i3j4k5l6.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/m7/n8/o9/m7n8o9p0q1r2s3t4u5v6w7x8y9z0a1b2.jpg"
+      },
+      {
+        "name": "Dr. Atsuko Chiba",
+        "japanese_voice_actor": "Megumi Hayashibara",
+        "english_voice_actor": "Cindy Robinson",
+        "character_image": "https://i.pinimg.com/564x/c3/d4/e5/c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/s9/t0/u1/s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4.jpg"
+      },
+      {
+        "name": "Detective Konakawa",
+        "japanese_voice_actor": "Koichi Yamadera",
+        "english_voice_actor": "Paul St. Peter",
+        "character_image": "https://i.pinimg.com/564x/i5/j6/k7/i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/y1/z2/a3/y1z2a3b4c5d6e7f8g9h0i1j2k3l4m5n6.jpg"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "type": "Movie",
+    "name": "Tokyo Godfathers",
+    "image": "https://i.pinimg.com/736x/o7/p8/q9/o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1d2.jpg",
+    "duration": "92 min",
+    "genres": [
+      "Adventure",
+      "Comedy",
+      "Drama"
+    ],
+    "status": "Complete",
+    "rating": "7.8",
+    "studios": "Madhouse",
+    "producers": "Madhouse, Tokyo Movie Shinsha",
+    "aired": "August 30, 2003",
+    "story": "Three homeless people discover an abandoned baby on Christmas Eve and search for its parents.",
+    "characters": [
+      {
+        "name": "Gin",
+        "japanese_voice_actor": "Toru Emori",
+        "english_voice_actor": "Jon Avner",
+        "character_image": "https://i.pinimg.com/564x/e3/f4/g5/e3f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/u9/v0/w1/u9v0w1x2y3z4a5b6c7d8e9f0g1h2i3j4.jpg"
+      },
+      {
+        "name": "Hana",
+        "japanese_voice_actor": "Yoshiaki Umegaki",
+        "english_voice_actor": "Ari Ross",
+        "character_image": "https://i.pinimg.com/564x/k5/l6/m7/k5l6m7n8o9p0q1r2s3t4u5v6w7x8y9z0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/a1/b2/c3/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6.jpg"
+      },
+      {
+        "name": "Miyuki",
+        "japanese_voice_actor": "Aya Okamoto",
+        "english_voice_actor": "Victoria Grace",
+        "character_image": "https://i.pinimg.com/564x/q7/r8/s9/q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/g3/h4/i5/g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "Movie",
+    "name": "The Girl Who Leapt Through Time",
+    "image": "https://i.pinimg.com/736x/w9/x0/y1/w9x0y1z2a3b4c5d6e7f8g9h0i1j2k3l4.jpg",
+    "duration": "98 min",
+    "genres": [
+      "Animation",
+      "Drama",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "7.7",
+    "studios": "Madhouse",
+    "producers": "Madhouse, Kadokawa Pictures",
+    "aired": "July 15, 2006",
+    "story": "A teenage girl discovers that she can literally leap through time, but her actions have consequences.",
+    "characters": [
+      {
+        "name": "Makoto Konno",
+        "japanese_voice_actor": "Riisa Naka",
+        "english_voice_actor": "Emily Hirst",
+        "character_image": "https://i.pinimg.com/564x/m5/n6/o7/m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/c1/d2/e3/c1d2e3f4g5h6i7j8k9l0m1n2o3p4q5r6.jpg"
+      },
+      {
+        "name": "Chiaki Mamiya",
+        "japanese_voice_actor": "Takuya Ishida",
+        "english_voice_actor": "Andrew Francis",
+        "character_image": "https://i.pinimg.com/564x/s7/t8/u9/s7t8u9v0w1x2y3z4a5b6c7d8e9f0g1h2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/i3/j4/k5/i3j4k5l6m7n8o9p0q1r2s3t4u5v6w7x8.jpg"
+      },
+      {
+        "name": "Kosuke Tsuda",
+        "japanese_voice_actor": "Mitsutaka Itakura",
+        "english_voice_actor": "Joshua Seth",
+        "character_image": "https://i.pinimg.com/564x/y9/z0/a1/y9z0a1b2c3d4e5f6g7h8i9j0k1l2m3n4.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/o5/p6/q7/o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0.jpg"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "type": "Movie",
+    "name": "Summer Wars",
+    "image": "https://i.pinimg.com/736x/e1/f2/g3/e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6.jpg",
+    "duration": "114 min",
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Drama"
+    ],
+    "status": "Complete",
+    "rating": "7.4",
+    "studios": "Madhouse",
+    "producers": "Madhouse, Nippon Television Network, Warner Bros. Japan",
+    "aired": "August 1, 2009",
+    "story": "A student tries to fix a problem he accidentally caused in OZ, a digital world, while staying with his friend's grandmother.",
+    "characters": [
+      {
+        "name": "Kenji Koiso",
+        "japanese_voice_actor": "Ryunosuke Kamiki",
+        "english_voice_actor": "Michael Sinterniklaas",
+        "character_image": "https://i.pinimg.com/564x/u7/v8/w9/u7v8w9x0y1z2a3b4c5d6e7f8g9h0i1j2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/k3/l4/m5/k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8.jpg"
+      },
+      {
+        "name": "Natsuki Shinohara",
+        "japanese_voice_actor": "Nanami Sakuraba",
+        "english_voice_actor": "Brina Palencia",
+        "character_image": "https://i.pinimg.com/564x/a9/b0/c1/a9b0c1d2e3f4g5h6i7j8k9l0m1n2o3p4.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/q5/r6/s7/q5r6s7t8u9v0w1x2y3z4a5b6c7d8e9f0.jpg"
+      },
+      {
+        "name": "Love Machine",
+        "japanese_voice_actor": "Takahiro Yokokawa",
+        "english_voice_actor": "J. Michael Tatum",
+        "character_image": "https://i.pinimg.com/564x/g1/h2/i3/g1h2i3j4k5l6m7n8o9p0q1r2s3t4u5v6.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/w7/x8/y9/w7x8y9z0a1b2c3d4e5f6g7h8i9j0k1l2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "type": "Movie",
+    "name": "A Silent Voice",
+    "image": "https://i.pinimg.com/736x/m3/n4/o5/m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8.jpg",
+    "duration": "130 min",
+    "genres": [
+      "Animation",
+      "Drama",
+      "Family"
+    ],
+    "status": "Complete",
+    "rating": "8.1",
+    "studios": "Kyoto Animation",
+    "producers": "Kyoto Animation, Pony Canyon, ABC Animation",
+    "aired": "September 17, 2016",
+    "story": "A former bully seeks redemption by befriending the deaf girl he once tormented.",
+    "characters": [
+      {
+        "name": "Shoya Ishida",
+        "japanese_voice_actor": "Miyu Irino",
+        "english_voice_actor": "Robbie Daymond",
+        "character_image": "https://i.pinimg.com/564x/c9/d0/e1/c9d0e1f2g3h4i5j6k7l8m9n0o1p2q3r4.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/s5/t6/u7/s5t6u7v8w9x0y1z2a3b4c5d6e7f8g9h0.jpg"
+      },
+      {
+        "name": "Shoko Nishimiya",
+        "japanese_voice_actor": "Saori Hayami",
+        "english_voice_actor": "Lexi Cowden",
+        "character_image": "https://i.pinimg.com/564x/i1/j2/k3/i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/y7/z8/a9/y7z8a9b0c1d2e3f4g5h6i7j8k9l0m1n2.jpg"
+      },
+      {
+        "name": "Yuzuru Nishimiya",
+        "japanese_voice_actor": "Aoi Yuki",
+        "english_voice_actor": "Sara Cravens",
+        "character_image": "https://i.pinimg.com/564x/o3/p4/q5/o3p4q5r6s7t8u9v0w1x2y3z4a5b6c7d8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/e9/f0/g1/e9f0g1h2i3j4k5l6m7n8o9p0q1r2s3t4.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "type": "Movie",
+    "name": "Ninja Scroll",
+    "image": "https://i.pinimg.com/736x/u5/v6/w7/u5v6w7x8y9z0a1b2c3d4e5f6g7h8i9j0.jpg",
+    "duration": "94 min",
+    "genres": [
+      "Action",
+      "Adventure",
+      "Thriller"
+    ],
+    "status": "Complete",
+    "rating": "7.8",
+    "studios": "Madhouse",
+    "producers": "Madhouse, Animate Film, JVC",
+    "aired": "June 5, 1993",
+    "story": "A wandering swordsman becomes embroiled in a struggle between mortal and supernatural forces.",
+    "characters": [
+      {
+        "name": "Jubei Kibagami",
+        "japanese_voice_actor": "Koichi Yamadera",
+        "english_voice_actor": "Dean Elliot",
+        "character_image": "https://i.pinimg.com/564x/k1/l2/m3/k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/a7/b8/c9/a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2.jpg"
+      },
+      {
+        "name": "Kagero",
+        "japanese_voice_actor": "Emi Shinohara",
+        "english_voice_actor": "Wendee Lee",
+        "character_image": "https://i.pinimg.com/564x/q3/r4/s5/q3r4s5t6u7v8w9x0y1z2a3b4c5d6e7f8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/g9/h0/i1/g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4.jpg"
+      },
+      {
+        "name": "Gemma Himuro",
+        "japanese_voice_actor": "Daisuke Gouri",
+        "english_voice_actor": "Richard Epcar",
+        "character_image": "https://i.pinimg.com/564x/w5/x6/y7/w5x6y7z8a9b0c1d2e3f4g5h6i7j8k9l0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/m1/n2/o3/m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6.jpg"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "type": "Movie",
+    "name": "The Wind Rises",
+    "image": "https://i.pinimg.com/736x/c7/d8/e9/c7d8e9f0g1h2i3j4k5l6m7n8o9p0q1r2.jpg",
+    "duration": "126 min",
+    "genres": [
+      "Animation",
+      "Biography",
+      "Drama"
+    ],
+    "status": "Complete",
+    "rating": "7.8",
+    "studios": "Studio Ghibli",
+    "producers": "Studio Ghibli, Nippon Television Network, Dentsu",
+    "aired": "July 20, 2013",
+    "story": "A biography of Jiro Horikoshi, the designer of the famous Japanese fighter plane used in World War II.",
+    "characters": [
+      {
+        "name": "Jiro Horikoshi",
+        "japanese_voice_actor": "Hideaki Anno",
+        "english_voice_actor": "Joseph Gordon-Levitt",
+        "character_image": "https://i.pinimg.com/564x/s3/t4/u5/s3t4u5v6w7x8y9z0a1b2c3d4e5f6g7h8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/i9/j0/k1/i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4.jpg"
+      },
+      {
+        "name": "Nahoko Satomi",
+        "japanese_voice_actor": "Miori Takimoto",
+        "english_voice_actor": "Emily Blunt",
+        "character_image": "https://i.pinimg.com/564x/y5/z6/a7/y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/o1/p2/q3/o1p2q3r4s5t6u7v8w9x0y1z2a3b4c5d6.jpg"
+      },
+      {
+        "name": "Giovanni Caproni",
+        "japanese_voice_actor": "Nomura Mansai",
+        "english_voice_actor": "Stanley Tucci",
+        "character_image": "https://i.pinimg.com/564x/e7/f8/g9/e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/u3/v4/w5/u3v4w5x6y7z8a9b0c1d2e3f4g5h6i7j8.jpg"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "Movie",
+    "name": "Redline",
+    "image": "https://i.pinimg.com/736x/k9/l0/m1/k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4.jpg",
+    "duration": "102 min",
+    "genres": [
+      "Action",
+      "Animation",
+      "Sci-Fi"
+    ],
+    "status": "Complete",
+    "rating": "7.5",
+    "studios": "Madhouse",
+    "producers": "Madhouse, Tohokushinsha Film Corporation",
+    "aired": "October 9, 2010",
+    "story": "A futuristic racing competition where racers pilot their machines in a no-holds-barred battle for glory.",
+    "characters": [
+      {
+        "name": "JP",
+        "japanese_voice_actor": "Takuya Kimura",
+        "english_voice_actor": "Patrick Seitz",
+        "character_image": "https://i.pinimg.com/564x/a5/b6/c7/a5b6c7d8e9f0g1h2i3j4k5l6m7n8o9p0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/q1/r2/s3/q1r2s3t4u5v6w7x8y9z0a1b2c3d4e5f6.jpg"
+      },
+      {
+        "name": "Sonoshee",
+        "japanese_voice_actor": "Yu Aoi",
+        "english_voice_actor": "Michelle Ruff",
+        "character_image": "https://i.pinimg.com/564x/g7/h8/i9/g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/w3/x4/y5/w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8.jpg"
+      },
+      {
+        "name": "Frisbee",
+        "japanese_voice_actor": "Tadanobu Asano",
+        "english_voice_actor": "Liam O'Brien",
+        "character_image": "https://i.pinimg.com/564x/m9/n0/o1/m9n0o1p2q3r4s5t6u7v8w9x0y1z2a3b4.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/c5/d6/e7/c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0.jpg"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "Movie",
+    "name": "Jin-Roh: The Wolf Brigade",
+    "image": "https://i.pinimg.com/736x/s1/t2/u3/s1t2u3v4w5x6y7z8a9b0c1d2e3f4g5h6.jpg",
+    "duration": "102 min",
+    "genres": [
+      "Action",
+      "Drama",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "7.4",
+    "studios": "Production I.G",
+    "producers": "Production I.G, Bandai Visual, Emotion",
+    "aired": "June 3, 2000",
+    "story": "A member of an elite paramilitary counter-terrorism unit becomes torn between following orders and protecting a young woman.",
+    "characters": [
+      {
+        "name": "Kazuki Fuse",
+        "japanese_voice_actor": "Yoshikatsu Fujiki",
+        "english_voice_actor": "Michael Dobson",
+        "character_image": "https://i.pinimg.com/564x/i7/j8/k9/i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/y3/z4/a5/y3z4a5b6c7d8e9f0g1h2i3j4k5l6m7n8.jpg"
+      },
+      {
+        "name": "Kei Amemiya",
+        "japanese_voice_actor": "Sumi Mutoh",
+        "english_voice_actor": "Moneca Stori",
+        "character_image": "https://i.pinimg.com/564x/o9/p0/q1/o9p0q1r2s3t4u5v6w7x8y9z0a1b2c3d4.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/e5/f6/g7/e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0.jpg"
+      },
+      {
+        "name": "Atsushi Henmi",
+        "japanese_voice_actor": "Hiroyuki Kinoshita",
+        "english_voice_actor": "Colin Murdock",
+        "character_image": "https://i.pinimg.com/564x/u1/v2/w3/u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/k7/l8/m9/k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "type": "Movie",
+    "name": "Ghost in the Shell",
+    "image": "https://i.pinimg.com/736x/a1/b2/c3/a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6.jpg",
+    "duration": "83 min",
+    "genres": [
+      "Action",
+      "Animation",
+      "Sci-Fi"
+    ],
+    "status": "Complete",
+    "rating": "8.0",
+    "studios": "Production I.G",
+    "producers": "Production I.G, Bandai Visual, Manga Entertainment",
+    "aired": "November 18, 1995",
+    "story": "A cyborg policewoman hunts a mysterious hacker in a futuristic world where the line between human and machine is blurred.",
+    "characters": [
+      {
+        "name": "Motoko Kusanagi",
+        "japanese_voice_actor": "Atsuko Tanaka",
+        "english_voice_actor": "Mimi Davila",
+        "character_image": "https://i.pinimg.com/564x/x1/y2/z3/x1y2z3a4b5c6d7e8f9g0h1i2j3k4l5m6.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/n7/o8/p9/n7o8p9q0r1s2t3u4v5w6x7y8z9a0b1c2.jpg"
+      },
+      {
+        "name": "Batou",
+        "japanese_voice_actor": "Koichi Yamadera",
+        "english_voice_actor": "Richard Epcar",
+        "character_image": "https://i.pinimg.com/564x/d3/e4/f5/d3e4f5g6h7i8j9k0l1m2n3o4p5q6r7s8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/t9/u0/v1/t9u0v1w2x3y4z5a6b7c8d9e0f1g2h3i4.jpg"
+      },
+      {
+        "name": "Puppet Master",
+        "japanese_voice_actor": "Iemasa Kayumi",
+        "english_voice_actor": "Abe Lasser",
+        "character_image": "https://i.pinimg.com/564x/j5/k6/l7/j5k6l7m8n9o0p1q2r3s4t5u6v7w8x9y0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/z1/a2/b3/z1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6.jpg"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "Movie",
+    "name": "Akira",
+    "image": "https://i.pinimg.com/736x/p7/q8/r9/p7q8r9s0t1u2v3w4x5y6z7a8b9c0d1e2.jpg",
+    "duration": "124 min",
+    "genres": [
+      "Action",
+      "Animation",
+      "Sci-Fi"
+    ],
+    "status": "Complete",
+    "rating": "8.0",
+    "studios": "Akira Committee",
+    "producers": "Akira Committee, Mainichi Broadcasting System, Sumitomo Corporation",
+    "aired": "July 16, 1988",
+    "story": "A secret military project endangers Neo-Tokyo when it turns a biker gang member into a rampaging psychic psychopath.",
+    "characters": [
+      {
+        "name": "Shotaro Kaneda",
+        "japanese_voice_actor": "Mitsuo Iwata",
+        "english_voice_actor": "Johnny Yong Bosch",
+        "character_image": "https://i.pinimg.com/564x/f3/g4/h5/f3g4h5i6j7k8l9m0n1o2p3q4r5s6t7u8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/v9/w0/x1/v9w0x1y2z3a4b5c6d7e8f9g0h1i2j3k4.jpg"
+      },
+      {
+        "name": "Tetsuo Shima",
+        "japanese_voice_actor": "Nozomu Sasaki",
+        "english_voice_actor": "Joshua Seth",
+        "character_image": "https://i.pinimg.com/564x/l5/m6/n7/l5m6n7o8p9q0r1s2t3u4v5w6x7y8z9a0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/b1/c2/d3/b1c2d3e4f5g6h7i8j9k0l1m2n3o4p5q6.jpg"
+      },
+      {
+        "name": "Kei",
+        "japanese_voice_actor": "Mami Koyama",
+        "english_voice_actor": "Wendee Lee",
+        "character_image": "https://i.pinimg.com/564x/r7/s8/t9/r7s8t9u0v1w2x3y4z5a6b7c8d9e0f1g2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/h3/i4/j5/h3i4j5k6l7m8n9o0p1q2r3s4t5u6v7w8.jpg"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "type": "Movie",
+    "name": "Princess Mononoke",
+    "image": "https://i.pinimg.com/736x/x9/y0/z1/x9y0z1a2b3c4d5e6f7g8h9i0j1k2l3m4.jpg",
+    "duration": "134 min",
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.4",
+    "studios": "Studio Ghibli",
+    "producers": "Studio Ghibli, Nippon Television Network, Dentsu",
+    "aired": "July 12, 1997",
+    "story": "A young warrior becomes embroiled in a struggle between the gods of a forest and the humans who consume its resources.",
+    "characters": [
+      {
+        "name": "Ashitaka",
+        "japanese_voice_actor": "Yoji Matsuda",
+        "english_voice_actor": "Billy Crudup",
+        "character_image": "https://i.pinimg.com/564x/n5/o6/p7/n5o6p7q8r9s0t1u2v3w4x5y6z7a8b9c0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/d1/e2/f3/d1e2f3g4h5i6j7k8l9m0n1o2p3q4r5s6.jpg"
+      },
+      {
+        "name": "San",
+        "japanese_voice_actor": "Yuriko Ishida",
+        "english_voice_actor": "Claire Danes",
+        "character_image": "https://i.pinimg.com/564x/t7/u8/v9/t7u8v9w0x1y2z3a4b5c6d7e8f9g0h1i2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/j3/k4/l5/j3k4l5m6n7o8p9q0r1s2t3u4v5w6x7y8.jpg"
+      },
+      {
+        "name": "Lady Eboshi",
+        "japanese_voice_actor": "Yuko Tanaka",
+        "english_voice_actor": "Minnie Driver",
+        "character_image": "https://i.pinimg.com/564x/z9/a0/b1/z9a0b1c2d3e4f5g6h7i8j9k0l1m2n3o4.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/p5/q6/r7/p5q6r7s8t9u0v1w2x3y4z5a6b7c8d9e0.jpg"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "type": "Movie",
+    "name": "Perfect Blue",
+    "image": "https://i.pinimg.com/736x/f1/g2/h3/f1g2h3i4j5k6l7m8n9o0p1q2r3s4t5u6.jpg",
+    "duration": "81 min",
+    "genres": [
+      "Animation",
+      "Drama",
+      "Mystery"
+    ],
+    "status": "Complete",
+    "rating": "8.0",
+    "studios": "Madhouse",
+    "producers": "Madhouse, Rex Entertainment",
+    "aired": "February 28, 1998",
+    "story": "A retired pop singer turned actress struggles to distinguish between reality and fantasy when she becomes the target of a stalker.",
+    "characters": [
+      {
+        "name": "Mima Kirigoe",
+        "japanese_voice_actor": "Junko Iwao",
+        "english_voice_actor": "Ruby Marlowe",
+        "character_image": "https://i.pinimg.com/564x/v7/w8/x9/v7w8x9y0z1a2b3c4d5e6f7g8h9i0j1k2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/l3/m4/n5/l3m4n5o6p7q8r9s0t1u2v3w4x5y6z7a8.jpg"
+      },
+      {
+        "name": "Rumi Hidaka",
+        "japanese_voice_actor": "Rica Matsumoto",
+        "english_voice_actor": "Wendee Lee",
+        "character_image": "https://i.pinimg.com/564x/b9/c0/d1/b9c0d1e2f3g4h5i6j7k8l9m0n1o2p3q4.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/r5/s6/t7/r5s6t7u8v9w0x1y2z3a4b5c6d7e8f9g0.jpg"
+      },
+      {
+        "name": "Tadokoro",
+        "japanese_voice_actor": "Shinpachi Tsuji",
+        "english_voice_actor": "Bob Marx",
+        "character_image": "https://i.pinimg.com/564x/h1/i2/j3/h1i2j3k4l5m6n7o8p9q0r1s2t3u4v5w6.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/x7/y8/z9/x7y8z9a0b1c2d3e4f5g6h7i8j9k0l1m2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "type": "Movie",
+    "name": "Howl's Moving Castle",
+    "image": "https://i.pinimg.com/736x/n3/o4/p5/n3o4p5q6r7s8t9u0v1w2x3y4z5a6b7c8.jpg",
+    "duration": "119 min",
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.2",
+    "studios": "Studio Ghibli",
+    "producers": "Studio Ghibli, Tokuma Shoten, Nippon Television Network",
+    "aired": "November 20, 2004",
+    "story": "A young woman cursed with an old body seeks to break the spell in a moving castle owned by a mysterious wizard.",
+    "characters": [
+      {
+        "name": "Sophie Hatter",
+        "japanese_voice_actor": "Chieko Baisho",
+        "english_voice_actor": "Jean Simmons",
+        "character_image": "https://i.pinimg.com/564x/d9/e0/f1/d9e0f1g2h3i4j5k6l7m8n9o0p1q2r3s4.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/t5/u6/v7/t5u6v7w8x9y0z1a2b3c4d5e6f7g8h9i0.jpg"
+      },
+      {
+        "name": "Howl",
+        "japanese_voice_actor": "Takuya Kimura",
+        "english_voice_actor": "Christian Bale",
+        "character_image": "https://i.pinimg.com/564x/j1/k2/l3/j1k2l3m4n5o6p7q8r9s0t1u2v3w4x5y6.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/z7/a8/b9/z7a8b9c0d1e2f3g4h5i6j7k8l9m0n1o2.jpg"
+      },
+      {
+        "name": "Calcifer",
+        "japanese_voice_actor": "Tatsuya Gashuin",
+        "english_voice_actor": "Billy Crystal",
+        "character_image": "https://i.pinimg.com/564x/p3/q4/r5/p3q4r5s6t7u8v9w0x1y2z3a4b5c6d7e8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/f9/g0/h1/f9g0h1i2j3k4l5m6n7o8p9q0r1s2t3u4.jpg"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "type": "Movie",
+    "name": "Grave of the Fireflies",
+    "image": "https://i.pinimg.com/736x/v5/w6/x7/v5w6x7y8z9a0b1c2d3e4f5g6h7i8j9k0.jpg",
+    "duration": "89 min",
+    "genres": [
+      "Animation",
+      "Drama",
+      "War"
+    ],
+    "status": "Complete",
+    "rating": "8.5",
+    "studios": "Studio Ghibli",
+    "producers": "Studio Ghibli, Shinchosha",
+    "aired": "April 16, 1988",
+    "story": "Two siblings struggle to survive in Japan during the final months of World War II.",
+    "characters": [
+      {
+        "name": "Seita",
+        "japanese_voice_actor": "Tsutomu Tatsumi",
+        "english_voice_actor": "Adam Gibbs",
+        "character_image": "https://i.pinimg.com/564x/l1/m2/n3/l1m2n3o4p5q6r7s8t9u0v1w2x3y4z5a6.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/b7/c8/d9/b7c8d9e0f1g2h3i4j5k6l7m8n9o0p1q2.jpg"
+      },
+      {
+        "name": "Setsuko",
+        "japanese_voice_actor": "Ayano Shiraishi",
+        "english_voice_actor": "Emily Neves",
+        "character_image": "https://i.pinimg.com/564x/r3/s4/t5/r3s4t5u6v7w8x9y0z1a2b3c4d5e6f7g8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/h9/i0/j1/h9i0j1k2l3m4n5o6p7q8r9s0t1u2v3w4.jpg"
+      },
+      {
+        "name": "Aunt",
+        "japanese_voice_actor": "Yoshiko Shinohara",
+        "english_voice_actor": "Veronica Taylor",
+        "character_image": "https://i.pinimg.com/564x/x5/y6/z7/x5y6z7a8b9c0d1e2f3g4h5i6j7k8l9m0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/n1/o2/p3/n1o2p3q4r5s6t7u8v9w0x1y2z3a4b5c6.jpg"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "type": "Movie",
+    "name": "My Neighbor Totoro",
+    "image": "https://i.pinimg.com/736x/d7/e8/f9/d7e8f9g0h1i2j3k4l5m6n7o8p9q0r1s2.jpg",
+    "duration": "86 min",
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Family"
+    ],
+    "status": "Complete",
+    "rating": "8.2",
+    "studios": "Studio Ghibli",
+    "producers": "Studio Ghibli, Tokuma Shoten",
+    "aired": "April 16, 1988",
+    "story": "Two sisters discover magical creatures living in the forest near their new home while dealing with their mother's illness.",
+    "characters": [
+      {
+        "name": "Satsuki Kusakabe",
+        "japanese_voice_actor": "Noriko Hidaka",
+        "english_voice_actor": "Dakota Fanning",
+        "character_image": "https://i.pinimg.com/564x/t3/u4/v5/t3u4v5w6x7y8z9a0b1c2d3e4f5g6h7i8.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/j9/k0/l1/j9k0l1m2n3o4p5q6r7s8t9u0v1w2x3y4.jpg"
+      },
+      {
+        "name": "Mei Kusakabe",
+        "japanese_voice_actor": "Chika Sakamoto",
+        "english_voice_actor": "Elle Fanning",
+        "character_image": "https://i.pinimg.com/564x/z5/a6/b7/z5a6b7c8d9e0f1g2h3i4j5k6l7m8n9o0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/p1/q2/r3/p1q2r3s4t5u6v7w8x9y0z1a2b3c4d5e6.jpg"
+      },
+      {
+        "name": "Totoro",
+        "japanese_voice_actor": "Hitoshi Takagi",
+        "english_voice_actor": "Frank Welker",
+        "character_image": "https://i.pinimg.com/564x/f7/g8/h9/f7g8h9i0j1k2l3m4n5o6p7q8r9s0t1u2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/v3/w4/x5/v3w4x5y6z7a8b9c0d1e2f3g4h5i6j7k8.jpg"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "type": "Movie",
+    "name": "Millennium Actress",
+    "image": "https://i.pinimg.com/736x/l9/m0/n1/l9m0n1o2p3q4r5s6t7u8v9w0x1y2z3a4.jpg",
+    "duration": "87 min",
+    "genres": [
+      "Animation",
+      "Drama",
+      "Romance"
+    ],
+    "status": "Complete",
+    "rating": "7.8",
+    "studios": "Madhouse",
+    "producers": "Madhouse, Klockworx",
+    "aired": "July 28, 2001",
+    "story": "A documentary filmmaker interviews a reclusive actress about her life and career, blurring the lines between reality and fiction.",
+    "characters": [
+      {
+        "name": "Chiyoko Fujiwara",
+        "japanese_voice_actor": "Miyoko Shoji",
+        "english_voice_actor": "Folake Olowofoyeku",
+        "character_image": "https://i.pinimg.com/564x/b5/c6/d7/b5c6d7e8f9g0h1i2j3k4l5m6n7o8p9q0.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/r1/s2/t3/r1s2t3u4v5w6x7y8z9a0b1c2d3e4f5g6.jpg"
+      },
+      {
+        "name": "Genya Tachibana",
+        "japanese_voice_actor": "Shozo Iizuka",
+        "english_voice_actor": "Paul St. Peter",
+        "character_image": "https://i.pinimg.com/564x/h7/i8/j9/h7i8j9k0l1m2n3o4p5q6r7s8t9u0v1w2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/x3/y4/z5/x3y4z5a6b7c8d9e0f1g2h3i4j5k6l7m8.jpg"
+      },
+      {
+        "name": "The Key Man",
+        "japanese_voice_actor": "Koichi Yamadera",
+        "english_voice_actor": "Crispin Freeman",
+        "character_image": "https://i.pinimg.com/564x/n9/o0/p1/n9o0p1q2r3s4t5u6v7w8x9y0z1a2b3c4.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/d5/e6/f7/d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0.jpg"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "type": "Movie",
+    "name": "Castle in the Sky",
+    "image": "https://i.pinimg.com/736x/t1/u2/v3/t1u2v3w4x5y6z7a8b9c0d1e2f3g4h5i6.jpg",
+    "duration": "124 min",
+    "genres": [
+      "Adventure",
+      "Animation",
+      "Fantasy"
+    ],
+    "status": "Complete",
+    "rating": "8.0",
+    "studios": "Studio Ghibli",
+    "producers": "Studio Ghibli, Tokuma Shoten",
+    "aired": "August 2, 1986",
+    "story": "A young girl and boy search for a legendary floating castle while being pursued by pirates and government agents.",
+    "characters": [
+      {
+        "name": "Pazu",
+        "japanese_voice_actor": "Mayumi Tanaka",
+        "english_voice_actor": "James Van Der Beek",
+        "character_image": "https://i.pinimg.com/564x/j7/k8/l9/j7k8l9m0n1o2p3q4r5s6t7u8v9w0x1y2.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/z3/a4/b5/z3a4b5c6d7e8f9g0h1i2j3k4l5m6n7o8.jpg"
+      },
+      {
+        "name": "Sheeta",
+        "japanese_voice_actor": "Keiko Yokozawa",
+        "english_voice_actor": "Anna Paquin",
+        "character_image": "https://i.pinimg.com/564x/p9/q0/r1/p9q0r1s2t3u4v5w6x7y8z9a0b1c2d3e4.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/f5/g6/h7/f5g6h7i8j9k0l1m2n3o4p5q6r7s8t9u0.jpg"
+      },
+      {
+        "name": "Muska",
+        "japanese_voice_actor": "Minori Terada",
+        "english_voice_actor": "Mark Hamill",
+        "character_image": "https://i.pinimg.com/564x/v1/w2/x3/v1w2x3y4z5a6b7c8d9e0f1g2h3i4j5k6.jpg",
+        "voice_actor_image": "https://i.pinimg.com/564x/l7/m8/n9/l7m8n9o0p1q2r3s4t5u6v7w8x9y0z1a2.jpg"
+      }
+    ]
+  }
+
+]

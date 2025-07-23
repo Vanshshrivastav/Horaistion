@@ -106,6 +106,12 @@ const Navbar = () => {
                     </svg>
                 </button>
                 <Link
+                    to="/"
+                    className="block px-4 py-2 text-sm text-[#D3D3D3] hover:text-[#E3B505]"
+                >
+                    Home
+                </Link>
+                <Link
                     to="/Movie"
                     className="block px-4 py-2 text-sm text-[#D3D3D3] hover:text-[#E3B505]"
                 >

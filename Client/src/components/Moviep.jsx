@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import animeMovies from "../data/animeMovies.json"; // Adjust the path if needed
+import { Link } from "react-router-dom";
 
 const AnimeCardGroup = () => {
     const [movies, setMovies] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const moviesPerPage = 15; // Number of movies per page
+    const moviesPerPage = 10; // Number of movies per page
 
     useEffect(() => {
         // Load anime movies data
@@ -31,36 +32,37 @@ const AnimeCardGroup = () => {
                 <h1 className="text-3xl font-bold mb-6 text-[#E0E0E0]">Movies</h1>
                 <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6  ">
                     {currentMovies.map((item) => (
-                        <div
-                            key={item.id}
-                            className=" overflow-hidden shadow-md bg-[#2E2E2E]"
-                        >
-                            {/* Anime image */}
-                            <img
-                                src={item.image}
-                                alt={item.name}
-                                className="h-60 w-full object-cover md:h-90"
-                            />
-                            {/* Movie info */}
-                            <div className="pt-2 bg-[#1E1E1E] flex flex-col  items-start justify-between">
-                                <div className="flex md:w-69 justify-between">
-                                    <div>
-                                        <h2 className="text-sm font-medium text-[#E0E0E0] hover:text-[#E3B505] truncate">
-                                            {item.name}
-                                        </h2>
-                                        <div className="flex gap-1 mt-1">
-                                            <p className="text-xs text-[#E0E0E0]">{item.type}</p>
-                                            <p className="text-xs text-[#E0E0E0]">{item.duration}</p>
+                        <Link >
+                            <div
+                                key={item.id}
+                                className=" overflow-hidden shadow-md bg-[#2E2E2E]"
+                            >
+                                {/* Anime image */}
+                                <img
+                                    src={item.image}
+                                    alt={item.name}
+                                    className="h-60 w-full object-cover md:h-90"
+                                />
+                                {/* Movie info */}
+                                <div className="pt-2 bg-[#1E1E1E] flex flex-col  items-start justify-between">
+                                    <div className="flex md:w-69 justify-between">
+                                        <div>
+                                            <h2 className="text-sm font-medium text-[#E0E0E0] hover:text-[#E3B505] truncate">
+                                                {item.name}
+                                            </h2>
+                                            <div className="flex gap-1 mt-1">
+                                                <p className="text-xs text-[#E0E0E0]">{item.type}</p>
+                                                <p className="text-xs text-[#E0E0E0]">{item.duration}</p>
+                                            </div>
+                                        </div>
+                                        <div className="mt-2 hidden md:block">
+                                            <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-md">
+                                                {item.rating}
+                                            </span>
                                         </div>
                                     </div>
-                                    <div className="mt-2 hidden md:block">
-                                        <span className="text-[12px] font-bold text-black bg-[#9fe49e] px-2 py-1 rounded-md">
-                                            {item.rating}
-                                        </span>
-                                    </div>
                                 </div>
-                            </div>
-                        </div>
+                            </div> </Link>
                     ))}
                 </div>
 

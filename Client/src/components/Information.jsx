@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import maindata from "../data/maindata.json"; // Adjust path based on your project structure
+import maindata from "../data/maindata.json";
+ // Adjust path based on your project structure
 
 import { useParams } from "react-router-dom";// Adjust path based on your project structure
 
