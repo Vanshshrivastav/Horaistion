@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Topcard from "../data/maindata.json";
 import { Link } from "react-router-dom";
 
-const AnimeCardGroup = () => {
+const Topcards = () => {
     const [movies, setMovies] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const moviesPerPage = 15;
@@ -114,4 +114,4 @@ const AnimeCardGroup = () => {
     );
 };
 
-export default AnimeCardGroup;
+export default Topcards;

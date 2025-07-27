@@ -4,7 +4,7 @@ import maindata from "../data/maindata.json";
 
 import { useParams } from "react-router-dom";// Adjust path based on your project structure
 
-const AnimeCard = () => {
+const Information = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
 
@@ -97,7 +97,7 @@ const AnimeCard = () => {
   );
 };
 
-export default AnimeCard;
+export default Information;
 
 
 

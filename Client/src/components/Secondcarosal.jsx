@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Link } from 'react-router-dom'; // ✅ Import Link
 import animeData from '../data/maindata.json';
 
-export default function AnimeCardCarousel() {
+export default function Secondcarosal() {
   const carouselRef = useRef(null);
 
   const scroll = (amount) =>

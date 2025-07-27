@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // ✅ Import Link
 import animeData from "../data/maindata.json"; // Adjust path if needed
 
-function App() {
+function Mosthome() {
     const [visibleCards, setVisibleCards] = useState(5);
 
     useEffect(() => {
@@ -61,4 +61,4 @@ function App() {
     );
 }
 
-export default App;
+export default Mosthome;

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import animeMovies from "../data/animeMovies.json"; // Adjust the path if needed
 import { Link } from "react-router-dom";
 
-const AnimeCardGroup = () => {
+const Moviep = () => {
     const [movies, setMovies] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
     const moviesPerPage = 10; // Number of movies per page
@@ -102,5 +102,5 @@ const AnimeCardGroup = () => {
     );
 };
 
-export default AnimeCardGroup;
+export default Moviep;
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-const LogoCarousel = () => {
+const Refad = () => {
   const logos = [
     {
       id: 1,
@@ -48,4 +48,4 @@ const LogoCarousel = () => {
   );
 };
 
-export default LogoCarousel;
+export default Refad;
