@@ -1,134 +1,90 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
-const LoginPage = () => {
-  const [isSignUp, setIsSignUp] = useState(false);
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:6002/login', { email, password });
+      if (response.data.success) {
+        navigate('/');
+      } else {
+        navigate('/Register');
+      }
+    } catch (error) {
+      console.error('Login error:', error);
+    }
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#1E1E1E] px-4">
+    <div className="min-h-screen bg-gray-900 flex flex-col justify-center items-center px-6">
+
+      {/* Login Form Container */}
       <div className="relative w-full max-w-md bg-[#121212] p-8 rounded-xl shadow-lg">
-        {/* Back Button */}
-        <button
-          onClick={() => navigate("/")}
-          className="absolute top-4 left-4 text-gray-400 hover:text-gray-200 transition"
-        >
-          ← Back
-        </button>
-
         {/* Header */}
-        <h2 className="text-2xl font-semibold text-center text-white">
-          {isSignUp ? "Sign Up" : "Login"}
-        </h2>
-        <p className="text-sm text-gray-400 text-center mb-6">
-          {isSignUp
-            ? "Create an account to explore amazing features."
-            : "Welcome back! Please login to continue."}
-        </p>
+        <div className="text-center mb-8">
+          <h1 className="text-3xl font-bold text-white mb-2">Login</h1>
+          <p className="text-gray-400">Welcome back! Please login to continue.</p>
+        </div>
 
-        {/* Form */}
-        <form className="space-y-4">
-          {isSignUp && (
-            <div>
-              <label
-                className="block text-sm text-gray-300 mb-1"
-                htmlFor="name"
-              >
-                Full Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#E3B505]"
-                placeholder="Enter your full name"
-              />
-            </div>
-          )}
+        {/* Login Form */}
+        <form className="space-y-4" onSubmit={handleSubmit}>
+          {/* Email Field */}
           <div>
-            <label className="block text-sm text-gray-300 mb-1" htmlFor="email">
+            <label className="block text-white text-sm font-medium mb-2">
               Email Address
             </label>
             <input
+              required
               type="email"
-              id="email"
-              className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#E3B505]"
               placeholder="Enter your email"
+              className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
+
+          {/* Password Field */}
           <div>
-            <label
-              className="block text-sm text-gray-300 mb-1"
-              htmlFor="password"
-            >
+            <label className="block text-white text-sm font-medium mb-2">
               Password
             </label>
             <input
+              required
               type="password"
-              id="password"
-              className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#E3B505]"
               placeholder="Enter your password"
+              className="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          {isSignUp && (
-            <div>
-              <label
-                className="block text-sm text-gray-300 mb-1"
-                htmlFor="confirm-password"
-              >
-                Confirm Password
-              </label>
-              <input
-                type="password"
-                id="confirm-password"
-                className="w-full px-4 py-2 rounded-lg bg-gray-700 text-white border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#E3B505]"
-                placeholder="Confirm your password"
-              />
-            </div>
-          )}
+
+          {/* Login Button */}
           <button
             type="submit"
-            className="w-full py-2 bg-[#E3B505] hover:bg-[#2E2E2E] text-white font-semibold rounded-lg transition duration-300"
+            className="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold py-3 rounded-lg transition duration-200"
           >
-            {isSignUp ? "Sign Up" : "Login"}
+            Login
           </button>
         </form>
 
-        {/* Footer */}
-        <p className="text-sm text-center text-gray-400 mt-6">
-          {isSignUp ? "Already have an account?" : "Don't have an account?"}{" "}
-          <button
-            onClick={() => setIsSignUp(!isSignUp)}
-            className="text-blue-400 hover:text-[#E3B505] font-medium"
-          >
-            {isSignUp ? "Login" : "Sign Up"}
-          </button>
-        </p>
-
-        {/* Social Login */}
-        <div className="mt-6 text-center">
-          <p className="text-sm text-gray-400">Or continue with</p>
-          <div className="flex justify-center gap-4 mt-4">
-            {/* Facebook Login */}
-            <button className="p-3 rounded-lg bg-gray-700 hover:bg-gray-600 transition">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-                alt="Facebook"
-                className="h-6 w-6"
-              />
-            </button>
-            {/* Google Login */}
-            <button className="p-3 rounded-lg bg-gray-700 hover:bg-gray-600 transition">
-              <img
-                src="https://static.dezeen.com/uploads/2025/05/sq-google-g-logo-update_dezeen_2364_col_0-852x852.jpg"
-                alt="Google Chrome"
-                className="h-6 w-6"
-              />
-            </button>
-          </div>
+        {/* Sign Up Link */}
+        <div className="text-center mt-6">
+          <span className="text-gray-400">Don't have an account? </span>
+          <Link to="/Register" className="text-blue-400 hover:text-blue-300 hover:underline">
+            Sign Up
+          </Link>
         </div>
+
+       
       </div>
     </div>
   );
 };
 
-export default LoginPage;
+export default Login;

@@ -68,30 +68,22 @@ const MovieSchema = new Schema({
     main_characters: [CharacterSchema]
 });
 
-// Schema for spotlight items
-const SpotlightSchema = new Schema({
-    spotlight: { type: String, required: true },
-    title: { type: String, required: true },
-    description: { type: String, required: true },
-    details: { type: String, required: true },
-    image: { type: String, required: true }
-});
 
-// Schema for users (for login functionality)
-const UserSchema = new Schema({
-    username: { type: String, required: true, unique: true },
-    password: { type: String, required: true },
-    email: { type: String, required: true, unique: true }
+const userSchema = new mongoose.Schema({
+    fullname: String,
+    email: String,
+    password: String,
+   conformPassword: String
 });
 
 const Media = mongoose.model('Media', MediaSchema, 'media');
 const Mov = mongoose.model('Mov', MovieSchema, 'mediaMovie');
-const Spotlight = mongoose.model('Spotlight', SpotlightSchema);
-const User = mongoose.model('User', UserSchema);
+const userModel = mongoose.model('userModel', userSchema, 'Signup');
+
+
 
 module.exports = {
     Media,
-    Spotlight,
-    User,
+    userModel,
     Mov
 };

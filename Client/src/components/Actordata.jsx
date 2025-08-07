@@ -81,19 +81,7 @@ const Actordata = ({ animeId }) => {
                   className="w-10 h-10 rounded-full"
                 />
               </div>
-              {/* <div className="flex items-center justify-end gap-3">
-                <div>
-                  <p className="text-white text-sm font-bold">
-                    {char.english_voice_actor}
-                  </p>
-                  <p className="text-gray-400 text-xs">English</p>
-                </div>
-                <img
-                  src={char.voice_actor_image}
-                  alt="EN VA"
-                  className="w-10 h-10 rounded-full"
-                />
-              </div> */}
+
             </div>
           </div>
         ))}

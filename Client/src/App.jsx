@@ -8,6 +8,7 @@ import Detailspage from './page/Detailspage'
 import Login from './page/Loginpage'
 import Mostwatch from './page/Mostwatch'
 import Animeinfo from './page/Animeinfo'
+import Registerpage from './page/Registerpage'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           <Route path='/topairing' element={<Topwatch />} />
           <Route path='/aniproflie/:id' element={<Detailspage />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/Register' element={<Registerpage />} />
           <Route path='/Mostwatch' element={<Mostwatch />} />
         </Routes>
       </BrowserRouter>
