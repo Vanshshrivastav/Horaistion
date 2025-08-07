@@ -16,7 +16,7 @@ const Navbar = () => {
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="w-5 h-5"
+                            className="w-6 h-6"
                             fill="none"
                             stroke="currentColor"
                             strokeWidth="2"
@@ -88,7 +88,7 @@ const Navbar = () => {
             <div
                 className={`fixed top-0 ${
                     menuOpen ? "left-0" : "-left-full"
-                } h-full bg-[#242424f1] w-40 md:w-[10%] shadow-lg transition-transform duration-300 z-50`}
+                } h-full bg-[#242424f1] w-40 md:w-[20%] shadow-lg transition-transform duration-300 z-50`}
             >
                 <button
                     onClick={() => setMenuOpen(false)}
@@ -96,7 +96,7 @@ const Navbar = () => {
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="w-6 h-6"
+                        className="w-7 h-7"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth="2"
@@ -107,25 +107,25 @@ const Navbar = () => {
                 </button>
                 <Link
                     to="/"
-                    className="block px-4 py-2 text-sm text-[#D3D3D3] hover:text-[#E3B505]"
+                    className="block px-4 py-2 text-lg text-[#D3D3D3] hover:text-[#E3B505]"
                 >
                     Home
                 </Link>
                 <Link
                     to="/Movie"
-                    className="block px-4 py-2 text-sm text-[#D3D3D3] hover:text-[#E3B505]"
+                    className="block px-4 py-2 text-lg text-[#D3D3D3] hover:text-[#E3B505]"
                 >
                     Movie
                 </Link>
                 <Link
                     to="/tvshow"
-                    className="block px-4 py-2 text-sm text-[#D3D3D3] hover:text-[#E3B505]"
+                    className="block px-4 py-2 text-lg text-[#D3D3D3] hover:text-[#E3B505]"
                 >
                     TV Show
                 </Link>
                 <Link
                     to="/topairing"
-                    className="block px-4 py-2 text-sm text-[#D3D3D3] hover:text-[#E3B505]"
+                    className="block px-4 py-2 text-lg text-[#D3D3D3] hover:text-[#E3B505]"
                 >
                     Top Airing
                 </Link>

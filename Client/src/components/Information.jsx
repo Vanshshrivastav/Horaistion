@@ -1,25 +1,49 @@
-import React, { useState } from "react";
-import maindata from "../data/maindata.json";
- // Adjust path based on your project structure
-
-import { useParams } from "react-router-dom";// Adjust path based on your project structure
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useParams } from "react-router-dom"; // Adjust path based on your project structure
 
 const Information = () => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [movies, setMovies] = useState([]);
+  const { id } = useParams();
 
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`http://localhost:6002/media`);
+        setMovies(response.data);
+        setError(null);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        setError("Failed to fetch anime data");
+      } finally {
+        setLoading(false);
+      }
+    };
 
-   const { id } = useParams(); // Get the recipe ID from the URL
+    fetchData();
+  }, []);
 
-    // Find the specific recipe based on the ID
-  const anime = maindata.find(item => item.id === parseInt(id));
-
-
-  // Assuming you are displaying the first anime's details for now
- 
+  // Find the specific anime based on the ID
+  const anime = movies.find((item) => item.id === parseInt(id));
 
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
+
+  if (loading) {
+    return <div className="text-white p-4 text-center">Loading...</div>;
+  }
+
+  if (error) {
+    return <div className="text-white p-4 text-center">Error: {error}</div>;
+  }
+
+  if (!anime) {
+    return <div className="text-white p-4 text-center">Anime not found.</div>;
+  }
 
   return (
     <div className="flex items-center justify-center bg-[#1E1E1E] p-4">
@@ -66,7 +90,11 @@ const Information = () => {
             <p className="leading-relaxed text-sm md:text-base">
               {isExpanded
                 ? anime.story
-                : `${anime.story ? anime.story.split(" ").slice(0, 50).join(" ") : ""}...`}
+                : `${
+                    anime.story
+                      ? anime.story.split(" ").slice(0, 50).join(" ")
+                      : ""
+                  }...`}
               <span
                 onClick={toggleExpand}
                 className="text-[#E3B505] hover:underline cursor-pointer"
@@ -74,7 +102,6 @@ const Information = () => {
                 {isExpanded ? " Show Less" : " Read More"}
               </span>
             </p>
-
           </div>
 
           {/* Buttons */}

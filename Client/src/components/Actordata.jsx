@@ -1,9 +1,38 @@
-import React from "react";
-import maindata from "../data/maindata.json"; // Adjust path if needed
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
 const Actordata = ({ animeId }) => {
-  // Find the specific anime using the ID passed from props
-  const anime = maindata.find((item) => item.id === parseInt(animeId));
+  const [movies, setMovies] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        setLoading(true);
+        const response = await axios.get(`http://localhost:6002/media`); // ✅ Using same API endpoint
+        setMovies(response.data);
+        setError(null);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+        setError("Failed to fetch anime data");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (loading) {
+    return <div className="text-white p-6">Loading...</div>;
+  }
+
+  if (error) {
+    return <div className="text-white p-6">Error: {error}</div>;
+  }
+
+  const anime = movies.find((item) => item.id === parseInt(animeId));
 
   if (!anime || !anime.characters) {
     return (

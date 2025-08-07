@@ -1,11 +1,23 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom"; // ✅ Import Link
-import animeData from "../data/maindata.json"; // Adjust path if needed
+import { Link } from "react-router-dom";
+import axios from "axios";
 
 function Mosthome() {
+    const [animeData, setAnimeData] = useState([]);
     const [visibleCards, setVisibleCards] = useState(5);
 
     useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get(`http://localhost:6002/media`);
+                setAnimeData(response.data);
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
+
+        fetchData();
+
         const handleResize = () => {
             if (window.innerWidth >= 1024) {
                 setVisibleCards(Math.min(animeData.length, 20));
@@ -17,7 +29,7 @@ function Mosthome() {
         handleResize();
         window.addEventListener("resize", handleResize);
         return () => window.removeEventListener("resize", handleResize);
-    }, []);
+    }, [animeData.length]);
 
     return (
         <div className="bg-[#1E1E1E] text-white p-3 sm:p-3  ">

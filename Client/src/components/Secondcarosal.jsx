@@ -1,9 +1,23 @@
-import React, { useRef } from 'react';
-import { Link } from 'react-router-dom'; // ✅ Import Link
-import animeData from '../data/maindata.json';
+import React, { useRef, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import axios from "axios";
 
 export default function Secondcarosal() {
   const carouselRef = useRef(null);
+  const [animeData, setAnimeData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(`http://localhost:6002/media`);
+        setAnimeData(response.data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
 
   const scroll = (amount) =>
     carouselRef.current?.scrollBy({ left: amount, behavior: 'smooth' });
