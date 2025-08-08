@@ -13,8 +13,9 @@ const Login = () => {
       const response = await axios.post('http://localhost:6002/login', { email, password });
       if (response.data.success) {
         navigate('/');
+        
       } else {
-        navigate('/Register');
+        alert("incoract Email or password")
       }
     } catch (error) {
       console.error('Login error:', error);
