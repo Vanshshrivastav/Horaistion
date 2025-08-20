@@ -12,8 +12,12 @@ const Login = () => {
     try {
       const response = await axios.post('http://localhost:6002/login', { email, password });
       if (response.data.success) {
-        navigate('/');
-        
+        if (email === "admin@gmail.com" && password === "admin123") {
+          navigate('/dashboard');
+        } else {
+          navigate('/');
+        }
+
       } else {
         alert("incoract Email or password")
       }
@@ -82,7 +86,7 @@ const Login = () => {
           </Link>
         </div>
 
-       
+
       </div>
     </div>
   );

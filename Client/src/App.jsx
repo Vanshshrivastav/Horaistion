@@ -9,6 +9,8 @@ import Login from './page/Loginpage'
 import Mostwatch from './page/Mostwatch'
 import Animeinfo from './page/Animeinfo'
 import Registerpage from './page/Registerpage'
+import Dashboard from './page/Dashboard'
+
 
 const App = () => {
   return (
@@ -25,6 +27,7 @@ const App = () => {
           <Route path='/login' element={<Login />} />
           <Route path='/Register' element={<Registerpage />} />
           <Route path='/Mostwatch' element={<Mostwatch />} />
+          <Route path='/dashboard' element={<Dashboard />} />
         </Routes>
       </BrowserRouter>
     </>

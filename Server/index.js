@@ -10,18 +10,32 @@ app.use(express.json())
 mongoose.connect('mongodb://localhost:27018/maindata')
 
 app.get('/media', async (req, res) => {
-    const med = await Media.find()
-    res.json(med)
-        .then(users => res.json(users))
-        .catch(err => res.json(err))
-})
+    try {
+        const media = await Media.find();
+        const movies = await Mov.find();
+        res.json([...media, ...movies]);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 
 app.get('/movie', async (req, res) => {
-    const mov = await Mov.find()
-    res.json(mov)
-        .then(users => res.json(users))
-        .catch(err => res.json(err))
-})
+    try {
+        const mov = await Mov.find();
+        res.json(mov);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
+
+app.get('/Signup', async (req, res) => {
+    try {
+        const users = await userModel.find();
+        res.json(users);
+    } catch (err) {
+        res.status(500).json(err);
+    }
+});
 
 app.post('/Signup', async (req, res) => {
     const { fullname, email, password, conformPassword } = req.body;
@@ -40,6 +54,23 @@ app.post('/login', async (req, res) => {
         }
     } catch (error) {
         res.status(500).json({ success: false, message: 'Server error' });
+    }
+});
+
+app.delete('/media/:id', async (req, res) => {
+    const { id } = req.params;
+    try {
+        let deleted = await Media.findByIdAndDelete(id);
+        if (!deleted) {
+            deleted = await Mov.findByIdAndDelete(id);
+        }
+        if (deleted) {
+            res.json({ success: true, message: 'Media deleted successfully' });
+        } else {
+            res.status(404).json({ success: false, message: 'Media not found' });
+        }
+    } catch (err) {
+        res.status(500).json({ success: false, message: 'Server error', error: err });
     }
 });
 
