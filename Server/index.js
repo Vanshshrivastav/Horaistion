@@ -74,6 +74,55 @@ app.delete('/media/:id', async (req, res) => {
     }
 });
 
+app.post('/addMedia', async (req, res) => {
+    try {
+        const { title, description, mediaType, genre, releaseYear, imageUrl, videoUrl, characters } = req.body;
+
+        // Find the highest ID to generate a new one
+        const lastMedia = await Media.findOne().sort({ id: -1 });
+        const lastMov = await Mov.findOne().sort({ id: -1 });
+        const lastId = Math.max(lastMedia ? lastMedia.id : 0, lastMov ? lastMov.id : 0);
+        const newId = lastId + 1;
+
+        const genres = genre.split(',').map(g => g.trim());
+
+        let newMedia;
+        const mediaData = {
+            id: newId,
+            name: title,
+            story: description,
+            synopsis: description,
+            genres: genres,
+            aired: releaseYear.toString(),
+            image: imageUrl,
+            animeTrailer: [{ title: 'Trailer', url: videoUrl }],
+            characters: characters, // Add characters to mediaData
+            main_characters: characters, // Also add to main_characters if needed
+            status: 'Finished Airing', // Example default
+            rating: 'N/A', // Example default
+        };
+
+        if (mediaType === 'movie') {
+            mediaData.type = 'Movie';
+            newMedia = new Mov(mediaData);
+        } else if (mediaType === 'tv show') {
+            mediaData.type = 'TV Series';
+            newMedia = new Media(mediaData);
+        } else if (mediaType === 'anime') {
+            mediaData.type = 'TV Series';
+            newMedia = new Media(mediaData);
+        } else {
+            return res.status(400).json({ message: 'Invalid media type' });
+        }
+
+        await newMedia.save();
+        res.status(201).json(newMedia);
+    } catch (error) {
+        console.error('Error adding media:', error);
+        res.status(500).json({ message: 'Failed to add media', error: error.message });
+    }
+});
+
 app.listen(6002, () => {
 
     console.log("server start!")

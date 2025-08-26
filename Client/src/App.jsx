@@ -10,7 +10,7 @@ import Mostwatch from './page/Mostwatch'
 import Animeinfo from './page/Animeinfo'
 import Registerpage from './page/Registerpage'
 import Dashboard from './page/Dashboard'
-
+import Addmedia from './page/AddMedia'
 
 const App = () => {
   return (
@@ -28,6 +28,7 @@ const App = () => {
           <Route path='/Register' element={<Registerpage />} />
           <Route path='/Mostwatch' element={<Mostwatch />} />
           <Route path='/dashboard' element={<Dashboard />} />
+          <Route path='/Addmedia' element={<Addmedia />} />
         </Routes>
       </BrowserRouter>
     </>
