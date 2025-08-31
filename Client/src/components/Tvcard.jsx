@@ -11,12 +11,17 @@ const Tvcard = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-       
+            try {
                 setLoading(true);
                 const response = await axios.get(`http://localhost:6002/media`); // ✅ Using same API endpoint
                 setMovies(response.data);
                 setError(null);
-         
+            } catch (error) {
+                console.error("Error fetching data:", error);
+                setError("Failed to fetch anime data");
+            } finally {
+                setLoading(false);
+            }
         };
 
         fetchData();

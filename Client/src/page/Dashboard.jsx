@@ -98,7 +98,7 @@ const Dashboard = () => {
                 </tr>
               </thead>
               <tbody>
-                {media.slice(0, 40).map(item => ( // Limiting to 10 for display
+                {media.slice(0, 10).map(item => ( // Limiting to 10 for display
                   <tr key={item._id} className="border-b border-gray-800 hover:bg-gray-800">
                     <td className="p-3 flex items-center">
                       <img src={item.image} alt={item.name} className="w-10 h-14 object-cover rounded-md mr-4"/>

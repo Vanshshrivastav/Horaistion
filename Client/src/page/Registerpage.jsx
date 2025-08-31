@@ -36,7 +36,7 @@ const Signup = () => {
             <div className="relative w-full max-w-md bg-[#121212] p-8 rounded-xl shadow-lg">
                 {/* Back Button */}
                 <div className="mb-8">
-                    <Link to="/" className="text-gray-400 hover:text-white flex items-center">
+                    <Link to="/login" className="text-gray-400 hover:text-white flex items-center">
                         ← Back
                     </Link>
                 </div>

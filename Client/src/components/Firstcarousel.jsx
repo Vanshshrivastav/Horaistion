@@ -23,12 +23,11 @@ const Firstcarousel = () => {
 
         fetchData();
 
-        console.log("Slides data:", slidesData); // Debug log
         const handleResize = () => setIsMobileView(window.innerWidth <= 768);
         window.addEventListener("resize", handleResize);
 
         return () => window.removeEventListener("resize", handleResize);
-    }, [slidesData]);
+    }, []);
 
     const handleNavigation = (direction) => {
         setCurrentIndex((prev) => {

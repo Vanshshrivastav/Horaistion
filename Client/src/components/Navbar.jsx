@@ -1,9 +1,21 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [searchOpen, setSearchOpen] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        setIsLoggedIn(!!localStorage.getItem('isLoggedIn'));
+    }, []);
+
+    const handleLogout = () => {
+        localStorage.removeItem('isLoggedIn');
+        setIsLoggedIn(false);
+        navigate('/login');
+    };
 
     return (
         <header className="bg-[#121212] text-gray-600 relative z-10">
@@ -25,7 +37,7 @@ const Navbar = () => {
                             <path d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>
                     </button>
-                    <Link to="/" className="text-[#D3D3D3] text-lg">
+                    <Link to="/home" className="text-[#D3D3D3] text-lg">
                         Horaistion
                     </Link>
                 </div>
@@ -50,12 +62,21 @@ const Navbar = () => {
                             />
                         </svg>
                     </button>
-                    <Link
-                        to="/login"
-                        className="ml-4 bg-[#E3B505] text-[#121212] text-sm py-2 px-4 rounded-md shadow "
-                    >
-                        Login
-                    </Link>
+                    {isLoggedIn ? (
+                        <button
+                            onClick={handleLogout}
+                            className="ml-4 bg-[#E3B505] text-[#121212] text-sm py-2 px-4 rounded-md shadow "
+                        >
+                            Logout
+                        </button>
+                    ) : (
+                        <Link
+                            to="/login"
+                            className="ml-4 bg-[#E3B505] text-[#121212] text-sm py-2 px-4 rounded-md shadow "
+                        >
+                            Login
+                        </Link>
+                    )}
                 </div>
 
                 {/* Mobile Search and Login Button */}
@@ -75,12 +96,21 @@ const Navbar = () => {
                             <path d="M10.5 3.75a6.75 6.75 0 1 0 0 13.5 6.75 6.75 0 0 0 0-13.5ZM2.25 10.5a8.25 8.25 0 1 1 14.59 5.28l4.69 4.69a.75.75 0 1 1-1.06 1.06l-4.69-4.69A8.25 8.25 0 0 1 2.25 10.5Z" />
                         </svg>
                     </button>
-                    <Link
-                        to="/Login"
-                        className="bg-[#E3B505] text-black text-sm py-2 px-1.5 rounded-md shadow hover:bg-[#C99E04]"
-                    >
-                        Login
-                    </Link>
+                    {isLoggedIn ? (
+                        <button
+                            onClick={handleLogout}
+                            className="bg-[#E3B505] text-black text-sm py-2 px-1.5 rounded-md shadow hover:bg-[#C99E04]"
+                        >
+                            Logout
+                        </button>
+                    ) : (
+                        <Link
+                            to="/Login"
+                            className="bg-[#E3B505] text-black text-sm py-2 px-1.5 rounded-md shadow hover:bg-[#C99E04]"
+                        >
+                            Login
+                        </Link>
+                    )}
                 </div>
             </div>
 
@@ -106,7 +136,7 @@ const Navbar = () => {
                     </svg>
                 </button>
                 <Link
-                    to="/"
+                    to="/home"
                     className="block px-4 py-2 text-lg text-[#D3D3D3] hover:text-[#E3B505]"
                 >
                     Home
@@ -129,6 +159,14 @@ const Navbar = () => {
                 >
                     Top Airing
                 </Link>
+            
+                <Link
+                    to="/contact"
+                    className="block px-4 py-2 text-lg text-[#D3D3D3] hover:text-[#E3B505]"
+                >
+                    Contact
+                </Link>
+                
             </div>
 
             {/* Mobile Search Bar */}

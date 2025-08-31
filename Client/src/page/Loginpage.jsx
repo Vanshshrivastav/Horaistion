@@ -1,16 +1,22 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import Login from '../components/Login'
+import React, { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import Login from '../components/Login';
 
-const Movie = () => {
+const LoginPage = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    if (isLoggedIn) {
+      navigate('/home');
+    }
+  }, [navigate]);
+
   return (
     <>
-      
       <Login />
-     
     </>
-  )
-}
+  );
+};
 
-export default Movie
+export default LoginPage;

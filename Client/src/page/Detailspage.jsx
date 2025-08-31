@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import Actordata from '../components/Actordata'
 import Trailer from '../components/Trailer'
 import Footer from '../components/Footer'
-import Refad from '../components/Refad'
+
 
 const Aniproflie = () => {
     const { id } = useParams(); // ⬅️ get id from URL
@@ -15,7 +15,6 @@ const Aniproflie = () => {
             <Navbar />
             <Information animeId={id} /> {/* ⬅️ pass id as prop */}
             <Actordata animeId={id} />
-            <Refad />
             <Trailer animeId={id} />
             <Footer />
         </div>
