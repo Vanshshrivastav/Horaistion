@@ -22,7 +22,7 @@ const App = () => {
           <Route path='/login' element={<LoginPage />} />
           <Route path='/Register' element={<Registerpage />} />
           <Route element={<ProtectedRoute />}>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/movie" element={<Moviepage />} />
             <Route path="/animovie/:id" element={<Animeinfo />} />
             <Route path='/tvshow' element={<Tvshow />} />
@@ -33,7 +33,6 @@ const App = () => {
             <Route path='/Addmedia' element={<Addmedia />} />
             <Route path='/contact' element={<Contact />} />
           </Route>
-          <Route path='/' element={<LoginPage />} />
         </Routes>
       </BrowserRouter>
     </>
