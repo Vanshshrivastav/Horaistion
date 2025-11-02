@@ -14,6 +14,7 @@ const Navbar = () => {
     const handleLogout = () => {
         localStorage.removeItem('isLoggedIn');
         setIsLoggedIn(false);
+        alert('Logout Successful!');
         navigate('/login');
     };
 
@@ -37,7 +38,7 @@ const Navbar = () => {
                             <path d="M4 6h16M4 12h16m-7 6h7" />
                         </svg>
                     </button>
-                    <Link to="/home" className="text-[#D3D3D3] text-lg">
+                    <Link to="/" className="text-[#D3D3D3] text-lg">
                         Horaistion
                     </Link>
                 </div>
@@ -136,7 +137,7 @@ const Navbar = () => {
                     </svg>
                 </button>
                 <Link
-                    to="/home"
+                    to="/"
                     className="block px-4 py-2 text-lg text-[#D3D3D3] hover:text-[#E3B505]"
                 >
                     Home

@@ -13,6 +13,7 @@ const Login = () => {
       const response = await axios.post('http://localhost:6002/login', { email, password });
       if (response.data.success) {
         localStorage.setItem('isLoggedIn', 'true');
+        alert('Login Successful!');
         if (email === "admin@gmail.com" && password === "admin123") {
           navigate('/dashboard');
         } else {

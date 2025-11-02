@@ -9,6 +9,7 @@ const Dashboard = () => {
   const [Signup, setSignup] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [visibleRecords, setVisibleRecords] = useState(10);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,6 +41,10 @@ const Dashboard = () => {
       console.error("Error deleting media:", error);
       alert("Failed to delete item.");
     }
+  };
+
+  const handleReadMore = () => {
+    setVisibleRecords(media.length);
   };
 
   if (loading) {
@@ -98,7 +103,7 @@ const Dashboard = () => {
                 </tr>
               </thead>
               <tbody>
-                {media.slice(0, 10).map(item => ( // Limiting to 10 for display
+                {media.slice(0, visibleRecords).map(item => ( 
                   <tr key={item._id} className="border-b border-gray-800 hover:bg-gray-800">
                     <td className="p-3 flex items-center">
                       <img src={item.image} alt={item.name} className="w-10 h-14 object-cover rounded-md mr-4"/>
@@ -119,6 +124,16 @@ const Dashboard = () => {
                 ))}
               </tbody>
             </table>
+            {media.length > 10 && visibleRecords < media.length && (
+              <div className="text-center mt-4">
+                <button
+                  onClick={handleReadMore}
+                  className="bg-yellow-500 text-black px-4 py-2 rounded-lg font-semibold hover:bg-yellow-400 transition"
+                >
+                  Read More
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>
