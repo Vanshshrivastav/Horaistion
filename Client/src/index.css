@@ -1,1 +1,85 @@
 @import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #F47521;
+  --color-brand-orange-dark: #C85E0F;
+  --color-brand-orange-light: #FF9A4D;
+
+  --color-dark-900: #0A0A0F;
+  --color-dark-800: #12121A;
+  --color-dark-700: #1A1A28;
+  --color-dark-600: #252535;
+  --color-dark-500: #3A3A55;
+
+  --color-text-primary: #F0F0F5;
+  --color-text-secondary: #A0A0B8;
+  --color-text-muted: #606078;
+
+  --font-sans: "Inter", "sans-serif";
+  --font-heading: "Plus Jakarta Sans", "sans-serif";
+
+  --aspect-poster: 2 / 3;
+}
+
+:root {
+  --primary: #F47521;
+  /* Crunchyroll Orange */
+  --bg-dark: #121212;
+  --bg-card: #23252B;
+  --text-main: #FFFFFF;
+  --text-dim: #A0A0A0;
+  --accent: #E3B505;
+}
+
+.container {
+  max-width: 1600px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* Glassmorphism Classes */
+.glass {
+  background: rgba(35, 37, 43, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Hover Animations */
+.hover-scale {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.card-overlay {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+}

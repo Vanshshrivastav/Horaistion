@@ -1,0 +1,229 @@
+# Horaistion - Project Technical Documentation
+
+==================================================
+1. PROJECT OVERVIEW
+==================================================
+- **What the project is about**: Horaistion is a full-stack web application for exploring and managing media content, including Anime, Movies, and TV Shows.
+- **The purpose of the application**: To provide a platform where users can browse various media, view detailed information (like synopsis, cast, and trailers), and allow administrators to manage the media catalog.
+- **The main problem it solves**: Aggregating entertainment info into a single user-friendly interface with trailers and character details.
+- **Target users**: Anime, Movie, and TV Show enthusiasts looking for information and trailers, as well as site administrators managing the content database.
+
+==================================================
+2. TECHNOLOGY STACK
+==================================================
+- **Frontend**: 
+  - React.js 19 (built with Vite)
+  - React Router DOM (for routing)
+  - Tailwind CSS & Material Tailwind (for styling and UI components)
+  - Axios (for HTTP requests)
+- **Backend**: 
+  - Node.js
+  - Express.js (for routing and server setup)
+  - Cors (for cross-origin requests)
+- **Database**: 
+  - MongoDB
+  - Mongoose (as the Object Data Modeling library)
+
+==================================================
+3. PROJECT FOLDER STRUCTURE
+==================================================
+/Horaistion
+│
+├── /Client (Frontend - React Application)
+│   ├── /public           # Static assets
+│   ├── /src
+│   │   ├── /assets       # Images, icons, and other media
+│   │   ├── /components   # Reusable UI parts (Navbar, Footer, Cards, Carousels)
+│   │   ├── /page         # Main application screens (Home, Dashboard, Login)
+│   │   ├── App.jsx       # Main React component containing all routing logic
+│   │   ├── main.jsx      # React entry point rendering the App
+│   │   └── index.css     # Global Tailwind CSS imports
+│   ├── package.json      # Frontend dependencies and scripts
+│   └── vite.config.js    # Vite build configuration
+│
+└── /Server (Backend - Node.js Application)
+    ├── /Model
+    │   └── schema.js     # Mongoose database models (Media, Mov, userModel)
+    ├── index.js          # Express server setup and API endpoint definitions
+    └── package.json      # Backend dependencies and scripts
+
+==================================================
+4. APPLICATION ARCHITECTURE
+==================================================
+- **Communication**: The frontend communicates with the backend via RESTful APIs using the Axios library. The backend operates on `http://localhost:6002`.
+- **State Management**: The application relies purely on functional React components utilizing built-in Hooks (`useState`, `useEffect`) for managing local component state. No global state manager (like Redux) is used.
+- **Authentication Flow**: 
+  - User submits credentials to `/login`.
+  - Backend verifies plaintext credentials against the Database.
+  - If successful, the frontend sets an `isLoggedIn` flag in the browser's `localStorage`.
+  - An admin check is performed on the frontend; if the user is `admin@gmail.com`, they are redirected to the Dashboard.
+  - Protected routes check the `localStorage` flag before rendering.
+
+==================================================
+5. PAGES AND SCREENS
+==================================================
+- **Login Page** (`/login`)
+  - Purpose: User authentication.
+  - Components: `Login.jsx`.
+  - Data: Sends POST request to `/login`.
+
+- **Register Page** (`/Register`)
+  - Purpose: New user account creation.
+  - Components: Registration forms.
+  - Data: Sends POST request to `/Signup`.
+
+- **Home Page** (`/`)
+  - Purpose: Main landing page displaying featured content.
+  - Components: `Navbar`, `Firstcarousel`, `Secondcarosal`, `Mosthome`, `Footer`.
+  - Data: Static UI/mixed data.
+
+- **Dashboard** (`/dashboard`)
+  - Purpose: Admin panel for managing content and viewing statistics.
+  - Components: Stats cards, Media Management Table.
+  - Data: Fetches `/media` and `/Signup`. Sends DELETE to `/media/:id`.
+
+- **Add Media Page** (`/Addmedia`)
+  - Purpose: Admin form to add new movies or TV shows to the database.
+  - Components: `AddMedia.jsx`.
+  - Data: Sends POST to `/addMedia` with form payload.
+
+- **Anime/Movie Info Pages** (`/animovie/:id`, `/aniproflie/:id`)
+  - Purpose: Displays in-depth information about a specific media item (Characters, Synopsis, Trailers).
+  - Components: Image poster, Video iframes, Character lists.
+  - Data: Fetches all movies/media and filters by the URL parameter `id`.
+
+- **Other Listing Pages** (`/movie`, `/tvshow`, `/topairing`, `/Mostwatch`)
+  - Purpose: Specific directory views separated by category.
+
+==================================================
+6. CORE FEATURES
+==================================================
+- **User Authentication**: Standard sign-up and login capability allowing access to protected application routes.
+- **Admin Dashboard**: Contains high-level statistics (total media, total users) and a data table for managing the active media catalog.
+- **CRUD Operations**: Admins can add new media via the Add Media form and delete existing media directly from the dashboard.
+- **Media Catalog Browsing**: Categorized viewing of Anime, Movies, and TV shows using dynamic routing.
+- **Embedded Trailers**: Media detail pages dynamically render YouTube iframes for trailers using database-provided URLs.
+- **Responsive UI**: Tailored layouts built with Tailwind CSS to ensure a mobile-friendly experience.
+
+==================================================
+7. API ENDPOINTS (Backend)
+==================================================
+Base URL: `http://localhost:6002`
+
+- **GET `/media`**
+  - Purpose: Retrieves all media items and movies.
+  - Response: Array of combined Media and Movie JSON objects.
+
+- **GET `/movie`**
+  - Purpose: Retrieves all objects from the movies collection.
+  - Response: Array of Movie JSON objects.
+
+- **GET `/Signup`**
+  - Purpose: Retrieves all registered users (for admin stats).
+  - Response: Array of User JSON objects.
+
+- **POST `/Signup`**
+  - Purpose: Creates a new user account.
+  - Body: `{ fullname, email, password, conformPassword }`
+  - Response: 201 Created with the new user object.
+
+- **POST `/login`**
+  - Purpose: Authenticates a user.
+  - Body: `{ email, password }`
+  - Response: JSON `{ success: true/false, message: "..." }`
+
+- **DELETE `/media/:id`**
+  - Purpose: Deletes a specific media or movie record by object ID.
+  - Response: JSON success or error message.
+
+- **POST `/addMedia`**
+  - Purpose: Inserts a new record into the database, dynamically selecting the correct collection based on media type.
+  - Body: `{ title, description, mediaType, genre, releaseYear, imageUrl, videoUrl }`
+  - Response: 201 Created with the inserted media object.
+
+==================================================
+8. DATABASE STRUCTURE
+==================================================
+MongoDB Database: `maindata`
+
+**Collection 1: `media` (TV Series / Anime)**
+- Fields:
+  - `id` (Number, Unique)
+  - `type` (String, e.g., "TV Series")
+  - `name` (String)
+  - `image` (String URL)
+  - `genres` (Array of Strings)
+  - `aired` (String Year)
+  - `story` / `synopsis` (String)
+  - `animeTrailer` (Array of Objects containing `title` and `url`)
+  - `characters` (Array of sub-schemas containing voice actor info and images)
+  - `status`, `rating`, `duration` (Strings)
+
+**Collection 2: `mediaMovie` (Movies)**
+- Fields: Same exact schema structure as the `media` collection, but restricted strictly to items typed as "Movie".
+
+**Collection 3: `Signup` (Users)**
+- Fields:
+  - `fullname` (String)
+  - `email` (String)
+  - `password` (String)
+  - `conformPassword` (String)
+
+==================================================
+9. IMPORTANT COMPONENTS / MODULES
+==================================================
+- **`ProtectedRoute.jsx`**: Acts as a wrapper around the application's protected routes. It intercepts navigation, checking the browser's localStorage for the `isLoggedIn` key. If absent, it redirects the user back to `/login`.
+- **`Navbar.jsx` & `Footer.jsx`**: Global layout components present across almost all screens, providing primary navigation links and branding.
+- **Carousels (`Firstcarousel`, `Secondcarosal`)**: Essential for the Home page to visually promote featured content in modern sliding views.
+
+==================================================
+10. DATA FLOW
+==================================================
+1. **Frontend Request**: A user interaction (like opening the Dashboard) triggers a React `useEffect` hook.
+2. **API Call**: Axios sends an HTTP GET/POST/DELETE request to the Node.js Express server (`localhost:6002`).
+3. **Backend Processing**: Express route catches the request and invokes a Mongoose method (e.g., `Media.find()`, `Mov.findByIdAndDelete()`).
+4. **Database Query**: Mongoose interacts with the local MongoDB instance on port `27018`.
+5. **Response**: MongoDB returns data to Express, which formats it as JSON and sends an HTTP response back to the client.
+6. **UI Update**: Axios receives the Promise resolution, React calls its `SetState` functions, and the UI re-renders with the fetched data.
+
+==================================================
+11. AUTHENTICATION & SECURITY
+==================================================
+- **Implementation**: Login uses a simplistic lookup matching the provided email and standard text password.
+- **Session Management**: Session persistence relies entirely on a flag (`isLoggedIn: 'true'`) stored in the browser's `localStorage`.
+- **Admin Access**: Admin privileges are granted by a hardcoded conditional check on the frontend (`email === "admin@gmail.com"`).
+- **Security Posture**: Currently lacks cryptographic measures. Passwords are saved in plain text, and API routes on the backend lack middleware to verify authentication tokens (JWTs), making endpoints vulnerable to unauthenticated REST client calls.
+
+==================================================
+12. INSTALLATION & SETUP
+==================================================
+**Prerequisites**: Node.js installed, MongoDB running locally on port `27018`.
+
+**1. Start the Backend:**
+- Navigate to the server folder: `cd c:\Users\User\Desktop\Horaistion\Server`
+- Install dependencies: `npm install`
+- Start the server: `npm start` (or `node index.js`)
+- The backend should now run on `http://localhost:6002`.
+
+**2. Start the Frontend:**
+- Navigate to the backend folder: `cd c:\Users\User\Desktop\Horaistion\Client`
+- Install dependencies: `npm install`
+- Start the React dev server: `npm run dev`
+- Open the provided localhost link in your browser.
+
+==================================================
+13. KNOWN LIMITATIONS OR POSSIBLE IMPROVEMENTS
+==================================================
+- **Security Vulnerabilities**:
+  - Implement JSON Web Tokens (JWT) for secure, stateless API authentication.
+  - Implement `bcrypt` on the backend to hash user passwords before storing them in MongoDB.
+  - Move hardcoded variables (like DB connections and API Base URLs) into `.env` files.
+- **Performance / Architecture**:
+  - The frontend fetches ALL records and then filters them on the client side for Detail Views (`/animovie/:id`). This should be optimized by fetching single items by ID via a new backend endpoint (e.g., `GET /media/:id`).
+  - Introduce global state management (like Redux or Context API) or caching tools (like React Query) to reduce redundant API calls on page navigation.
+  - Admin validation should be governed by the backend (e.g., a `role: 'admin'` field on the user model), rather than verified directly inside the React Client layer.
+
+==================================================
+14. SUMMARY
+==================================================
+Horaistion is a MERN stack media catalog application featuring an intuitive public-facing UI for browsing movies and shows, complete with embedded character data and trailers. Behind a basic authentication layer, it also includes a functional administrative dashboard allowing direct CRUD operations on the MongoDB collections, enabling comprehensive control over the content catalog without needing direct database access.

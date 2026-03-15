@@ -11,7 +11,7 @@ const Actordata = ({ animeId }) => {
       try {
         setLoading(true);
         const response = await axios.get(`http://localhost:6002/media`); // ✅ Using same API endpoint
-        setMovies(response.data);
+        setMovies(response.data || []);
         setError(null);
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -43,45 +43,24 @@ const Actordata = ({ animeId }) => {
   }
 
   return (
-    <div className="bg-[#1E1E1E] p-8">
-      <h2 className="text-white text-2xl font-bold mb-6">
-        {anime.name} – Characters & Voice Actors
+    <div className="container mx-auto px-4 py-12 border-t border-white/5">
+      <h2 className="text-xl font-black text-white uppercase italic tracking-tighter mb-8 flex items-center gap-4">
+        <div className="w-1 h-6 bg-[#F47521]" />
+        Characters & Cast
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {anime.characters.map((char, index) => (
-          <div
-            key={index}
-            className="flex items-center justify-between p-4 bg-[#121212] rounded-xl shadow-lg gap-3"
-          >
-            {/* Character Info */}
-            <div className="flex items-center">
-              <img
-                src={char.character_image}
-                alt={char.name}
-                className="w-16 h-12 rounded-full mr-3"
-              />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {anime?.characters?.map((char, index) => (
+          <div key={index} className="flex items-center justify-between p-4 bg-[#23252B] rounded-xl border border-white/5 hover:border-white/10 transition-colors">
+            <div className="flex items-center gap-4">
+              <img src={char.character_image} alt={char.name} className="w-16 h-16 rounded-lg object-cover shadow-lg" />
               <div>
-                <p className="text-white font-bold">{char.name}</p>
-                <p className="text-gray-400 text-sm">Main</p>
+                <p className="text-white font-bold text-sm tracking-tight">{char.name}</p>
+                <p className="text-gray-500 text-[10px] uppercase font-black tracking-widest">Main Character</p>
               </div>
             </div>
-
-            {/* Voice Actors */}
-            <div className="flex flex-col text-right gap-1">
-              <div className="flex items-center justify-end gap-3">
-                <div>
-                  <p className="text-white text-sm font-bold">
-                    {char.japanese_voice_actor}
-                  </p>
-                  <p className="text-gray-400 text-xs">Japanese</p>
-                </div>
-                <img
-                  src={char.voice_actor_image}
-                  alt="JP VA"
-                  className="w-10 h-10 rounded-full"
-                />
-              </div>
-
+            <div className="text-right">
+              <p className="text-[#F47521] font-bold text-xs tracking-tight">{char.japanese_voice_actor}</p>
+              <p className="text-gray-500 text-[10px] uppercase font-black tracking-widest">Japanese VA</p>
             </div>
           </div>
         ))}

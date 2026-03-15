@@ -1,9 +1,11 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { useToast } from '../context/ToastContext';
 
 const Signup = () => {
     const navigate = useNavigate();
+    const { showToast } = useToast();
     const [formData, setFormData] = useState({
         fullname: '',
         email: '',
@@ -22,12 +24,13 @@ const Signup = () => {
         e.preventDefault();
         try {
             const res = await axios.post('http://localhost:6002/Signup', formData);
-            console.log('Form Submitted:', res.data);
-            if (res.status === 201) {
+            if (res.data.success) {
+                showToast("Account created! Please login.", "success");
                 navigate('/login');
             }
         } catch (error) {
             console.error("Signup failed:", error);
+            showToast(error.response?.data?.message || "Registration failed", "error");
         }
     };
 

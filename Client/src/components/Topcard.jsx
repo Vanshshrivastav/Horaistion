@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import axios from "axios"; // ✅ Added axios import
+import axios from "axios";
+import MediaCard from './MediaCard';
 
 const Topcards = () => {
     const [movies, setMovies] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [loading, setLoading] = useState(true); // ✅ Added loading state
-    const [error, setError] = useState(null); // ✅ Added error state
-    const moviesPerPage = 15;
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
+    const moviesPerPage = 12;
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 setLoading(true);
-                const response = await axios.get(`http://localhost:6002/media`); // ✅ Using same API endpoint
-                setMovies(response.data);
+                const response = await axios.get(`http://localhost:6002/media`);
+                // Randomize for fresh start
+                const randomizedData = [...response.data].sort(() => Math.random() - 0.5);
+                setMovies(randomizedData);
                 setError(null);
             } catch (error) {
                 console.error("Error fetching data:", error);
@@ -39,67 +41,30 @@ const Topcards = () => {
         }
     };
 
- 
-
     return (
-        <div className="bg-[#1E1E1E] min-h-screen">
-            <div className="container mx-auto p-[1.0rem]">
-                <h1 className="text-3xl font-bold mb-6 text-[#E0E0E0]">Top Airing</h1>
+        <div className="bg-[#121212] min-h-screen pt-32">
+            <div className="container mx-auto px-4">
+                <h1 className="text-4xl font-black text-white uppercase italic tracking-tighter mb-12 flex items-center gap-4">
+                    <div className="w-1.5 h-10 bg-[#F47521]" />
+                    Top Airing
+                </h1>
 
-                <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6">
                     {currentMovies.map((item) => (
-                       <Link to={`/aniproflie/${item.id}`} key={item.id}>
-                            <div className="overflow-hidden shadow-md bg-[#2E2E2E] cursor-pointer hover:shadow-lg transition">
-                                <div className="relative">
-                                    <img
-                                        src={item.image}
-                                        alt={item.name || "Anime"}
-                                        loading="lazy"
-                                        className="h-60 w-full object-cover md:h-90"
-                                    />
-                                    <div className="absolute bottom-2 left-2 flex gap-0.5">
-                                        <span className="text-[12px] font-bold text-[#E3B505] bg-[#2E2E2E] px-2 py-1 rounded-l-lg">
-                                            {item.total_episodes || "?"}
-                                        </span>
-                                        <span className="text-[12px] font-bold text-[#121212] bg-[#E3B505] px-2 py-1 rounded-r-lg">
-                                            {item.aired_episodes || "?"}
-                                        </span>
-                                    </div>
-                                </div>
-                                <div className="pt-2 bg-[#1E1E1E] flex flex-col items-start justify-between">
-                                    <div className="flex md:w-69 justify-between w-full px-2">
-                                        <div>
-                                            <h2 className="text-sm font-medium text-[#E0E0E0] hover:text-[#E3B505] truncate">
-                                                {item.name || "No Title"}
-                                            </h2>
-                                            <div className="flex gap-1 mt-1">
-                                                <p className="text-xs text-[#E0E0E0]">{item.type || "?"}</p>
-                                                <p className="text-xs text-[#E0E0E0]">{item.duration || "?"}</p>
-                                            </div>
-                                        </div>
-                                        <div className="mt-2 hidden md:block">
-                                            <span className="text-[12px] font-bold text-[#121212] bg-[#E3B505] px-2 py-1 rounded-md">
-                                                {item.rating || "NR"}
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
+                        <MediaCard key={item.id} item={item} />
                     ))}
                 </div>
 
                 {/* ✅ Only show pagination if there are movies */}
                 {movies.length > 0 && (
-                    <div className="flex justify-center items-center mt-6 gap-2 flex-wrap">
+                    <div className="flex justify-center items-center mt-12 gap-2 flex-wrap pb-12">
                         <button
                             onClick={() => handlePageChange(currentPage - 1)}
-                            className="px-3 py-1 bg-[#121212] text-[#E3B505] rounded-md disabled:opacity-50"
+                            className="w-10 h-10 flex items-center justify-center bg-[#23252B] text-white hover:bg-[#F47521] rounded font-black transition-all disabled:opacity-20 disabled:hover:bg-[#23252B]"
                             disabled={currentPage === 1}
                         >
                             &lt;
                         </button>
-
                         {Array.from({ length: totalPages }, (_, index) => index + 1)
                             .filter(page => Math.abs(page - currentPage) <= 2 || page === 1 || page === totalPages)
                             .map((pageNumber, idx, array) => {
@@ -107,12 +72,12 @@ const Topcards = () => {
                                 const isGap = prev && pageNumber - prev > 1;
                                 return (
                                     <React.Fragment key={pageNumber}>
-                                        {isGap && <span className="text-[#E0E0E0]">...</span>}
+                                        {isGap && <span className="text-gray-600 font-black">...</span>}
                                         <button
                                             onClick={() => handlePageChange(pageNumber)}
-                                            className={`px-3 py-1 rounded-md ${currentPage === pageNumber
-                                                ? "bg-[#E3B505] text-black"
-                                                : "bg-[#1E1E1E] text-white"
+                                            className={`w-10 h-10 flex items-center justify-center rounded font-black transition-all ${currentPage === pageNumber
+                                                ? "bg-[#F47521] text-black"
+                                                : "bg-[#23252B] text-white hover:bg-white hover:text-black"
                                                 }`}
                                         >
                                             {pageNumber}
@@ -120,10 +85,9 @@ const Topcards = () => {
                                     </React.Fragment>
                                 );
                             })}
-
                         <button
                             onClick={() => handlePageChange(currentPage + 1)}
-                            className="px-3 py-1 bg-[#121212] text-[#E3B505] rounded-md disabled:opacity-50"
+                            className="w-10 h-10 flex items-center justify-center bg-[#23252B] text-white hover:bg-[#F47521] rounded font-black transition-all disabled:opacity-20 disabled:hover:bg-[#23252B]"
                             disabled={currentPage === totalPages}
                         >
                             &gt;

@@ -1,10 +1,17 @@
 import React from 'react';
 import { Navigate, Outlet } from 'react-router-dom';
 
-const ProtectedRoute = () => {
-  const isLoggedIn = localStorage.getItem('isLoggedIn');
+const ProtectedRoute = ({ adminOnly = false }) => {
+  const token = localStorage.getItem('token');
+  const role = localStorage.getItem('role');
 
-  return isLoggedIn ? <Outlet /> : <Navigate to="/login" />;
+  if (!token) return <Navigate to="/login" />;
+  
+  if (adminOnly && role !== 'admin') {
+    return <Navigate to="/" />;
+  }
+
+  return <Outlet />;
 };
 
 export default ProtectedRoute;

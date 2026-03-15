@@ -6,9 +6,9 @@ const LoginPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
-    if (isLoggedIn) {
-      navigate('/home');
+    const token = localStorage.getItem('token');
+    if (token) {
+      navigate('/');
     }
   }, [navigate]);
 

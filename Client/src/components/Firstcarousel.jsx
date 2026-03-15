@@ -56,7 +56,7 @@ const Firstcarousel = () => {
                 </p>
             )}
             <div className="flex gap-4">
-             <Link to={`/aniproflie/${slide.id}`}>
+             <Link to={slide.type === 'Movie' ? `/animovie/${slide.id}` : `/aniproflie/${slide.id}`}>
                 <button className="bg-[#E3B505] text-[#121212] px-4 py-2 rounded-lg">Watch Now</button>
              </Link>
                 <button className="bg-[#2E2E2E] text-[#E3B505] px-4 py-2 rounded-lg">Detail</button>

@@ -42,7 +42,7 @@ export default function Secondcarosal() {
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
         {animeData.slice(0, 10).map((anime) => (
-          <Link to={`/aniproflie/${anime.id}`} key={anime.id}>
+          <Link to={anime.type === 'Movie' ? `/animovie/${anime.id}` : `/aniproflie/${anime.id}`} key={anime.id}>
             <div className="min-w-[125px] lg:min-w-[200px] bg-[#121212] shadow-lg flex flex-col text-white hover:shadow-xl transition cursor-pointer">
               <img src={anime.image} alt={anime.name} className="w-full h-50 md:h-70 object-cover" />
               <div className="p-2">

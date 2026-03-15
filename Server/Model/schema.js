@@ -71,19 +71,36 @@ const MovieSchema = new Schema({
 
 const userSchema = new mongoose.Schema({
     fullname: String,
-    email: String,
-    password: String,
-   conformPassword: String
+    email: { type: String, unique: true, required: true },
+    password: { type: String, required: true },
+    conformPassword: String,
+    role: { type: String, enum: ['user', 'admin'], default: 'user' },
+    watchlist: [{
+        mediaId: Number,
+        mediaType: String,
+        name: String,
+        image: String,
+        addedAt: { type: Date, default: Date.now }
+    }]
+});
+
+const ReviewSchema = new Schema({
+    mediaId: { type: Number, required: true },
+    userEmail: { type: String, required: true },
+    userName: { type: String, required: true },
+    comment: { type: String, required: true },
+    rating: { type: Number, min: 1, max: 10 },
+    createdAt: { type: Date, default: Date.now }
 });
 
 const Media = mongoose.model('Media', MediaSchema, 'media');
 const Mov = mongoose.model('Mov', MovieSchema, 'mediaMovie');
 const userModel = mongoose.model('userModel', userSchema, 'Signup');
-
-
+const Review = mongoose.model('Review', ReviewSchema, 'reviews');
 
 module.exports = {
     Media,
     userModel,
-    Mov
+    Mov,
+    Review
 };

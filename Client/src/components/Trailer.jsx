@@ -42,12 +42,27 @@ const Trailer = () => {
     return <div className="text-white p-4 text-center">Anime not found.</div>;
   }
 
+  const getEmbedUrl = (url) => {
+    if (!url) return "";
+    let videoId = "";
+    
+    if (url.includes("youtu.be/")) {
+      videoId = url.split("youtu.be/")[1].split(/[?#]/)[0];
+    } else if (url.includes("watch?v=")) {
+      videoId = url.split("watch?v=")[1].split(/[&?#]/)[0];
+    } else if (url.includes("embed/")) {
+      videoId = url.split("embed/")[1].split(/[?#]/)[0];
+    }
+    
+    return videoId ? `https://www.youtube-nocookie.com/embed/${videoId}` : url;
+  };
+
   // Convert animeTrailer array to the format expected by the component
   const videos = anime.animeTrailer
-    ? anime.animeTrailer.map((trailer, index) => ({
+    ? anime.animeTrailer?.map((trailer, index) => ({
         id: index + 1,
         name: trailer.title,
-        videoUrl: trailer.url.replace("watch?v=", "embed/"),
+        videoUrl: getEmbedUrl(trailer.url),
       }))
     : [];
 
@@ -55,7 +70,7 @@ const Trailer = () => {
     <div className="bg-[#1E1E1E] p-6">
       <h2 className="text-white text-xl mb-4">Trailer Videos</h2>
       <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        {videos.map((video) => (
+        {videos?.map((video) => (
           <div
             key={video.id}
             className="bg-white rounded-md overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
