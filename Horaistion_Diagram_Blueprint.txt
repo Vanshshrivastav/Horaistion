@@ -1,0 +1,701 @@
+================================================================================
+  HORAISTION — AI DIAGRAM BLUEPRINT
+  Full System Reference for Generating Any Diagram Type
+  (Architecture, DFD, ERD, Flowchart, Sequence, Use-Case, Component, etc.)
+================================================================================
+
+This file is written for AI diagram generators. Every section is labelled
+with the diagram types it is most useful for. Read the entire file before
+generating any diagram so you can cross-reference relationships.
+
+================================================================================
+SECTION 1 — SYSTEM OVERVIEW
+[Useful for: Architecture Diagrams, Context Diagrams, Use-Case Diagrams]
+================================================================================
+
+Application Name : Horaistion
+Type             : Full-Stack Web Application (MERN Stack)
+Purpose          : A media catalog platform for browsing Anime, Movies, and
+                   TV Shows. Users can explore media, read details, watch
+                   trailers, manage a personal watchlist, and write reviews.
+                   Admins can add, edit, and delete content via a dashboard.
+
+Actors:
+  1. Guest (Unauthenticated)  — Can only access /login and /Register pages.
+  2. Registered User          — Can browse media, manage watchlist, write
+                                reviews, and update their profile.
+  3. Admin User               — Has all User permissions PLUS can access the
+                                Admin Dashboard, Add Media, and Edit Media.
+  4. Express.js Server        — The backend middleware between browser and DB.
+  5. MongoDB Database         — Persistent data store for all collections.
+
+External Systems:
+  - YouTube (embedded iframes for trailers — no API call, just URL rendering)
+  - Browser localStorage      — Stores JWT token, user email, role, fullname.
+
+================================================================================
+SECTION 2 — TECHNOLOGY STACK
+[Useful for: Architecture Diagrams, Component Diagrams]
+================================================================================
+
+FRONTEND (Client):
+  - Framework   : React.js 19 (built with Vite)
+  - Routing     : React Router DOM v6 (BrowserRouter)
+  - Styling     : Tailwind CSS + Material Tailwind components
+  - HTTP Client : Axios (with request/response interceptors)
+  - State       : React Hooks only (useState, useEffect) — no Redux
+  - Context     : ToastContext (global notification system)
+  - Entry Point : main.jsx → App.jsx
+
+BACKEND (Server):
+  - Runtime     : Node.js
+  - Framework   : Express.js
+  - Auth        : JSON Web Tokens (jsonwebtoken) + bcryptjs for hashing
+  - DB ODM      : Mongoose
+  - Middleware  : cors, express.json(), custom auth/adminAuth guards
+  - Port        : 6002
+
+DATABASE:
+  - Engine      : MongoDB (local instance, port 27017)
+  - DB Name     : maindata
+  - Collections : media, mediaMovie, Signup, reviews
+
+================================================================================
+SECTION 3 — FOLDER STRUCTURE
+[Useful for: Component Diagrams, Package Diagrams]
+================================================================================
+
+/Horaistion (root)
+│
+├── /Client  (React Frontend)
+│   ├── index.html
+│   ├── vite.config.js
+│   ├── tailwind.config.js
+│   └── /src
+│       ├── main.jsx           ← React entry point
+│       ├── App.jsx            ← Router + Axios interceptors + Global providers
+│       ├── index.css          ← Global Tailwind CSS imports
+│       │
+│       ├── /context
+│       │   └── ToastContext.jsx  ← Global toast notification context/provider
+│       │
+│       ├── /components        ← Reusable UI components
+│       │   ├── Navbar.jsx
+│       │   ├── Footer.jsx
+│       │   ├── ProtectedRoute.jsx
+│       │   ├── Login.jsx
+│       │   ├── Firstcarousel.jsx
+│       │   ├── Secondcarosal.jsx
+│       │   ├── Mosthome.jsx
+│       │   ├── Mostlink.jsx
+│       │   ├── MediaCard.jsx
+│       │   ├── MediaDetailHero.jsx
+│       │   ├── MediaSection.jsx
+│       │   ├── Topcard.jsx
+│       │   ├── Tvcard.jsx
+│       │   ├── Trailer.jsx
+│       │   ├── Actordata.jsx
+│       │   ├── HeroBanner.jsx
+│       │   ├── Information.jsx
+│       │   ├── CommentSection.jsx
+│       │   ├── RecommendationSection.jsx
+│       │   ├── Moviep.jsx
+│       │   ├── Refad.jsx
+│       │   ├── SkeletonLoader.jsx
+│       │   ├── Toast.jsx
+│       │   └── ErrorBoundary.jsx
+│       │
+│       └── /page              ← Page-level screen components (route targets)
+│           ├── Home.jsx
+│           ├── Loginpage.jsx
+│           ├── Registerpage.jsx
+│           ├── Moviepage.jsx
+│           ├── Tvshow.jsx
+│           ├── Topwatch.jsx
+│           ├── Mostwatch.jsx
+│           ├── Animeinfo.jsx
+│           ├── Detailspage.jsx
+│           ├── SearchPage.jsx
+│           ├── WatchlistPage.jsx
+│           ├── Contact.jsx
+│           ├── Profile.jsx
+│           ├── Dashboard.jsx
+│           ├── AddMedia.jsx
+│           └── EditMedia.jsx
+│
+└── /Server  (Express Backend)
+    ├── index.js               ← Server entry, all routes defined here
+    └── /Model
+        └── schema.js          ← All Mongoose schemas and model exports
+
+================================================================================
+SECTION 4 — ROUTING MAP
+[Useful for: Flowcharts, Sitemap Diagrams, Navigation Diagrams]
+================================================================================
+
+PUBLIC ROUTES (No authentication required):
+  /login        → LoginPage component   → Login.jsx component inside
+  /Register     → Registerpage component
+
+PROTECTED ROUTES (Require valid JWT in localStorage; role: 'user' or 'admin'):
+  /             → Home.jsx
+  /search       → SearchPage.jsx
+  /watchlist    → WatchlistPage.jsx
+  /movie        → Moviepage.jsx
+  /tvshow       → Tvshow.jsx
+  /topairing    → Topwatch.jsx
+  /Mostwatch    → Mostwatch.jsx
+  /animovie/:id → Animeinfo.jsx         (media detail view using URL param id)
+  /aniproflie/:id → Detailspage.jsx     (alternate detail view)
+  /contact      → Contact.jsx
+  /profile      → Profile.jsx
+
+ADMIN-ONLY ROUTES (Require valid JWT in localStorage; role: 'admin'):
+  /dashboard    → Dashboard.jsx
+  /AddMedia     → AddMedia.jsx
+  /edit-media/:id → EditMedia.jsx
+
+ROUTE GUARD MECHANISM:
+  - ProtectedRoute.jsx wraps all protected/admin routes as an Outlet.
+  - It reads the JWT token from localStorage.
+  - For adminOnly prop=true, it additionally checks the role field.
+  - Unauthorized users are redirected to /login.
+
+================================================================================
+SECTION 5 — DATABASE SCHEMA (Entity-Relationship)
+[Useful for: ERD, Database Diagrams]
+================================================================================
+
+--- Collection: media (TV Series / Anime) ---
+Model Name : Media
+Fields:
+  _id               : ObjectId (auto by MongoDB)
+  id                : Number, required, unique
+  type              : String, enum ['TV Series', 'Movie', 'OVA'], required
+  name              : String, required
+  image             : String (URL)
+  duration          : String
+  total_episodes    : Number
+  aired_episodes    : Number
+  genres            : [String]
+  status            : String
+  rating            : String
+  studios           : [String]
+  producers         : [String]
+  aired             : String (year)
+  story             : String
+  synopsis          : String
+  animeTrailer      : [AnimeTrailerSchema]  ← embedded sub-documents
+  characters        : [CharacterSchema]     ← embedded sub-documents
+  main_characters   : [CharacterSchema]     ← embedded sub-documents
+
+--- Collection: mediaMovie (Movies only) ---
+Model Name : Mov
+Fields: Identical structure to Media schema above.
+  type is restricted to enum ['Movie'] only.
+
+--- Sub-Schema: AnimeTrailer (embedded in Media and Mov) ---
+Fields:
+  title : String
+  url   : String (YouTube embed URL)
+
+--- Sub-Schema: Character (embedded in Media and Mov) ---
+Fields:
+  name                  : String, required
+  character_image       : String (URL)
+  japanese_voice_actor  : String
+  english_voice_actor   : String
+  voice_actor_image     : String (URL)
+  japanese_va           : String
+  english_va            : String
+  va_image              : String (URL)
+  voice_actor_jp        : String
+  voice_actor_en        : String
+
+--- Collection: Signup (Users) ---
+Model Name : userModel
+Fields:
+  _id             : ObjectId (auto)
+  fullname        : String
+  email           : String, unique, required
+  password        : String (bcrypt hashed), required
+  conformPassword : String
+  role            : String, enum ['user', 'admin'], default 'user'
+  watchlist       : [WatchlistItemSchema] ← embedded array
+
+--- Embedded: WatchlistItem (inside userModel.watchlist) ---
+Fields:
+  mediaId   : Number
+  mediaType : String
+  name      : String
+  image     : String (URL)
+  addedAt   : Date, default now
+
+--- Collection: reviews ---
+Model Name : Review
+Fields:
+  _id        : ObjectId (auto)
+  mediaId    : Number, required
+  userEmail  : String, required
+  userName   : String, required
+  comment    : String, required
+  rating     : Number, min 1, max 10
+  createdAt  : Date, default now
+
+RELATIONSHIPS SUMMARY:
+  userModel  1 --- * WatchlistItem   (embedded, user owns watchlist)
+  Media      1 --- * AnimeTrailer    (embedded)
+  Media      1 --- * Character       (embedded, via characters + main_characters)
+  Mov        1 --- * AnimeTrailer    (embedded)
+  Mov        1 --- * Character       (embedded)
+  Review     * --- 1 Media/Mov       (linked by mediaId number, not ObjectId ref)
+  Review     * --- 1 userModel       (linked by userEmail string)
+
+================================================================================
+SECTION 6 — BACKEND API ENDPOINTS
+[Useful for: DFD Level 1 & 2, Sequence Diagrams, API Diagrams]
+================================================================================
+
+Base URL: http://localhost:6002
+
+AUTH LEGEND:
+  [PUBLIC]    = No token required
+  [AUTH]      = Requires valid JWT in header 'x-auth-token'
+  [ADMINAUTH] = Requires valid JWT with role='admin'
+
+--- MEDIA ---
+GET    /media                 [PUBLIC]    → Returns all Media + Mov combined
+GET    /movie                 [PUBLIC]    → Returns all Mov (movies only)
+GET    /admin/media/:id       [ADMINAUTH] → Get single media by MongoDB _id
+PUT    /admin/media/:id       [ADMINAUTH] → Update media/movie record by _id
+DELETE /media/:id             [ADMINAUTH] → Delete media or movie by _id
+POST   /addMedia              [ADMINAUTH] → Create new media or movie record
+
+--- USERS / AUTH ---
+POST   /Signup                [PUBLIC]    → Register new user (hashes password,
+                                            assigns role based on email pattern)
+GET    /Signup                [ADMINAUTH] → List all non-admin users
+POST   /login                 [PUBLIC]    → Authenticate user, return JWT token
+POST   /change-password       [AUTH]      → Update authenticated user's password
+
+--- WATCHLIST ---
+GET    /watchlist/:email      [PUBLIC]    → Get watchlist for given user email
+POST   /watchlist/add         [AUTH]      → Add item to user's watchlist
+POST   /watchlist/remove      [AUTH]      → Remove item from user's watchlist
+
+--- REVIEWS ---
+GET    /reviews/:mediaId      [PUBLIC]    → Get all reviews for a media item
+POST   /reviews/add           [AUTH]      → Post a new review
+DELETE /reviews/:id           [AUTH]      → Delete review (own or admin)
+GET    /reviews/user/:email   [AUTH]      → Get all reviews by a user
+GET    /all-reviews           [ADMINAUTH] → Get all reviews (admin view)
+
+--- ADMIN STATS ---
+GET    /admin/stats           [ADMINAUTH] → Returns:
+                                            { totalMedia, totalUsers,
+                                              totalReviews, movies, series }
+
+================================================================================
+SECTION 7 — AUTHENTICATION & AUTHORIZATION FLOW
+[Useful for: Sequence Diagrams, Flowcharts, Security Diagrams]
+================================================================================
+
+REGISTRATION FLOW:
+  1. User fills Registerpage form (fullname, email, password).
+  2. Frontend POSTs to /Signup.
+  3. Backend checks if email already exists in userModel.
+  4. If new → bcrypt hashes the password (salt rounds: 10).
+  5. If email contains 'admin' → role set to 'admin', else 'user'.
+  6. userModel document created and saved in MongoDB.
+  7. Response: { success: true, message: "User registered successfully" }
+  8. Frontend redirects to /login.
+
+LOGIN FLOW:
+  1. User fills Login form (email, password).
+  2. Frontend POSTs to /login.
+  3. Backend special-cases hardcoded admin (admin@gmail.com / admin123)
+     → issues JWT immediately if matched.
+  4. Otherwise → finds user in DB → bcrypt.compare(password, hashed).
+  5. If match → signs JWT: { id, email, role } with 24h expiry.
+  6. Response: { success, token, email, fullname, role }
+  7. Frontend stores in localStorage: token, email, fullname, role.
+  8. If role === 'admin' → navigate to /dashboard.
+  9. If role === 'user'  → navigate to /.
+
+AUTHENTICATED REQUEST FLOW:
+  1. Axios request interceptor reads token from localStorage.
+  2. Adds header: 'x-auth-token': <token>.
+  3. Backend auth middleware verifies token signature using JWT_SECRET.
+  4. If valid → attaches req.user = { id, email, role } → calls next().
+  5. If invalid/missing → 401 response.
+  6. Axios response interceptor catches 401 → clears localStorage →
+     redirects to /login.
+
+ADMIN REQUEST FLOW:
+  1. Same as above but after auth middleware → adminAuth checks req.user.role.
+  2. If role !== 'admin' → 403 Forbidden response.
+
+LOGOUT:
+  - No dedicated logout endpoint.
+  - Frontend clears localStorage (token, email, role, fullname).
+  - Redirect to /login.
+
+================================================================================
+SECTION 8 — DATA FLOW (DFD)
+[Useful for: DFD Level 0, 1, 2]
+================================================================================
+
+LEVEL 0 — CONTEXT DIAGRAM:
+  [User/Admin Browser] ←──HTTP──→ [Horaistion System] ←──Mongoose──→ [MongoDB]
+
+LEVEL 1 — MAIN PROCESSES:
+  Process 1: User Authentication
+    Input : Login form data (email, password)
+    Output: JWT token + user info → localStorage
+    Store : Signup collection (read/write)
+
+  Process 2: Media Browsing
+    Input : User navigation (click category/search term)
+    Output: Media cards displayed on screen
+    Store : media collection (read), mediaMovie collection (read)
+
+  Process 3: Media Detail View
+    Input : Media item ID (from URL param)
+    Output: Full detail page (synopsis, characters, trailers, reviews)
+    Store : media / mediaMovie (read), reviews (read)
+
+  Process 4: Watchlist Management
+    Input : User action (add/remove), media info
+    Output: Updated watchlist displayed
+    Store : Signup collection — watchlist array (read/write)
+
+  Process 5: Review Management
+    Input : User comment + rating
+    Output: Reviews list updated
+    Store : reviews collection (read/write)
+
+  Process 6: Admin Content Management
+    Input : Admin form submission (add/edit/delete media)
+    Output: Updated media catalog
+    Store : media / mediaMovie collections (read/write)
+
+  Process 7: Admin Dashboard Stats
+    Input : Admin page load
+    Output: Stats cards (totalMedia, totalUsers, totalReviews)
+    Store : media, mediaMovie, Signup, reviews (read — countDocuments)
+
+LEVEL 2 — PROCESS 1 (Authentication) DECOMPOSITION:
+  1.1 Validate Input    → Check email/password not empty
+  1.2 Check Admin Flag  → If admin@gmail.com, skip DB lookup
+  1.3 DB Lookup         → userModel.findOne({ email })
+  1.4 Password Compare  → bcrypt.compare(input, stored hash)
+  1.5 JWT Sign          → jwt.sign({ id, email, role }, secret, 24h)
+  1.6 Store Token       → localStorage.setItem('token', ...)
+  1.7 Route Redirect    → Navigate by role (admin→/dashboard, user→/)
+
+LEVEL 2 — PROCESS 6 (Admin Content Management) DECOMPOSITION:
+  6.1 Add Media
+      → Admin fills AddMedia form → POST /addMedia
+      → Backend auto-increments id, selects collection by mediaType
+      → Saves new Mov or Media document
+  6.2 Edit Media
+      → Admin clicks Edit on Dashboard → GET /admin/media/:id
+      → EditMedia form pre-populated → PUT /admin/media/:id
+      → Backend updates Media or Mov by _id
+  6.3 Delete Media
+      → Admin clicks Delete → DELETE /media/:id
+      → Backend tries Media.findByIdAndDelete, then Mov.findByIdAndDelete
+
+================================================================================
+SECTION 9 — COMPONENT RELATIONSHIPS
+[Useful for: Component Diagrams, Dependency Diagrams]
+================================================================================
+
+App.jsx
+  └── ErrorBoundary
+      └── ToastProvider (ToastContext)
+          └── BrowserRouter
+              ├── Route /login         → LoginPage → Login.jsx
+              ├── Route /Register      → Registerpage
+              └── ProtectedRoute (user)
+                  ├── Route /          → Home
+                  │     ├── Navbar
+                  │     ├── HeroBanner
+                  │     ├── Firstcarousel
+                  │     ├── Secondcarosal
+                  │     ├── Mosthome
+                  │     └── Footer
+                  ├── Route /search    → SearchPage → MediaCard (list)
+                  ├── Route /watchlist → WatchlistPage → MediaCard (list)
+                  ├── Route /movie     → Moviepage → Moviep / MediaCard
+                  ├── Route /tvshow    → Tvshow → Tvcard
+                  ├── Route /topairing → Topwatch → Topcard
+                  ├── Route /Mostwatch → Mostwatch → Mostlink
+                  ├── Route /animovie/:id → Animeinfo
+                  │     ├── MediaDetailHero
+                  │     ├── Information
+                  │     ├── Trailer
+                  │     ├── Actordata
+                  │     ├── CommentSection
+                  │     └── RecommendationSection
+                  ├── Route /aniproflie/:id → Detailspage
+                  ├── Route /contact   → Contact
+                  └── Route /profile   → Profile
+                      ProtectedRoute (admin)
+                  ├── Route /dashboard   → Dashboard → AdminSidebar
+                  ├── Route /AddMedia    → AddMedia  → AdminSidebar
+                  └── Route /edit-media/:id → EditMedia → AdminSidebar
+
+CONTEXT USAGE:
+  ToastContext.jsx
+    → Exports: ToastProvider, useToast
+    → Consumed by: any component that triggers notifications (Login,
+      CommentSection, WatchlistPage, AddMedia, EditMedia, Profile)
+    → Toast.jsx renders the actual notification UI
+
+================================================================================
+SECTION 10 — KEY COMPONENT RESPONSIBILITIES
+[Useful for: Component/Class Diagrams, Module Diagrams]
+================================================================================
+
+ProtectedRoute.jsx
+  - Reads token from localStorage.
+  - If no token → <Navigate to="/login" />
+  - If adminOnly=true AND role !== 'admin' → <Navigate to="/" />
+  - Otherwise renders <Outlet /> (child routes).
+
+Navbar.jsx
+  - Displays navigation links.
+  - Reads user info (email, role, fullname) from localStorage.
+  - Shows admin link if role === 'admin'.
+  - Provides search input that navigates to /search?q=...
+  - Handles logout (clears localStorage, navigates to /login).
+
+Dashboard.jsx (Admin)
+  - On mount: fetches /admin/stats → displays stat cards.
+  - Fetches /media → renders media management table.
+  - Delete button calls DELETE /media/:id.
+  - Edit button navigates to /edit-media/:id.
+
+AddMedia.jsx (Admin)
+  - Multi-field form for new media.
+  - On submit: POST /addMedia with all form fields.
+  - On success: navigates back to /dashboard.
+
+EditMedia.jsx (Admin)
+  - On mount: fetches GET /admin/media/:id → pre-fills form.
+  - On submit: PUT /admin/media/:id.
+  - On success: navigates back to /dashboard.
+
+Animeinfo.jsx (Media Detail Page)
+  - Uses URL param :id.
+  - Fetches /media (all) → finds matching item by numeric id.
+  - Passes data down to children: MediaDetailHero, Information,
+    Trailer, Actordata, CommentSection, RecommendationSection.
+
+CommentSection.jsx
+  - Fetches GET /reviews/:mediaId on mount.
+  - Authenticated users can POST /reviews/add.
+  - Authors and admins can DELETE /reviews/:id.
+
+WatchlistPage.jsx
+  - Reads email from localStorage.
+  - Fetches GET /watchlist/:email.
+  - Remove button calls POST /watchlist/remove.
+
+Profile.jsx
+  - Reads user info from localStorage.
+  - Displays user's watchlist and reviews.
+  - Handles POST /change-password.
+
+SearchPage.jsx
+  - Reads query from URL (?q=...).
+  - Fetches /media (all) → filters client-side by name/genre match.
+  - Renders matching MediaCard components.
+
+ErrorBoundary.jsx
+  - Class component wrapping entire app.
+  - Catches JS errors in render and displays fallback UI.
+
+SkeletonLoader.jsx
+  - Placeholder UI shown while async data is loading.
+
+Toast.jsx
+  - Renders the toast notification popup.
+  - Consumed by ToastContext.
+
+================================================================================
+SECTION 11 — SEQUENCE DIAGRAMS (TEXTUAL)
+[Useful for: Sequence Diagrams]
+================================================================================
+
+--- SEQUENCE: User Logs In ---
+Browser → /login page renders Login.jsx
+User fills email/password → clicks Submit
+Login.jsx → axios.post('/login', { email, password })
+  Express /login handler:
+    │ Check hardcoded admin shortcut
+    │ userModel.findOne({ email })
+    │ bcrypt.compare(password, user.password)
+    └── jwt.sign({ id, email, role }) → token
+Express → Response { success:true, token, email, fullname, role }
+Login.jsx → localStorage.setItem('token', ...)
+           → localStorage.setItem('role', ...)
+           → navigate to /dashboard (admin) or / (user)
+
+--- SEQUENCE: User Adds Item to Watchlist ---
+User clicks "Add to Watchlist" on MediaCard or Animeinfo
+Component reads email from localStorage
+axios.post('/watchlist/add', { email, mediaId, mediaType, name, image })
+  [Axios interceptor adds x-auth-token header]
+  Express auth middleware verifies JWT
+  userModel.findOne({ email })
+  user.watchlist.push({ mediaId, mediaType, name, image })
+  user.save()
+Express → Response { success:true, watchlist: [...] }
+Component → shows Toast notification "Added to Watchlist"
+WatchlistPage re-fetch updates UI
+
+--- SEQUENCE: Admin Deletes Media ---
+Admin on Dashboard clicks Delete button for a media row
+Dashboard.jsx → axios.delete('/media/:id')
+  [Axios adds x-auth-token header]
+  Express adminAuth: verify JWT → check role === 'admin'
+  Media.findByIdAndDelete(id) — if null try Mov.findByIdAndDelete(id)
+Express → { success:true, message: "Media deleted successfully" }
+Dashboard.jsx → removes item from local state → re-renders table
+
+--- SEQUENCE: Admin Edits Media ---
+Admin on Dashboard clicks Edit for a row → navigate('/edit-media/:id')
+EditMedia.jsx mounts → axios.get('/admin/media/:id')
+  Express adminAuth → Media.findById(id) or Mov.findById(id)
+  Returns media document JSON
+EditMedia.jsx → pre-fills all form fields
+Admin edits fields → clicks Save
+EditMedia.jsx → axios.put('/admin/media/:id', formData)
+  Express adminAuth → Media.findByIdAndUpdate or Mov.findByIdAndUpdate
+Express → { success:true, data: updatedDoc }
+EditMedia.jsx → navigate('/dashboard')
+
+================================================================================
+SECTION 12 — USE-CASE SUMMARY
+[Useful for: Use-Case Diagrams]
+================================================================================
+
+ACTOR: Guest (Unauthenticated)
+  - View Login Page
+  - Submit Login Credentials
+  - View Register Page
+  - Create Account
+
+ACTOR: Registered User (extends Guest)
+  - Browse Home Page
+  - Browse Movies / TV Shows / Anime categories
+  - Search Media by keyword
+  - View Media Detail (synopsis, characters, trailers)
+  - Add Media to Watchlist
+  - Remove Media from Watchlist
+  - View Watchlist
+  - Post a Review / Rating
+  - Delete Own Review
+  - View Profile
+  - Change Password
+  - Logout
+
+ACTOR: Admin (extends Registered User)
+  - View Admin Dashboard
+  - View Dashboard Statistics
+  - View All Media in Management Table
+  - Add New Media (Movie or TV Series)
+  - Edit Existing Media
+  - Delete Media
+  - View All User Reviews
+  - Delete Any Review
+
+================================================================================
+SECTION 13 — STATE DIAGRAM (User Session)
+[Useful for: State Diagrams]
+================================================================================
+
+States:
+  [Unauthenticated]
+    → Event: Successful login
+    → Transition to: [Authenticated-User]
+    OR
+    → Transition to: [Authenticated-Admin] (if role=admin)
+
+  [Authenticated-User]
+    → Can navigate all protected user routes
+    → Event: Logout or 401 response
+    → Transition to: [Unauthenticated]
+
+  [Authenticated-Admin]
+    → Can navigate all user routes AND admin routes
+    → Event: Logout or 401/403 response
+    → Transition to: [Unauthenticated]
+
+  [Token Expired] (sub-state reached from any Authenticated state)
+    → Axios interceptor catches 401
+    → localStorage.clear()
+    → Auto-redirect to /login
+    → Transition to: [Unauthenticated]
+
+================================================================================
+SECTION 14 — DEPLOYMENT / NETWORK TOPOLOGY
+[Useful for: Deployment/Infrastructure Diagrams]
+================================================================================
+
+[Developer Machine]
+  │
+  ├── [Browser / React App]
+  │     Port: 5173 (Vite dev server)
+  │     Communicates via HTTP to Backend
+  │
+  ├── [Node.js Express Server]
+  │     File : Server/index.js
+  │     Port : 6002
+  │     Communicates via Mongoose to MongoDB
+  │
+  └── [MongoDB Instance]
+        Port    : 27017
+        DB Name : maindata
+        Collections: media, mediaMovie, Signup, reviews
+
+Network Calls Summary:
+  Browser (5173) → Express (6002) : Axios HTTP REST calls
+  Express (6002) → MongoDB (27017) : Mongoose queries
+  Browser        → YouTube CDN    : Embedded iframe (no API call)
+
+================================================================================
+SECTION 15 — QUICK ENTITY LIST (for any diagram)
+[Useful for: All diagram types as a reference]
+================================================================================
+
+ENTITIES / NODES:
+  User, Admin, Media (Anime/TV Series), Movie, Review, Watchlist,
+  WatchlistItem, Character, AnimeTrailer
+
+PROCESSES / SERVICES:
+  Authentication Service, Media Service, Watchlist Service,
+  Review Service, Admin Stats Service, Search Service
+
+DATA STORES:
+  media (MongoDB collection), mediaMovie (MongoDB collection),
+  Signup/users (MongoDB collection), reviews (MongoDB collection),
+  localStorage (Browser)
+
+INTERFACES / UI SCREENS:
+  LoginPage, RegisterPage, HomePage, SearchPage, MoviePage, TvShowPage,
+  TopAiringPage, MostwatchPage, AnimeInfoPage (Detail), DetailsPage,
+  WatchlistPage, ContactPage, ProfilePage,
+  [Admin] Dashboard, AddMediaPage, EditMediaPage
+
+API FLOWS (direction: Frontend → Backend → DB):
+  Login, Register, GetAllMedia, GetMovies, AddMedia, EditMedia,
+  DeleteMedia, GetAdminMediaById, AddToWatchlist, RemoveFromWatchlist,
+  GetWatchlist, AddReview, DeleteReview, GetReviews, GetUserReviews,
+  GetAllReviews, GetAdminStats, ChangePassword, GetAllUsers
+
+================================================================================
+END OF HORAISTION DIAGRAM BLUEPRINT
+================================================================================
